@@ -1,2 +1,1 @@
-# rails-application-custom
--_- 
+This is my application
