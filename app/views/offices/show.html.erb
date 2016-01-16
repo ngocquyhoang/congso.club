@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @office.title %>
+</p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @office.owner %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @office.image %>
+</p>
+
+<p>
+  <strong>Like:</strong>
+  <%= @office.like %>
+</p>
+
+<p>
+  <strong>Dislike:</strong>
+  <%= @office.dislike %>
+</p>
+
+<%= link_to 'Edit', edit_office_path(@office) %> |
+<%= link_to 'Back', offices_path %>
