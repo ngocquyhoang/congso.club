@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+// $(document).ready(function(){
+//     var facebookShareUrl = window.location.href;
+//     $('.facebook-share-button').attr("href", "http://www.facebook.com/sharer.php?u=" + facebookShareUrl);
+// });

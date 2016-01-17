@@ -10,8 +10,30 @@ class OfficesController < ApplicationController
   # GET /offices/1
   # GET /offices/1.json
   def show
+    productDomain = "congso-ngocquyhoang.c9users.io"
+    @currentUrl = "https://" + productDomain + "/offices/" + @office.slug
   end
-
+  # like button
+  def like
+    puts "DKM"
+    if params[:idPost].blank?
+      # do no thing
+    else
+      likeCount = Office.find(params[:idPost])
+      likeCount.like = likeCount.like + 1
+      likeCount.save
+    end
+  end
+  
+  def dislike
+    if params[:idPost].blank?
+      # do no thing
+    else
+      dislikeCount = Office.find(params[:idPost])
+      dislikeCount.dislike = dislikeCount.dislike + 1
+      dislikeCount.save
+    end
+  end
   # GET /offices/new
   def new
     @office = Office.new
@@ -69,6 +91,6 @@ class OfficesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def office_params
-      params.require(:office).permit(:title, :owner, :image, :like, :dislike)
+      params.require(:office).permit(:title, :owner, :image)
     end
 end

@@ -12,7 +12,8 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @office.image %>
+  <img src="<%= @office.image %>" />
+  
 </p>
 
 <p>
@@ -24,6 +25,9 @@
   <strong>Dislike:</strong>
   <%= @office.dislike %>
 </p>
-
+<a class="facebook-share-button" target="top" href="<%= "http://www.facebook.com/sharer.php?u=" + @currentUrl %>">Share on facebook | <span><%= facebook_shares(@currentUrl)['share_count'] %></span></a>
+<br />
+<div class="fb-comments" data-href="<%= @currentUrl %>" data-numposts="10"></div>
+<br />
 <%= link_to 'Edit', edit_office_path(@office) %> |
 <%= link_to 'Back', offices_path %>

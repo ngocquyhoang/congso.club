@@ -20,8 +20,8 @@
         <td><%= office.title %></td>
         <td><%= office.owner %></td>
         <td><%= office.image %></td>
-        <td><%= office.like %></td>
-        <td><%= office.dislike %></td>
+        <td class= "like"><button class= "like" id="<%= office.id %>" >Like</button> | <span class= "like<%= office.id %>" ><%= office.like %></span></td>
+        <td class= "dislike"><button class= "dislike" id="<%= office.id %>" >Dislike</button> | <span class= "dislike<%= office.id %>" ><%= office.dislike %></span></td>
         <td><%= link_to 'Show', office %></td>
         <td><%= link_to 'Edit', edit_office_path(office) %></td>
         <td><%= link_to 'Destroy', office, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -31,5 +31,38 @@
 </table>
 
 <br>
+<!--call ajax-->
+<script type="text/javascript">
+  // like button
+  $('button.like').click(function() {
+    // call ajax
+    idPost = $(this).attr('id');
+    $.ajax({
+      url: "/offices/like",
+      type: "POST",
+      dataType: "script",
+      data: {"idPost": idPost},
+    });
+    //set value and add class
+    likeCount = parseInt($('td.like span.like' + idPost ).html());
+    $('td.like span.like' + idPost ).html(likeCount + 1);
+    $(this).addClass('liked');
+  });
+  // dislike button
+  $('button.dislike').click(function() {
+    // call ajax
+    idPost = $(this).attr('id');
+    $.ajax({
+      url: "/offices/dislike",
+      type: "POST",
+      dataType: "script",
+      data: {"idPost": idPost},
+    });
+    //set value and add class
+    dislikeCount = parseInt($('td.dislike span.dislike' + idPost ).html());
+    $('td.dislike span.dislike' + idPost ).html(dislikeCount + 1);
+    $(this).addClass('disliked');
+  });
+</script>
 
 <%= link_to 'New Office', new_office_path %>
