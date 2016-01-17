@@ -4,3 +4,730 @@ Started GET "/" for 127.0.0.1 at 2015-12-23 14:07:59 +0700
 Processing by Rails::WelcomeController#index as HTML
   Rendered /home/quyhn/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
 Completed 200 OK in 67ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (10.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (20.7ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateOffices (20160116140229)
+  [1m[35m (8.3ms)[0m  CREATE TABLE `offices` (`id` int(11) auto_increment PRIMARY KEY, `title` text, `owner` text, `image` text, `like` int(11), `dislike` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160116140229')
+  [1m[36m (4.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateFriendlyIdSlugs (20160117072415)
+  [1m[35m (7.7ms)[0m  CREATE TABLE `friendly_id_slugs` (`id` int(11) auto_increment PRIMARY KEY, `slug` varchar(255) NOT NULL, `sluggable_id` int(11) NOT NULL, `sluggable_type` varchar(50), `scope` varchar(255), `created_at` datetime) ENGINE=InnoDB
+  [1m[36m (14.3ms)[0m  [1mCREATE  INDEX `index_friendly_id_slugs_on_sluggable_id`  ON `friendly_id_slugs` (`sluggable_id`) [0m
+  [1m[35m (27.4ms)[0m  CREATE  INDEX `index_friendly_id_slugs_on_slug_and_sluggable_type`  ON `friendly_id_slugs` (`slug`, `sluggable_type`) 
+  [1m[36m (18.5ms)[0m  [1mCREATE UNIQUE INDEX `index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope`  ON `friendly_id_slugs` (`slug`, `sluggable_type`, `scope`) [0m
+  [1m[35m (16.7ms)[0m  CREATE  INDEX `index_friendly_id_slugs_on_sluggable_type`  ON `friendly_id_slugs` (`sluggable_type`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160117072415')
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (2.1ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'c9'
+  AND fk.table_name = 'friendly_id_slugs'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `friendly_id_slugs`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'c9'
+  AND fk.table_name = 'offices'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `offices`
+
+
+Started GET "/" for 118.71.191.54 at 2016-01-17 07:33:17 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (4.4ms)
+Completed 200 OK in 71ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/offices" for 118.71.191.54 at 2016-01-17 07:33:23 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#index as HTML
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 2.2ms)
+
+NoMethodError (undefined method `approximate_ascii=' for #<#<Class:0x00000002321cc8>:0x00000002321bd8>):
+  app/models/office.rb:3:in `<class:Office>'
+  app/models/office.rb:1:in `<top (required)>'
+  app/controllers/offices_controller.rb:7:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (220.1ms)
+
+
+Started GET "/offices/new" for 118.71.191.54 at 2016-01-17 07:33:26 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#new as HTML
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.5ms)
+
+NoMethodError (undefined method `approximate_ascii=' for #<#<Class:0x0000000430d6b8>:0x0000000430d5c8>):
+  app/models/office.rb:3:in `<class:Office>'
+  app/models/office.rb:1:in `<top (required)>'
+  app/controllers/offices_controller.rb:17:in `new'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.4ms)
+
+
+Started GET "/offices/new" for 118.71.191.54 at 2016-01-17 07:36:09 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#new as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `approximate_ascii=' for #<#<Class:0x000000041b4c80>:0x000000041b4c08>):
+  app/models/office.rb:3:in `<class:Office>'
+  app/models/office.rb:1:in `<top (required)>'
+  app/controllers/offices_controller.rb:17:in `new'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.9ms)
+
+
+Started GET "/offices/new" for 118.71.191.54 at 2016-01-17 07:36:22 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#new as HTML
+  Rendered offices/_form.html.erb (142.0ms)
+  Rendered offices/new.html.erb within layouts/application (149.1ms)
+Completed 200 OK in 1598ms (Views: 1586.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 118.71.191.54 at 2016-01-17 07:36:23 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 118.71.191.54 at 2016-01-17 07:36:24 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 118.71.191.54 at 2016-01-17 07:36:24 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 118.71.191.54 at 2016-01-17 07:36:24 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 118.71.191.54 at 2016-01-17 07:36:24 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 118.71.191.54 at 2016-01-17 07:36:24 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 118.71.191.54 at 2016-01-17 07:36:24 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 118.71.191.54 at 2016-01-17 07:36:24 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/offices" for 118.71.191.54 at 2016-01-17 07:36:37 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bhqMyYU60DQJhW8ZUABRzOcs2ScneuRq4XfEQglhtb1xOVCVkbyclyqKDQFKt+m+jvQuOe3cXmZYUBPe18q08g==", "office"=>{"title"=>"con mều", "owner"=>"ádasdsad", "image"=>"ádasdasdas", "like"=>"10", "dislike"=>"0"}, "commit"=>"Create Office"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `slug' for #<Office:0x007f794ef1e5e0>):
+  app/controllers/offices_controller.rb:30:in `block in create'
+  app/controllers/offices_controller.rb:29:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.7ms)
+  [1m[36m (13.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (21.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateOffices (20160116140229)
+  [1m[35m (11.1ms)[0m  CREATE TABLE `offices` (`id` int(11) auto_increment PRIMARY KEY, `title` text, `owner` text, `image` text, `slug` text, `like` int(11), `dislike` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160116140229')
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateFriendlyIdSlugs (20160117072415)
+  [1m[35m (9.7ms)[0m  CREATE TABLE `friendly_id_slugs` (`id` int(11) auto_increment PRIMARY KEY, `slug` varchar(255) NOT NULL, `sluggable_id` int(11) NOT NULL, `sluggable_type` varchar(50), `scope` varchar(255), `created_at` datetime) ENGINE=InnoDB
+  [1m[36m (19.2ms)[0m  [1mCREATE  INDEX `index_friendly_id_slugs_on_sluggable_id`  ON `friendly_id_slugs` (`sluggable_id`) [0m
+  [1m[35m (17.7ms)[0m  CREATE  INDEX `index_friendly_id_slugs_on_slug_and_sluggable_type`  ON `friendly_id_slugs` (`slug`, `sluggable_type`) 
+  [1m[36m (22.5ms)[0m  [1mCREATE UNIQUE INDEX `index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope`  ON `friendly_id_slugs` (`slug`, `sluggable_type`, `scope`) [0m
+  [1m[35m (19.7ms)[0m  CREATE  INDEX `index_friendly_id_slugs_on_sluggable_type`  ON `friendly_id_slugs` (`sluggable_type`) 
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160117072415')
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'c9'
+  AND fk.table_name = 'friendly_id_slugs'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `friendly_id_slugs`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'c9'
+  AND fk.table_name = 'offices'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `offices`
+
+
+Started POST "/offices" for 118.71.191.54 at 2016-01-17 07:37:10 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bhqMyYU60DQJhW8ZUABRzOcs2ScneuRq4XfEQglhtb1xOVCVkbyclyqKDQFKt+m+jvQuOe3cXmZYUBPe18q08g==", "office"=>{"title"=>"con mều", "owner"=>"ádasdsad", "image"=>"ádasdasdas", "like"=>"10", "dislike"=>"0"}, "commit"=>"Create Office"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `slug' for #<Office:0x00000003ec5f60>):
+  app/controllers/offices_controller.rb:30:in `block in create'
+  app/controllers/offices_controller.rb:29:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.4ms)
+  [1m[36m (10.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (22.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateOffices (20160116140229)
+  [1m[35m (7.3ms)[0m  CREATE TABLE `offices` (`id` int(11) auto_increment PRIMARY KEY, `title` text, `owner` text, `image` text, `slug` text, `like` int(11), `dislike` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160116140229')
+  [1m[36m (5.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateFriendlyIdSlugs (20160117072415)
+  [1m[35m (8.7ms)[0m  CREATE TABLE `friendly_id_slugs` (`id` int(11) auto_increment PRIMARY KEY, `slug` varchar(255) NOT NULL, `sluggable_id` int(11) NOT NULL, `sluggable_type` varchar(50), `scope` varchar(255), `created_at` datetime) ENGINE=InnoDB
+  [1m[36m (18.6ms)[0m  [1mCREATE  INDEX `index_friendly_id_slugs_on_sluggable_id`  ON `friendly_id_slugs` (`sluggable_id`) [0m
+  [1m[35m (18.6ms)[0m  CREATE  INDEX `index_friendly_id_slugs_on_slug_and_sluggable_type`  ON `friendly_id_slugs` (`slug`, `sluggable_type`) 
+  [1m[36m (18.2ms)[0m  [1mCREATE UNIQUE INDEX `index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope`  ON `friendly_id_slugs` (`slug`, `sluggable_type`, `scope`) [0m
+  [1m[35m (18.8ms)[0m  CREATE  INDEX `index_friendly_id_slugs_on_sluggable_type`  ON `friendly_id_slugs` (`sluggable_type`) 
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160117072415')
+  [1m[36m (4.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'c9'
+  AND fk.table_name = 'friendly_id_slugs'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `friendly_id_slugs`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'c9'
+  AND fk.table_name = 'offices'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `offices`
+
+
+Started POST "/offices" for 118.71.191.54 at 2016-01-17 07:40:28 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by OfficesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bhqMyYU60DQJhW8ZUABRzOcs2ScneuRq4XfEQglhtb1xOVCVkbyclyqKDQFKt+m+jvQuOe3cXmZYUBPe18q08g==", "office"=>{"title"=>"con mều", "owner"=>"ádasdsad", "image"=>"ádasdasdas", "like"=>"10", "dislike"=>"0"}, "commit"=>"Create Office"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 2.3ms)
+
+NoMethodError (undefined method `transliterate' for #<Office:0x00000002ce5520>
+Did you mean?  transaction):
+  app/models/office.rb:6:in `title_and_owner'
+  app/controllers/offices_controller.rb:30:in `block in create'
+  app/controllers/offices_controller.rb:29:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (110.1ms)
+
+
+Started POST "/offices" for 118.71.191.54 at 2016-01-17 07:40:47 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bhqMyYU60DQJhW8ZUABRzOcs2ScneuRq4XfEQglhtb1xOVCVkbyclyqKDQFKt+m+jvQuOe3cXmZYUBPe18q08g==", "office"=>{"title"=>"con mều", "owner"=>"ádasdsad", "image"=>"ádasdasdas", "like"=>"10", "dislike"=>"0"}, "commit"=>"Create Office"}
+  [1m[35m (119.1ms)[0m  BEGIN
+  [1m[36mOffice Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `offices` WHERE (`offices`.`id` IS NOT NULL) AND `offices`.`slug` = 'con-m-u-by-adasdsad' LIMIT 1[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO `offices` (`title`, `owner`, `image`, `like`, `dislike`, `slug`, `created_at`, `updated_at`) VALUES ('con mều', 'ádasdsad', 'ádasdasdas', 10, 0, 'con-m-u-by-adasdsad', '2016-01-17 07:40:47', '2016-01-17 07:40:47')
+  [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+Redirected to https://congso-ngocquyhoang.c9users.io/offices/con-m-u-by-adasdsad
+Completed 302 Found in 301ms (ActiveRecord: 131.0ms)
+
+
+Started GET "/offices/con-m-u-by-adasdsad" for 118.71.191.54 at 2016-01-17 07:40:47 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#show as HTML
+  Parameters: {"id"=>"con-m-u-by-adasdsad"}
+  [1m[35mOffice Load (0.5ms)[0m  SELECT  `offices`.* FROM `offices` WHERE `offices`.`slug` = 'con-m-u-by-adasdsad'  ORDER BY `offices`.`id` ASC LIMIT 1
+  Rendered offices/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 319ms (Views: 315.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 118.71.191.54 at 2016-01-17 07:40:47 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 118.71.191.54 at 2016-01-17 07:40:48 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 118.71.191.54 at 2016-01-17 07:40:48 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 118.71.191.54 at 2016-01-17 07:40:48 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 118.71.191.54 at 2016-01-17 07:40:48 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 118.71.191.54 at 2016-01-17 07:40:48 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 118.71.191.54 at 2016-01-17 07:40:48 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 118.71.191.54 at 2016-01-17 07:40:48 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36m (8.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (27.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateOffices (20160116140229)
+  [1m[35m (8.2ms)[0m  CREATE TABLE `offices` (`id` int(11) auto_increment PRIMARY KEY, `title` text, `owner` text, `image` text, `slug` text, `like` int(11), `dislike` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160116140229')
+  [1m[36m (3.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateFriendlyIdSlugs (20160117072415)
+  [1m[35m (10.7ms)[0m  CREATE TABLE `friendly_id_slugs` (`id` int(11) auto_increment PRIMARY KEY, `slug` varchar(255) NOT NULL, `sluggable_id` int(11) NOT NULL, `sluggable_type` varchar(50), `scope` varchar(255), `created_at` datetime) ENGINE=InnoDB
+  [1m[36m (16.9ms)[0m  [1mCREATE  INDEX `index_friendly_id_slugs_on_sluggable_id`  ON `friendly_id_slugs` (`sluggable_id`) [0m
+  [1m[35m (16.7ms)[0m  CREATE  INDEX `index_friendly_id_slugs_on_slug_and_sluggable_type`  ON `friendly_id_slugs` (`slug`, `sluggable_type`) 
+  [1m[36m (14.0ms)[0m  [1mCREATE UNIQUE INDEX `index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope`  ON `friendly_id_slugs` (`slug`, `sluggable_type`, `scope`) [0m
+  [1m[35m (14.6ms)[0m  CREATE  INDEX `index_friendly_id_slugs_on_sluggable_type`  ON `friendly_id_slugs` (`sluggable_type`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160117072415')
+  [1m[36m (4.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'c9'
+  AND fk.table_name = 'friendly_id_slugs'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `friendly_id_slugs`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'c9'
+  AND fk.table_name = 'offices'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `offices`
+
+
+Started GET "/offices" for 118.71.191.54 at 2016-01-17 07:56:51 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.4ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 356ms (Views: 320.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/offices/new" for 118.71.191.54 at 2016-01-17 07:56:54 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#new as HTML
+  Rendered offices/_form.html.erb (33.9ms)
+  Rendered offices/new.html.erb within layouts/application (41.3ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (:de is not a valid locale):
+    12:   <% end %>
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :title %><br>
+    16:     <%= f.text_area :title %>
+    17:   </div>
+    18:   <div class="field">
+  app/views/offices/_form.html.erb:15:in `block in _app_views_offices__form_html_erb__1480117111796519291_70216089592460'
+  app/views/offices/_form.html.erb:1:in `_app_views_offices__form_html_erb__1480117111796519291_70216089592460'
+  app/views/offices/new.html.erb:3:in `_app_views_offices_new_html_erb___3466451633972154534_70216082195140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (44.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (135.1ms)
+
+
+Started GET "/offices/new" for 118.71.191.54 at 2016-01-17 07:56:56 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#new as HTML
+  Rendered offices/_form.html.erb (5.4ms)
+  Rendered offices/new.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (:de is not a valid locale):
+    12:   <% end %>
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :title %><br>
+    16:     <%= f.text_area :title %>
+    17:   </div>
+    18:   <div class="field">
+  app/views/offices/_form.html.erb:15:in `block in _app_views_offices__form_html_erb__1480117111796519291_70216090349400'
+  app/views/offices/_form.html.erb:1:in `_app_views_offices__form_html_erb__1480117111796519291_70216090349400'
+  app/views/offices/new.html.erb:3:in `_app_views_offices_new_html_erb___3466451633972154534_70216090463040'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.8ms)
+
+
+Started GET "/offices/new" for 118.71.191.54 at 2016-01-17 08:09:19 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by OfficesController#new as HTML
+  Rendered offices/_form.html.erb (63.8ms)
+  Rendered offices/new.html.erb within layouts/application (73.7ms)
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 2.1ms)
+
+ActionView::Template::Error (:de is not a valid locale):
+    12:   <% end %>
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :title %><br>
+    16:     <%= f.text_area :title %>
+    17:   </div>
+    18:   <div class="field">
+  app/views/offices/_form.html.erb:15:in `block in _app_views_offices__form_html_erb__519321923700897416_11497240'
+  app/views/offices/_form.html.erb:1:in `_app_views_offices__form_html_erb__519321923700897416_11497240'
+  app/views/offices/new.html.erb:3:in `_app_views_offices_new_html_erb__1609207736675481348_17880040'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.2ms)
+
+
+Started GET "/offices/new" for 118.71.191.54 at 2016-01-17 08:09:20 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#new as HTML
+  Rendered offices/_form.html.erb (2.7ms)
+  Rendered offices/new.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (:de is not a valid locale):
+    12:   <% end %>
+    13: 
+    14:   <div class="field">
+    15:     <%= f.label :title %><br>
+    16:     <%= f.text_area :title %>
+    17:   </div>
+    18:   <div class="field">
+  app/views/offices/_form.html.erb:15:in `block in _app_views_offices__form_html_erb__519321923700897416_11497240'
+  app/views/offices/_form.html.erb:1:in `_app_views_offices__form_html_erb__519321923700897416_11497240'
+  app/views/offices/new.html.erb:3:in `_app_views_offices_new_html_erb__1609207736675481348_17880040'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (105.2ms)
+
+
+Started GET "/offices/new" for 118.71.191.54 at 2016-01-17 08:12:48 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by OfficesController#new as HTML
+  Rendered offices/_form.html.erb (62.8ms)
+  Rendered offices/new.html.erb within layouts/application (75.1ms)
+Completed 200 OK in 460ms (Views: 388.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 118.71.191.54 at 2016-01-17 08:12:49 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 118.71.191.54 at 2016-01-17 08:12:49 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 118.71.191.54 at 2016-01-17 08:12:49 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 118.71.191.54 at 2016-01-17 08:12:49 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 118.71.191.54 at 2016-01-17 08:12:49 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 118.71.191.54 at 2016-01-17 08:12:49 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 118.71.191.54 at 2016-01-17 08:12:49 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 118.71.191.54 at 2016-01-17 08:12:49 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/offices" for 118.71.191.54 at 2016-01-17 08:13:02 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cs7O+/ufQ7SNJsbznfcKeM8s2tX94u8vDU+ESueXCaBt7RKn7xkPF64ppOuHQLIKpvQtyzdEVSO0aFPWOTwI7w==", "office"=>{"title"=>"con mều", "owner"=>"ádasd", "image"=>"ádasdasd", "like"=>"10", "dislike"=>"0"}, "commit"=>"Create Office"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mOffice Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM `offices` WHERE (`offices`.`id` IS NOT NULL) AND `offices`.`slug` = 'con-meu-by-adasd' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `offices` (`title`, `owner`, `image`, `like`, `dislike`, `slug`, `created_at`, `updated_at`) VALUES ('con mều', 'ádasd', 'ádasdasd', 10, 0, 'con-meu-by-adasd', '2016-01-17 08:13:02', '2016-01-17 08:13:02')
+  [1m[36m (9.0ms)[0m  [1mCOMMIT[0m
+Redirected to https://congso-ngocquyhoang.c9users.io/offices/con-meu-by-adasd
+Completed 302 Found in 413ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/offices/con-meu-by-adasd" for 118.71.191.54 at 2016-01-17 08:13:03 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#show as HTML
+  Parameters: {"id"=>"con-meu-by-adasd"}
+  [1m[35mOffice Load (0.4ms)[0m  SELECT  `offices`.* FROM `offices` WHERE `offices`.`slug` = 'con-meu-by-adasd'  ORDER BY `offices`.`id` ASC LIMIT 1
+  Rendered offices/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 60ms (Views: 54.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/offices" for 118.71.191.54 at 2016-01-17 08:14:02 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.4ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 64ms (Views: 58.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/offices/new" for 118.71.191.54 at 2016-01-17 08:14:03 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#new as HTML
+  Rendered offices/_form.html.erb (4.4ms)
+  Rendered offices/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/offices" for 118.71.191.54 at 2016-01-17 08:14:14 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HfpSsCF2jm9iFFAHk5nT/u8zwkA+4l7oC+0t1/+n310C2Y7sNfDCzEEbMh+JLmuMhus1XvRE5OSyyvpLIQzeEg==", "office"=>{"title"=>"con mều da", "owner"=>"ádasd", "image"=>"ádasd", "like"=>"10", "dislike"=>"0"}, "commit"=>"Create Office"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mOffice Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `offices` WHERE (`offices`.`id` IS NOT NULL) AND `offices`.`slug` = 'con-meu-da-by-adasd' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `offices` (`title`, `owner`, `image`, `like`, `dislike`, `slug`, `created_at`, `updated_at`) VALUES ('con mều da', 'ádasd', 'ádasd', 10, 0, 'con-meu-da-by-adasd', '2016-01-17 08:14:14', '2016-01-17 08:14:14')
+  [1m[36m (5.4ms)[0m  [1mCOMMIT[0m
+Redirected to https://congso-ngocquyhoang.c9users.io/offices/con-meu-da-by-adasd
+Completed 302 Found in 14ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/offices/con-meu-da-by-adasd" for 118.71.191.54 at 2016-01-17 08:14:14 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#show as HTML
+  Parameters: {"id"=>"con-meu-da-by-adasd"}
+  [1m[35mOffice Load (0.4ms)[0m  SELECT  `offices`.* FROM `offices` WHERE `offices`.`slug` = 'con-meu-da-by-adasd'  ORDER BY `offices`.`id` ASC LIMIT 1
+  Rendered offices/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 20.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/offices" for 118.71.191.54 at 2016-01-17 08:14:35 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.4ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/offices/new" for 118.71.191.54 at 2016-01-17 08:14:36 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#new as HTML
+  Rendered offices/_form.html.erb (3.5ms)
+  Rendered offices/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/offices" for 118.71.191.54 at 2016-01-17 08:14:53 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jVj7cZDWBAyR0JsGyfF+HdTND0dH//Sn2XIXhXSCcCGSeycthFBIr7Lf+R7TRsZvvRX4WY1ZTqtgVcAZqilxbg==", "office"=>{"title"=>"con mều éo đi ỉa", "owner"=>"ádasdasd", "image"=>"ádasdasd", "like"=>"10", "dislike"=>"0"}, "commit"=>"Create Office"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mOffice Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM `offices` WHERE (`offices`.`id` IS NOT NULL) AND `offices`.`slug` = 'con-meu-eo-di-a-by-adasdasd' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `offices` (`title`, `owner`, `image`, `like`, `dislike`, `slug`, `created_at`, `updated_at`) VALUES ('con mều éo đi ỉa', 'ádasdasd', 'ádasdasd', 10, 0, 'con-meu-eo-di-a-by-adasdasd', '2016-01-17 08:14:53', '2016-01-17 08:14:53')
+  [1m[36m (5.5ms)[0m  [1mCOMMIT[0m
+Redirected to https://congso-ngocquyhoang.c9users.io/offices/con-meu-eo-di-a-by-adasdasd
+Completed 302 Found in 14ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/offices/con-meu-eo-di-a-by-adasdasd" for 118.71.191.54 at 2016-01-17 08:14:53 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#show as HTML
+  Parameters: {"id"=>"con-meu-eo-di-a-by-adasdasd"}
+  [1m[35mOffice Load (0.4ms)[0m  SELECT  `offices`.* FROM `offices` WHERE `offices`.`slug` = 'con-meu-eo-di-a-by-adasdasd'  ORDER BY `offices`.`id` ASC LIMIT 1
+  Rendered offices/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/offices" for 118.71.191.54 at 2016-01-17 08:35:24 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.6ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 87ms (Views: 78.9ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/offices/new" for 118.71.191.54 at 2016-01-17 08:35:27 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#new as HTML
+  Rendered offices/_form.html.erb (13.1ms)
+  Rendered offices/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/offices" for 118.71.191.54 at 2016-01-17 08:35:54 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5p1Ms1lfApScQVe5I/iRJzbv7LRZ5JDN31YF55HB8eb5vpDvTdlON79ONaE5TylVXzcbqpNCKsFmcdJ7T2rwqQ==", "office"=>{"title"=>"con mều đi ả ỉa đéo đeo bao", "owner"=>"lê thị đụ", "image"=>"ád", "like"=>"10", "dislike"=>"0"}, "commit"=>"Create Office"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mOffice Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `offices` WHERE (`offices`.`id` IS NOT NULL) AND `offices`.`slug` = 'con-meu-di-a-deo-deo-bao-by-le-th-d' LIMIT 1[0m
+  [1m[35mSQL (59.6ms)[0m  INSERT INTO `offices` (`title`, `owner`, `image`, `like`, `dislike`, `slug`, `created_at`, `updated_at`) VALUES ('con mều đi ả ỉa đéo đeo bao', 'lê thị đụ', 'ád', 10, 0, 'con-meu-di-a-deo-deo-bao-by-le-th-d', '2016-01-17 08:35:54', '2016-01-17 08:35:54')
+  [1m[36m (7.8ms)[0m  [1mCOMMIT[0m
+Redirected to https://congso-ngocquyhoang.c9users.io/offices/con-meu-di-a-deo-deo-bao-by-le-th-d
+Completed 302 Found in 79ms (ActiveRecord: 68.0ms)
+
+
+Started GET "/offices/con-meu-di-a-deo-deo-bao-by-le-th-d" for 118.71.191.54 at 2016-01-17 08:35:55 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#show as HTML
+  Parameters: {"id"=>"con-meu-di-a-deo-deo-bao-by-le-th-d"}
+  [1m[35mOffice Load (0.5ms)[0m  SELECT  `offices`.* FROM `offices` WHERE `offices`.`slug` = 'con-meu-di-a-deo-deo-bao-by-le-th-d'  ORDER BY `offices`.`id` ASC LIMIT 1
+  Rendered offices/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 22.8ms | ActiveRecord: 0.5ms)
+  [1m[36m (14.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (20.6ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateOffices (20160116140229)
+  [1m[35m (8.0ms)[0m  CREATE TABLE `offices` (`id` int(11) auto_increment PRIMARY KEY, `title` text, `owner` text, `image` text, `slug` text, `like` int(11), `dislike` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160116140229')
+  [1m[36m (4.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateFriendlyIdSlugs (20160117072415)
+  [1m[35m (9.8ms)[0m  CREATE TABLE `friendly_id_slugs` (`id` int(11) auto_increment PRIMARY KEY, `slug` varchar(255) NOT NULL, `sluggable_id` int(11) NOT NULL, `sluggable_type` varchar(50), `scope` varchar(255), `created_at` datetime) ENGINE=InnoDB
+  [1m[36m (14.1ms)[0m  [1mCREATE  INDEX `index_friendly_id_slugs_on_sluggable_id`  ON `friendly_id_slugs` (`sluggable_id`) [0m
+  [1m[35m (19.0ms)[0m  CREATE  INDEX `index_friendly_id_slugs_on_slug_and_sluggable_type`  ON `friendly_id_slugs` (`slug`, `sluggable_type`) 
+  [1m[36m (17.2ms)[0m  [1mCREATE UNIQUE INDEX `index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope`  ON `friendly_id_slugs` (`slug`, `sluggable_type`, `scope`) [0m
+  [1m[35m (17.8ms)[0m  CREATE  INDEX `index_friendly_id_slugs_on_sluggable_type`  ON `friendly_id_slugs` (`sluggable_type`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20160117072415')
+  [1m[36m (4.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'c9'
+  AND fk.table_name = 'friendly_id_slugs'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `friendly_id_slugs`
+  [1m[36m (0.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'c9'
+  AND fk.table_name = 'offices'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `offices`
+
+
+Started GET "/offices" for 118.71.191.54 at 2016-01-17 08:37:39 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.4ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 362ms (Views: 302.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/offices/new" for 118.71.191.54 at 2016-01-17 08:37:41 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#new as HTML
+  Rendered offices/_form.html.erb (55.7ms)
+  Rendered offices/new.html.erb within layouts/application (63.7ms)
+Completed 200 OK in 100ms (Views: 90.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/offices" for 118.71.191.54 at 2016-01-17 08:37:52 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MOd6Q6gy/xfAIZgmgZP2JC2a+DidR3nWW/GdCmai2vwvxKYfvLSztOMu+j6bJE5WREIPJlfhw9ri1kqWuAnbsw==", "office"=>{"title"=>"con mều đi ả ỉa đéo đeo bao", "owner"=>"lê thị đụ", "image"=>"ádasd", "like"=>"010", "dislike"=>"0"}, "commit"=>"Create Office"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mOffice Exists (0.6ms)[0m  SELECT  1 AS one FROM `offices` WHERE (`offices`.`id` IS NOT NULL) AND `offices`.`slug` = 'con-meu-di-a-ia-deo-deo-bao-by-le-thi-du' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `offices` (`title`, `owner`, `image`, `like`, `dislike`, `slug`, `created_at`, `updated_at`) VALUES ('con mều đi ả ỉa đéo đeo bao', 'lê thị đụ', 'ádasd', 10, 0, 'con-meu-di-a-ia-deo-deo-bao-by-le-thi-du', '2016-01-17 08:37:52', '2016-01-17 08:37:52')[0m
+  [1m[35m (8.4ms)[0m  COMMIT
+Redirected to https://congso-ngocquyhoang.c9users.io/offices/con-meu-di-a-ia-deo-deo-bao-by-le-thi-du
+Completed 302 Found in 174ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/offices/con-meu-di-a-ia-deo-deo-bao-by-le-thi-du" for 118.71.191.54 at 2016-01-17 08:37:52 +0000
+Cannot render console from 118.71.191.54! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by OfficesController#show as HTML
+  Parameters: {"id"=>"con-meu-di-a-ia-deo-deo-bao-by-le-thi-du"}
+  [1m[36mOffice Load (0.4ms)[0m  [1mSELECT  `offices`.* FROM `offices` WHERE `offices`.`slug` = 'con-meu-di-a-ia-deo-deo-bao-by-le-thi-du'  ORDER BY `offices`.`id` ASC LIMIT 1[0m
+  Rendered offices/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.4ms)
