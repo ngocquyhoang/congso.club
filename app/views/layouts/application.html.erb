@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>App</title>
+    <title>Congso.club</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'logo-icon.png' %>
   </head>
   <body>
     <!--facebook sdk-->
@@ -26,8 +27,56 @@
        }(document, 'script', 'facebook-jssdk'));
     </script>
     <!--end call facebook sdk-->
-    
-    <%= yield %>
-    
+    <!-- header -->
+    <header>
+      <h1 class="logo-text">
+        <%= image_tag("logo-icon.png", class: "logo-icon hidden-element") %>
+      Congso.club</h1>
+      <div class="header-navigation-bar">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Đăng nhập</a></li>
+          <div class="clear-fix"></div>
+        </ul>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- main content -->
+    <div class="main-content">
+      <%= yield %>
+      <p>lorem</p>
+      <p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p>
+    </div>
+    <!-- end main content -->
+    <!-- footer -->
+    <footer>
+      <div class="footer-element subscribe">
+        <h2>Subscribe</h2>
+        <div class="footer-content">
+          <form>
+            <input type="text" name="" value="" placeholder="Your email ... ">
+            <!-- <br /> -->
+            <input type="submit" name="" value="Subscribe">
+          </form>
+        </div>
+      </div>
+      <div class="footer-element follow">
+        <h2>Follow we on social</h2>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Google Plus</li>
+          <li>Instagram</li>
+        </ul>
+      </div>
+      <div class="footer-element about-me">
+        <h2>About me</h2>
+        <p>My name is Hoang Ngoc Quy</p>
+        <%= image_tag("per-logo.png", class: "zorba-icon") %>
+      </div>
+      <div class="clear-fix"></div>
+    </footer>
+    <!-- end footer -->
   </body>
 </html>

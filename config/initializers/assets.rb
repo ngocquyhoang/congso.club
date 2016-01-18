@@ -9,3 +9,6 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+# add favico
+Rails.application.config.assets.precompile += %w( logo-icon.png )
+Rails.application.config.assets.precompile += %w( per-logo.png )

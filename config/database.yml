@@ -13,13 +13,13 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: ngocquyhoang
-  password: ''
+  username: root
+  password: 'Cbr1000r'
   socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
-  database: c9
+  database: app_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
