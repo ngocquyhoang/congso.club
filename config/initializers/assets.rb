@@ -12,3 +12,4 @@ Rails.application.config.assets.version = '1.0'
 # add favico
 Rails.application.config.assets.precompile += %w( logo-icon.png )
 Rails.application.config.assets.precompile += %w( per-logo.png )
+Rails.application.config.assets.precompile += %w( loadding.svg )

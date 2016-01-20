@@ -17,7 +17,6 @@
           version    : 'v2.5'
         });
       };
-    
       (function(d, s, id){
          var js, fjs = d.getElementsByTagName(s)[0];
          if (d.getElementById(id)) {return;}
@@ -49,16 +48,25 @@
       <p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p>
     </div>
     <!-- end main content -->
-    <!-- footer -->
+    <!-- follow box -->
     <div class="page-secction follow-us-by-mail">
       <h2 class="page-title">Đăng kí để cười nhiều hơn mỗi ngày</h2>
       <form class="follow">
         <input type="text" name="name" value="" placeholder="Tên của bạn">
         <input type="text" name="email" value="" placeholder="Email">
-        <input type="submit" name="" value="Theo dõi">
+        <input type="submit" name="" value="Theo dõi" id="send-email">
         <div class="clear-fix"></div>
       </form>
     </div>
+    <div class="slide-box thank-box">
+      <div class="slide-box-content">
+        <div>
+          <%= image_tag("loadding.svg", class: "loadding-logo") %>
+          <h2 class="thank-text">CẢM ƠN</h2>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
     <footer class="page-secction footer-page">
       <ul>
         <li class="icon facebook"></li>

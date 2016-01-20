@@ -26,6 +26,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Stag';    
+  src: url('Stag.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 *{
 	margin: 0px;
 	padding: 0px;
@@ -72,7 +78,7 @@ html, body{
     color: #ff4455;
 }
 ::selection {
-    color: #ff4455; 
+    color: #000; 
 }
 /*setting for header*/
 header{
@@ -147,26 +153,27 @@ div.main-content.sticky{
 }
 /*setting for follow form*/
 .follow-us-by-mail{
-	font-family: 'Hero';
-	background-color: #E89980;
+	font-family: 'Stag';
+	background-color: #ff4455;
 	padding: 3.5em 0em 4em;
 	color: #fff;
 }
 .page-title{
-	font-size: 1.8em;
+	font-size: 2.0em;
 	font-weight: normal;
 	margin-bottom: 1em;
 }
 .follow-us-by-mail .follow input[type="text"]{
 	height: 3em;
 	padding: 0 2em;
-	background-color: rgba(255,255,255,0.15);
+	background-color: rgba(255,255,255,0.2);
 	color: #fff;
-	border: 1px solid #E89980;
+	border: 1px solid #ff4455;
 	line-height: 1.5em;
 	font-size: 1.2em;
 	width: 15em;
 	margin: 0 0.5em;
+	font-family: 'Stag';
 }
 .follow-us-by-mail .follow input[type="text"]:focus{
 	border: 1px solid #fff;
@@ -174,13 +181,14 @@ div.main-content.sticky{
 }
 .follow-us-by-mail .follow input[type="submit"]{
 	height: 3em;
-	padding: 0 2em;
-	border: 0px;
+	padding: 0 2.2em;
+	border: 1px solid #fff;
 	line-height: 1.5em;
 	font-size: 1.2em;
-	color: #E89980;
+	color: #ff4455;
 	background-color: #fff;
 	margin: 0 0.5em;
+	font-family: 'Stag';
 }
 .follow-us-by-mail .follow input[type="submit"]:hover{
 	background-color: rgba(255,255,255,0.75);
@@ -250,4 +258,33 @@ div.main-content.sticky{
 .footer-page .zorba-logo{
 	height: 4.0em;
 	float: left;
+}
+/*thank box setting*/
+.slide-box{
+	width: 100%;
+	height: 300%;
+	background-color: rgba(0,0,0,0.70);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.slide-box .slide-box-content{
+	text-align: center;
+}
+.slide-box .slide-box-content > div{
+	margin-top: 32.5vh;
+}
+.thank-box .thank-text{
+	font-family: 'Stag';
+	font-size: 6.0em;
+	color: #fff;
+	font-weight: normal;
+	display: none;
+}
+.slide-box .loadding-logo{
+	width: 11em;
+}
+.thank-box{
+	display: none;
 }

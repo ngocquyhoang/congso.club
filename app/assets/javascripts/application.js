@@ -30,3 +30,16 @@ if ($(this).scrollTop() > 1){
     $('.main-content').removeClass("sticky");
   }
 });
+$(document).ready(function() {
+	showThankbox();	
+});
+function showThankbox () {
+	$('.zorba-logo').click(function() {
+		$('.thank-box').slideDown(750);
+		setTimeout(function(){ $('.thank-box .loadding-logo').hide(50); }, 1750);
+		setTimeout(function(){ $('.thank-box .thank-text').show(50); }, 1800);
+		setTimeout(function(){ $('.thank-box').slideUp(750); }, 2500);
+		setTimeout(function(){ $('.thank-box .loadding-logo').show(); }, 3250);
+		setTimeout(function(){ $('.thank-box .thank-text').hide(); }, 3250);
+	});
+}

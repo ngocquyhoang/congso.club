@@ -21219,3 +21219,3698 @@ Started GET "/assets/googleplus-full-color.png" for 127.0.0.1 at 2016-01-20 16:1
 
 
 Started GET "/assets/youtube-full-color.png" for 127.0.0.1 at 2016-01-20 16:11:44 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:21:39 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1176ms (Views: 1175.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 129ms (Views: 127.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/application.self-20db412fb2c31240eb3e0dbb8e0290a5ba1d1351e590175ae145beea278a4d77.css?body=1" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:28:10 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:28:11 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:28:11 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 93ms (Views: 91.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-40021753643262186ecc9ada853eb139005d1033e62137340527d32f04e343b7.css?body=1" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:28:53 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 78ms (Views: 76.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/application.self-0864791f357348c48615b7054881130741b288d4c19e087710fcdb093a36472f.css?body=1" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:29:43 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:29:44 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 79ms (Views: 78.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/application.self-1cb3f600be1d897b5abc72788ef79d6e2fe9aab58d5c23781512e11e5e6f222b.css?body=1" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:30:14 +0700
+
+
+Started GET "/?name=&email=" for 127.0.0.1 at 2016-01-20 16:30:20 +0700
+Processing by OfficesController#index as HTML
+  Parameters: {"name"=>"", "email"=>""}
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:30:23 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:30:23 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:30:23 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:30:23 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:30:23 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:30:23 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:30:23 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:30:23 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 94ms (Views: 93.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-f3aa01ce6ddc6ad4e0007d22ce368534906caf0ad076da1c4ed89ed4b53b96f2.css?body=1" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:30:57 +0700
+
+
+Started GET "/assets/facebook-full-color.png" for 127.0.0.1 at 2016-01-20 16:31:05 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/application.self-6071bd87a892d133cfe2d1f8119188d4ca4fdd6cb3eca1a7107859491ae295c4.css?body=1" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:31:39 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:31:40 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:32:30 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.6ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-f9bbfb193a7a2e3eaeed8e8077e1d7ace633466832d8e9a2aa0e4ba47b1ac9dd.css?body=1" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:32:31 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-8fc0716d84b75fcd3e98c39afaa56267acb210c819f633910db8f1f7b0aea5d0.css?body=1" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:32:59 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:33:05 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:33:05 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:33:05 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:33:05 +0700
+
+
+Started GET "/assets/application.self-8fc0716d84b75fcd3e98c39afaa56267acb210c819f633910db8f1f7b0aea5d0.css?body=1" for 127.0.0.1 at 2016-01-20 16:33:05 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:33:05 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:33:05 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:33:05 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:33:05 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:33:05 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:33:05 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:33:44 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 84ms (Views: 83.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-0a7db322eeb883512b56ad44e31f473bc606cdfda84e0fbc3b7be2b0d6cb9c59.css?body=1" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:33:45 +0700
+
+
+Started GET "/assets/facebook-full-color.png" for 127.0.0.1 at 2016-01-20 16:34:26 +0700
+
+
+Started GET "/assets/googleplus-full-color.png" for 127.0.0.1 at 2016-01-20 16:34:36 +0700
+
+
+Started GET "/assets/youtube-full-color.png" for 127.0.0.1 at 2016-01-20 16:34:42 +0700
+
+
+Started GET "/assets/twitter-full-color.png" for 127.0.0.1 at 2016-01-20 16:34:43 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:36:26 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:36:26 +0700
+
+
+Started GET "/assets/application.self-0a7db322eeb883512b56ad44e31f473bc606cdfda84e0fbc3b7be2b0d6cb9c59.css?body=1" for 127.0.0.1 at 2016-01-20 16:36:26 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:36:26 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:36:26 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:36:26 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:36:26 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:36:26 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:36:26 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:36:26 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:36:27 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:38:42 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:38:42 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:38:42 +0700
+
+
+Started GET "/assets/application.self-0a7db322eeb883512b56ad44e31f473bc606cdfda84e0fbc3b7be2b0d6cb9c59.css?body=1" for 127.0.0.1 at 2016-01-20 16:38:42 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:38:42 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:38:42 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:38:42 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:38:42 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:38:42 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:38:42 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:38:43 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:41:41 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 78ms (Views: 77.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-1f260a7be96098a69dfc627816aa182b574a5d31245e546d067240e90541e5ba.css?body=1" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:41:42 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:41:43 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:41:47 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-1f260a7be96098a69dfc627816aa182b574a5d31245e546d067240e90541e5ba.css?body=1" for 127.0.0.1 at 2016-01-20 16:41:47 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:41:47 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:41:47 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:41:47 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:41:47 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:41:47 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:41:47 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:41:47 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:41:47 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:41:47 +0700
+
+
+Started GET "/assets/youtube-full-color.png" for 127.0.0.1 at 2016-01-20 16:41:59 +0700
+
+
+Started GET "/assets/googleplus-full-color.png" for 127.0.0.1 at 2016-01-20 16:41:59 +0700
+
+
+Started GET "/assets/twitter-full-color.png" for 127.0.0.1 at 2016-01-20 16:41:59 +0700
+
+
+Started GET "/assets/facebook-full-color.png" for 127.0.0.1 at 2016-01-20 16:41:59 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-b56326c361c62884f929523515e6aad93229e8f1f293800bd01b68a12566ff52.css?body=1" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:45:20 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:45:21 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 114ms (Views: 112.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/application.self-7f71ba5952704f63acdcda16572ba20fb227e62e7a9e525cc0acd18aaa15914f.css?body=1" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:46:19 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.3ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 90ms (Views: 88.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/application.self-99d60651fc99f5d5aa0b3ff6cd94b4099a0a51f19ead0b9a2f659786acc3a0bd.css?body=1" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:46:36 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 78ms (Views: 77.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-a36615e5f9c9a946443e712082db28a729d628248b590d45acc1acc295fb224e.css?body=1" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:46:57 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:47:07 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 92ms (Views: 90.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:47:07 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:07 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:07 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:07 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:07 +0700
+
+
+Started GET "/assets/application.self-83517dbb85cc1e4bc5fc85125ffc8f09fb5abfff38f30eb0d878f22a092fbf7f.css?body=1" for 127.0.0.1 at 2016-01-20 16:47:07 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:07 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:47:07 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:47:07 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:47:08 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:47:08 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:47:08 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:47:08 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:47:08 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:47:08 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:47:08 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:47:08 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 80ms (Views: 79.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-ee9d0f63b5dd3e1ebf62a1ba8c91a85dc3647bc569cfe1b60640724ddb5ff750.css?body=1" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:47:14 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-805c819feb5f9cf9a6ba924210a0ac3a70e21d5591cd3f9a8779aedb4207a7fe.css?body=1" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:47:44 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:47:54 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:54 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:54 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/application.self-31d161e9948d62dc07b2dbdc2585c7550f118bcfa8098787973ae6450ae18fb0.css?body=1" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:47:55 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-619d9b4127f0df9ec496bde2312b9b5d858ad559ff8ea036524a7ee4024b1b16.css?body=1" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:48:05 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 88ms (Views: 86.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/application.self-fd4384a69f5bb29a54c722750e2e3c612df9398ae97bad723f6030b22c4c4c7f.css?body=1" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:48:32 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-d8beedecaf7b35c07cbe3bf12418a73384c4bb1c8b98a8c8139520d33cf3e151.css?body=1" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:48:37 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 76.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/application.self-ed52a31783b2d9db462177b475a99a3b36f2b4bcdc678c56cd62614b8ad25bd5.css?body=1" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:48:58 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:48:59 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 76ms (Views: 75.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/application.self-06bf1b003b1c8bdc1de42a119a70e1c1d8ce41575c75462f3275b1b9dd84a143.css?body=1" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:49:09 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:49:10 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/application.self-8aca873c4a9f0ba699d10ed7f5c687817dfd1f0d739444789680b7f529da7325.css?body=1" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:49:15 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:49:16 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-41a20a528bd1fa5c24be45a6cff88d5159829d8ac8bb8ea079d28d7f6153584a.css?body=1" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 16:49:22 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 16:49:23 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 16:59:19 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 107ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( loadding.svg )` to `config/initializers/assets.rb` and restart your server):
+    60:     </div>
+    61:     <div class="slide-box thank-box">
+    62:       <div class="slide-box-content">
+    63:         <%= image_tag("loadding.svg", class: "zorba-logo") %>
+    64:       </div>
+    65:     </div>
+    66:     <!-- footer -->
+  app/views/layouts/application.html.erb:63:in `_app_views_layouts_application_html_erb__2047616562205015385_70140280036220'
+
+
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.0ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.7ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (56.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:00:40 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 604ms (Views: 560.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:00:41 +0700
+
+
+Started GET "/assets/application.self-41a20a528bd1fa5c24be45a6cff88d5159829d8ac8bb8ea079d28d7f6153584a.css?body=1" for 127.0.0.1 at 2016-01-20 17:00:41 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:00:41 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:00:41 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:00:41 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:00:41 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:00:41 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:00:41 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:00:41 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:00:41 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:00:42 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 137ms (Views: 135.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-26e8a4de8caa5bcebc820d4e2ec740e7d1fc089fd7e4d9223cdb2157d311294c.css?body=1" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:04:12 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:04:13 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 95ms (Views: 94.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-dc82aed195e28529e0c76094461c81b8424a8201b180142c7fe35af2629649ae.css?body=1" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:05:44 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:05:45 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 89ms (Views: 88.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/application.self-15c26653566d6530d787031e9f80b3e04f010f97b29de750c0eea866ef57a54d.css?body=1" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:13:28 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:13:29 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:13:29 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:14:11 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:14:11 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:14:11 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:14:11 +0700
+
+
+Started GET "/assets/application.self-dc82aed195e28529e0c76094461c81b8424a8201b180142c7fe35af2629649ae.css?body=1" for 127.0.0.1 at 2016-01-20 17:14:11 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:14:11 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:14:11 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:14:11 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:14:11 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:14:11 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:14:11 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:14:12 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 71ms (Views: 70.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-8d395d687d8cb3a12551cd2085b9111f534cdb1f05c9a254f6b952e80c4f0024.css?body=1" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:17:45 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:17:46 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:18:27 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/application.self-780b9f0f57a87d041ba8f05c1139f2407ad3236bfe4ef768e4e1e2a47a4e6ae2.css?body=1" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:18:28 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:18:42 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (Incompatible units: 'px' and 'vh'.):
+    2: <html>
+    3:   <head>
+    4:     <title>Congso.club</title>
+    5:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:     <%= csrf_meta_tags %>
+    8:     <%= favicon_link_tag 'logo-icon.png' %>
+  app/assets/stylesheets/application.scss:277
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3985875104798021654_70017318746840'
+
+
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.4ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.9ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/quyhn-hiworld/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:18:50 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:18:50 +0700
+
+
+Started GET "/assets/application.self-780b9f0f57a87d041ba8f05c1139f2407ad3236bfe4ef768e4e1e2a47a4e6ae2.css?body=1" for 127.0.0.1 at 2016-01-20 17:18:50 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:18:50 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:18:50 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:18:50 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:18:50 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:18:50 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:18:50 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:18:50 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:18:50 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:18:51 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 99ms (Views: 98.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/application.self-76a2a28c3df662de19ac5505ee7c352aea67965efca6e9a77a8a5efafea5cc4a.css?body=1" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:19:03 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:19:04 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:19:04 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:19:04 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-307ccd672b6c762906487e94c5870bfd6271f043444bac12adcf8017fa6c0f81.css?body=1" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:19:09 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 81ms (Views: 80.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-cad78aee8a506907d274868dc1a5ec713e4d8e09c03d5f2a3a96442e161cc650.css?body=1" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:19:31 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/application.self-c93b7b3f2caf8d26d1c4f7d23331f63ac0954e6286d77c9b36ccbd6f5aa401c8.css?body=1" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:19:54 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:19:55 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 89ms (Views: 88.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-85b5976ce66ddd6096c277e47353e29e55cf232d38698f3151512800f5304ec3.css?body=1" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:21:32 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:21:33 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 89ms (Views: 88.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/application.self-4d032f0861afa993304d5e95459e24edbe0a4c9ceb822155afa4281f99b5b3e9.css?body=1" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:21:40 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:21:41 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:22:02 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 90ms (Views: 89.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-93f96f4d04c63596e4b1f9ace7345a99397d2324fc311e5acff93a5f023d1fb4.css?body=1" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:22:03 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 84ms (Views: 83.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-dd02e75a0b8f54b29d8fa338222c7ad3d4cd0c2749b42fc88a7f966a17a03c6b.css?body=1" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:22:47 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:22:48 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 82ms (Views: 81.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/application.self-25e0ac90052600948daeaa4941222b05cc9e68a6e8c3d0e7ab664f74c2868fbf.css?body=1" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:22:54 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:25:09 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:25:09 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:25:10 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:25:10 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:25:10 +0700
+
+
+Started GET "/assets/application.self-25e0ac90052600948daeaa4941222b05cc9e68a6e8c3d0e7ab664f74c2868fbf.css?body=1" for 127.0.0.1 at 2016-01-20 17:25:10 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:25:10 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:25:10 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:25:10 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:25:10 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:25:10 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:25:10 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 96ms (Views: 95.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-5a7ee908b7bd50d9c624c58072440b75a45f18ee06093874bff7c758558fc269.css?body=1" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:28:35 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:28:36 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-84c8b2470ce530862ace2ae82f809ae305f162738dcc9d77b26607ebbcf578d0.css?body=1" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:29:37 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 72ms (Views: 71.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/application.self-4993ce9faeb1260d6592ef81cb11cdf5fc7990b5a91cbbf1ff3f1fbc803c8363.css?body=1" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/application.self-1cca84d1dc85bdce5bea8a38f3177fd1925fa60a5eb12e68340cd731a0ab3416.js?body=1" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:30:48 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:30:49 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:35:22 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 149ms (Views: 148.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/application.self-4537b34ab015c9a32810827a3aef3b8a4190f5b09882dac9017a542d368e8bb7.css?body=1" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/application.self-e7a1a96e7474f893defda394323dbb31864b8fc71b989007a435bb0cd4982b39.js?body=1" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:35:23 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:35:24 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 101ms (Views: 99.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/application.self-3681834b2eeeedfbd518318883c5cc6563b5f95caa4ab5d66fd89276e71050d1.css?body=1" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/application.self-e7a1a96e7474f893defda394323dbb31864b8fc71b989007a435bb0cd4982b39.js?body=1" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:36:14 +0700
+
+
+Started GET "/?name=&email=" for 127.0.0.1 at 2016-01-20 17:36:16 +0700
+Processing by OfficesController#index as HTML
+  Parameters: {"name"=>"", "email"=>""}
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?name=&email=" for 127.0.0.1 at 2016-01-20 17:36:19 +0700
+Processing by OfficesController#index as HTML
+  Parameters: {"name"=>"", "email"=>""}
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/?name=&email=" for 127.0.0.1 at 2016-01-20 17:36:52 +0700
+Processing by OfficesController#index as HTML
+  Parameters: {"name"=>"", "email"=>""}
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 97ms (Views: 95.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:36:52 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:36:52 +0700
+
+
+Started GET "/assets/application.self-4de2b15addf2b9c074a911d48f45f6ba25d573fce781b5fee2b597b43448f604.js?body=1" for 127.0.0.1 at 2016-01-20 17:36:52 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:36:52 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:36:52 +0700
+
+
+Started GET "/assets/application.self-3681834b2eeeedfbd518318883c5cc6563b5f95caa4ab5d66fd89276e71050d1.css?body=1" for 127.0.0.1 at 2016-01-20 17:36:52 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:36:52 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:36:52 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:36:52 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:36:52 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:36:53 +0700
+
+
+Started GET "/?name=&email=" for 127.0.0.1 at 2016-01-20 17:36:54 +0700
+Processing by OfficesController#index as HTML
+  Parameters: {"name"=>"", "email"=>""}
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/?name=&email=" for 127.0.0.1 at 2016-01-20 17:37:15 +0700
+Processing by OfficesController#index as HTML
+  Parameters: {"name"=>"", "email"=>""}
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/googleplus-full-color.png" for 127.0.0.1 at 2016-01-20 17:39:11 +0700
+
+
+Started GET "/?name=&email=" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+Processing by OfficesController#index as HTML
+  Parameters: {"name"=>"", "email"=>""}
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 79ms (Views: 77.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/youtube-full-color.png" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/application.self-84cf2e91b26d64768986f9daaaafd09ada5ed5ab36dedc7f84c400563d71ceec.js?body=1" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/application.self-3681834b2eeeedfbd518318883c5cc6563b5f95caa4ab5d66fd89276e71050d1.css?body=1" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/youtube-full-color.png" for 127.0.0.1 at 2016-01-20 17:39:27 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:39:28 +0700
+
+
+Started GET "/?name=&email=" for 127.0.0.1 at 2016-01-20 17:39:31 +0700
+Processing by OfficesController#index as HTML
+  Parameters: {"name"=>"", "email"=>""}
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:39:31 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:39:31 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:39:31 +0700
+
+
+Started GET "/assets/application.self-84cf2e91b26d64768986f9daaaafd09ada5ed5ab36dedc7f84c400563d71ceec.js?body=1" for 127.0.0.1 at 2016-01-20 17:39:31 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:39:31 +0700
+
+
+Started GET "/assets/application.self-3681834b2eeeedfbd518318883c5cc6563b5f95caa4ab5d66fd89276e71050d1.css?body=1" for 127.0.0.1 at 2016-01-20 17:39:31 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:39:31 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:39:31 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:39:31 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:39:31 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:39:33 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:39:35 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:39:35 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:39:35 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:39:35 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:39:35 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:39:35 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:39:35 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:39:35 +0700
+
+
+Started GET "/assets/youtube-full-color.png" for 127.0.0.1 at 2016-01-20 17:39:37 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 134ms (Views: 132.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/application.self-8b03b9a75c0f3f7055caef3b4f54114926fbc60e2b8fa8a524d130e82ea33ee1.css?body=1" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/application.self-0f68660aaf276e46264a2fd302849d588a8035f77eaac413ae13d695284b091e.js?body=1" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/Hero.ttf" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/Genica.otf" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/twitter-black.png" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/googleplus-black.png" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/youtube-black.png" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/Stag.ttf" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/facebook-black.png" for 127.0.0.1 at 2016-01-20 17:43:05 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:43:06 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:43:41 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:43:41 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:43:41 +0700
+
+
+Started GET "/assets/application.self-280037ce052491fa10dae608110d274d26f9652b8141e1f79b6229f77c2ae542.js?body=1" for 127.0.0.1 at 2016-01-20 17:43:41 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:43:41 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:43:41 +0700
+
+
+Started GET "/assets/application.self-8b03b9a75c0f3f7055caef3b4f54114926fbc60e2b8fa8a524d130e82ea33ee1.css?body=1" for 127.0.0.1 at 2016-01-20 17:43:41 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:43:41 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:43:41 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:43:41 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:43:41 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:43:42 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:44:35 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 75ms (Views: 74.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:44:35 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:44:35 +0700
+
+
+Started GET "/assets/application.self-84364b636691226a8629b83e26b930c8c6cac3ddf3130c8db16dbf82d19d375c.js?body=1" for 127.0.0.1 at 2016-01-20 17:44:35 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:44:35 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:44:35 +0700
+
+
+Started GET "/assets/application.self-8b03b9a75c0f3f7055caef3b4f54114926fbc60e2b8fa8a524d130e82ea33ee1.css?body=1" for 127.0.0.1 at 2016-01-20 17:44:35 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:44:35 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:44:35 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:44:35 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:44:35 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:44:36 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:45:22 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:45:22 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:45:22 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:45:22 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:45:22 +0700
+
+
+Started GET "/assets/application.self-02a26a8a04520c5625c3c5c832a956c5bd792297a49ff1aa42752691d7c2e8ee.js?body=1" for 127.0.0.1 at 2016-01-20 17:45:22 +0700
+
+
+Started GET "/assets/application.self-8b03b9a75c0f3f7055caef3b4f54114926fbc60e2b8fa8a524d130e82ea33ee1.css?body=1" for 127.0.0.1 at 2016-01-20 17:45:22 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:45:22 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:45:22 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:45:22 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:45:22 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:45:23 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:45:46 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-8b03b9a75c0f3f7055caef3b4f54114926fbc60e2b8fa8a524d130e82ea33ee1.css?body=1" for 127.0.0.1 at 2016-01-20 17:45:47 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:45:47 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:45:47 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:45:47 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:45:47 +0700
+
+
+Started GET "/assets/application.self-b6d10b15f03c7ed44f50ad8d4190c6efa212ebf1786c8724fb8bc67a4a549489.js?body=1" for 127.0.0.1 at 2016-01-20 17:45:47 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:45:47 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:45:47 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:45:47 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:45:47 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:45:47 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:46:53 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 86ms (Views: 84.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:46:53 +0700
+
+
+Started GET "/assets/application.self-8b03b9a75c0f3f7055caef3b4f54114926fbc60e2b8fa8a524d130e82ea33ee1.css?body=1" for 127.0.0.1 at 2016-01-20 17:46:53 +0700
+
+
+Started GET "/assets/application.self-11def6673d057041413346d69052dc9f189f6ec5747f029d5d1c9dac211b8d61.js?body=1" for 127.0.0.1 at 2016-01-20 17:46:53 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:46:53 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:46:53 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:46:53 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:46:53 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:46:53 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:46:53 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:46:53 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:46:54 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:47:15 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.1ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 75ms (Views: 74.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-b2bfd8cfe71f4229b63f0f922c75c1615c10003b5332dca3f72f2ed944066d7d.js?body=1" for 127.0.0.1 at 2016-01-20 17:47:15 +0700
+
+
+Started GET "/assets/application.self-8b03b9a75c0f3f7055caef3b4f54114926fbc60e2b8fa8a524d130e82ea33ee1.css?body=1" for 127.0.0.1 at 2016-01-20 17:47:15 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:47:15 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:47:15 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:47:15 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:47:15 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:47:15 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:47:15 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:47:15 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:47:15 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:47:16 +0700
+
+
+Started GET "/assets/youtube-full-color.png" for 127.0.0.1 at 2016-01-20 17:47:25 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:47:56 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.2ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-8b03b9a75c0f3f7055caef3b4f54114926fbc60e2b8fa8a524d130e82ea33ee1.css?body=1" for 127.0.0.1 at 2016-01-20 17:47:56 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:47:56 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:47:56 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:47:56 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:47:56 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:47:56 +0700
+
+
+Started GET "/assets/application.self-b2bfd8cfe71f4229b63f0f922c75c1615c10003b5332dca3f72f2ed944066d7d.js?body=1" for 127.0.0.1 at 2016-01-20 17:47:56 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:47:56 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:47:56 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:47:56 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:47:57 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:49:24 +0700
+Processing by OfficesController#index as HTML
+  [1m[35mOffice Load (0.2ms)[0m  SELECT `offices`.* FROM `offices`
+  Rendered offices/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:49:24 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:49:24 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:49:24 +0700
+
+
+Started GET "/assets/application.self-8b03b9a75c0f3f7055caef3b4f54114926fbc60e2b8fa8a524d130e82ea33ee1.css?body=1" for 127.0.0.1 at 2016-01-20 17:49:24 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:49:24 +0700
+
+
+Started GET "/assets/application.self-912ccff913fb44a81483e4282e461a1d63b2056a880ca4e349f9718746c3a117.js?body=1" for 127.0.0.1 at 2016-01-20 17:49:24 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:49:24 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:49:24 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:49:24 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:49:24 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:49:25 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-20 17:49:32 +0700
+Processing by OfficesController#index as HTML
+  [1m[36mOffice Load (0.1ms)[0m  [1mSELECT `offices`.* FROM `offices`[0m
+  Rendered offices/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-158d97eaacfbc05ffaca06ec207db467c06b234a694c608f1a5da8bdda280ee9.js?body=1" for 127.0.0.1 at 2016-01-20 17:49:32 +0700
+
+
+Started GET "/assets/application.self-8b03b9a75c0f3f7055caef3b4f54114926fbc60e2b8fa8a524d130e82ea33ee1.css?body=1" for 127.0.0.1 at 2016-01-20 17:49:32 +0700
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-01-20 17:49:32 +0700
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-01-20 17:49:32 +0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-01-20 17:49:32 +0700
+
+
+Started GET "/assets/offices.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-20 17:49:32 +0700
+
+
+Started GET "/assets/offices.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-01-20 17:49:32 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:49:32 +0700
+
+
+Started GET "/assets/loadding-08cf1de80d1b5f6649278e49d57dd08c1f7e67d5685ee94769cf88940bcd4c50.svg" for 127.0.0.1 at 2016-01-20 17:49:32 +0700
+
+
+Started GET "/assets/per-logo-5d29daae93116b9befa55833df55c188a26133995b321dde86ba8127568644a3.png" for 127.0.0.1 at 2016-01-20 17:49:32 +0700
+
+
+Started GET "/assets/logo-icon-0c829686cdc16409794d57a1aa91eb9cd0c89a181e6399014d80e191f247abd0.png" for 127.0.0.1 at 2016-01-20 17:49:32 +0700
+
+
+Started GET "/assets/googleplus-full-color.png" for 127.0.0.1 at 2016-01-20 17:49:34 +0700
