@@ -36,6 +36,44 @@
 .clear-fix{
 	clear: both;
 }
+html, body{
+	background-color: #F5F5F5;
+	font-size: 15px;
+}
+.page-secction{
+	width: 100%;
+	min-height: 100px;
+	text-align: center;
+}
+::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+  color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+
+::-ms-input-placeholder { /* Edge */
+  color: #fff;
+}
+
+:placeholder-shown { /* Standard one last! */
+  color: #fff;
+}
+::-moz-selection { /* Code for Firefox */
+    color: #ff4455;
+}
+::selection {
+    color: #ff4455; 
+}
 /*setting for header*/
 header{
   /*position: fixed;*/
@@ -107,37 +145,109 @@ header.sticky .header-navigation-bar ul li:hover{
 div.main-content.sticky{
 	padding-top: 51px;
 }
-/*setting for footer*/
-footer{
-	width: 100%;
-	height: 250px;
-	background-color: rgba(116, 77, 36, 0.8);
-	color: #fff;
+/*setting for follow form*/
+.follow-us-by-mail{
 	font-family: 'Hero';
+	background-color: #E89980;
+	padding: 3.5em 0em 4em;
+	color: #fff;
 }
-footer .footer-element{
-	float: left;
-	width: 33.3%;
-	height: 250px;
-}
-footer .about-me img.zorba-icon{
-	width: 90%;
-}
-footer .footer-element h2{
-	font-size: 25px;
+.page-title{
+	font-size: 1.8em;
 	font-weight: normal;
-	text-align: center;
-	padding:25px 0px 10px;
-
+	margin-bottom: 1em;
 }
-footer .footer-element .footer-content{
-	padding: 15px 30px 0px;
+.follow-us-by-mail .follow input[type="text"]{
+	height: 3em;
+	padding: 0 2em;
+	background-color: rgba(255,255,255,0.15);
+	color: #fff;
+	border: 1px solid #E89980;
+	line-height: 1.5em;
+	font-size: 1.2em;
+	width: 15em;
+	margin: 0 0.5em;
 }
-footer .subscribe form input[type="text"]{
-	width: 150px;
-	padding: 7px 10px;
-	border: 0px solid #000;
+.follow-us-by-mail .follow input[type="text"]:focus{
+	border: 1px solid #fff;
+	outline: none;
 }
-footer .subscribe form input[type="submit"]{
-	padding: 7px 20px;
+.follow-us-by-mail .follow input[type="submit"]{
+	height: 3em;
+	padding: 0 2em;
+	border: 0px;
+	line-height: 1.5em;
+	font-size: 1.2em;
+	color: #E89980;
+	background-color: #fff;
+	margin: 0 0.5em;
+}
+.follow-us-by-mail .follow input[type="submit"]:hover{
+	background-color: rgba(255,255,255,0.75);
+}
+.follow-us-by-mail .follow input[type="submit"]:active{
+	outline: none;
+}
+/*setting for footer*/
+.footer-page{
+	padding: 3.5em 0 4em;
+}
+.footer-page ul{
+	list-style: none;
+	margin: 0 auto;
+	display: inline-block;
+}
+.footer-page ul .icon{
+	width: 48px;
+	height: 48px;
+	float: left;
+	margin: 0 1em;
+}
+.footer-page ul .icon.facebook{
+	background-image: url('/assets/facebook-black.png');
+	transition: all 0.7s ease;
+}
+.footer-page ul .icon.facebook:hover{
+	background-color: #F5F5F5;
+	background-image: url('/assets/facebook-full-color.png');
+}
+.footer-page ul .icon.twitter{
+	background-image: url('/assets/twitter-black.png');
+	transition: all 0.7s ease;
+}
+.footer-page ul .icon.twitter:hover{
+	background-image: url('/assets/twitter-full-color.png');
+}
+.footer-page ul .icon.googleplus{
+	background-image: url('/assets/googleplus-black.png');
+	transition: all 0.7s ease;
+}
+.footer-page ul .icon.googleplus:hover{
+	background-image: url('/assets/googleplus-full-color.png');
+}
+.footer-page ul .icon.youtube{
+	background-image: url('/assets/youtube-black.png');
+	transition: all 0.7s ease;
+}
+.footer-page ul .icon.youtube:hover{
+	background-image: url('/assets/youtube-full-color.png');
+}
+.footer-page .design-by{
+	font-family: 'Hero';
+	margin-top: 1em;
+}
+.footer-page .design-by div{
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+}
+.design-by h2#design-text{
+	float: left;
+	margin-top: 14px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+}
+.footer-page .zorba-logo{
+	height: 4.0em;
+	float: left;
 }

@@ -50,32 +50,30 @@
     </div>
     <!-- end main content -->
     <!-- footer -->
-    <footer>
-      <div class="footer-element subscribe">
-        <h2>Subscribe</h2>
-        <div class="footer-content">
-          <form>
-            <input type="text" name="" value="" placeholder="Your email ... ">
-            <!-- <br /> -->
-            <input type="submit" name="" value="Subscribe">
-          </form>
+    <div class="page-secction follow-us-by-mail">
+      <h2 class="page-title">Đăng kí để cười nhiều hơn mỗi ngày</h2>
+      <form class="follow">
+        <input type="text" name="name" value="" placeholder="Tên của bạn">
+        <input type="text" name="email" value="" placeholder="Email">
+        <input type="submit" name="" value="Theo dõi">
+        <div class="clear-fix"></div>
+      </form>
+    </div>
+    <footer class="page-secction footer-page">
+      <ul>
+        <li class="icon facebook"></li>
+        <li class="icon twitter"></li>
+        <li class="icon googleplus"></li>
+        <li class="icon youtube"></li>
+        <div class="clear-fix"></div>
+      </ul>
+      <div class="design-by">
+        <div>
+          <h2 id="design-text" class="page-title">Design by </h2>
+          <a href="#"><%= image_tag("per-logo.png", class: "zorba-logo") %></a>
+          <div class="clear-fix"></div>
         </div>
       </div>
-      <div class="footer-element follow">
-        <h2>Follow we on social</h2>
-        <ul>
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>Google Plus</li>
-          <li>Instagram</li>
-        </ul>
-      </div>
-      <div class="footer-element about-me">
-        <h2>About me</h2>
-        <p>My name is Hoang Ngoc Quy</p>
-        <%= image_tag("per-logo.png", class: "zorba-icon") %>
-      </div>
-      <div class="clear-fix"></div>
     </footer>
     <!-- end footer -->
   </body>
