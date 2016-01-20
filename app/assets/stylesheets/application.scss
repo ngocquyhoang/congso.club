@@ -179,7 +179,7 @@ div.main-content.sticky{
 	border: 1px solid #fff;
 	outline: none;
 }
-.follow-us-by-mail .follow input[type="submit"]{
+.follow-us-by-mail .follow button{
 	height: 3em;
 	padding: 0 2.2em;
 	border: 1px solid #fff;
@@ -190,10 +190,10 @@ div.main-content.sticky{
 	margin: 0 0.5em;
 	font-family: 'Stag';
 }
-.follow-us-by-mail .follow input[type="submit"]:hover{
+.follow-us-by-mail .follow button:hover{
 	background-color: rgba(255,255,255,0.75);
 }
-.follow-us-by-mail .follow input[type="submit"]:active{
+.follow-us-by-mail .follow button:active{
 	outline: none;
 }
 /*setting for footer*/

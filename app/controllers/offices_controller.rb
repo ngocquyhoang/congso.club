@@ -15,20 +15,30 @@ class OfficesController < ApplicationController
   end
   # like button
   def like
-    puts "DKM"
-    if params[:idPost].blank?
-      # do no thing
-    else
+    if params[:idPost].present?
       likeCount = Office.find(params[:idPost])
       likeCount.like = likeCount.like + 1
       likeCount.save
     end
   end
   
+  def sendmail
+    if params[:name].present? && params[:email].present?
+      # save
+      @newContact = Contact.new()
+      byebug
+      @newContact = Contact.new(params);
+      if @newContact.save
+        @newContact.notice = "Save successfully !"
+      else
+        @newContact.notice = "Save false !"
+      end
+      # validate on model
+    end
+  end
+  
   def dislike
-    if params[:idPost].blank?
-      # do no thing
-    else
+    if params[:idPost].present?
       dislikeCount = Office.find(params[:idPost])
       dislikeCount.dislike = dislikeCount.dislike + 1
       dislikeCount.save

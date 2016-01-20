@@ -34,8 +34,18 @@ $(document).ready(function() {
 	showThankbox();	
 });
 function showThankbox () {
-	$('.zorba-logo').click(function() {
+	$('.follow button#send-email').click(function() {
 		$('.thank-box').slideDown(750);
+		// call ajax
+		var name = $('.follow-us-by-mail .follow .name').val();
+		var email = $('.follow-us-by-mail .follow .email').val();
+		$.ajax({
+	      url: "/offices/sendmail",
+	      type: "POST",
+	      dataType: "script",
+	      data: {"name": name, "email": email},
+	    });
+		// end call
 		setTimeout(function(){ $('.thank-box .loadding-logo').hide(50); }, 1750);
 		setTimeout(function(){ $('.thank-box .thank-text').show(50); }, 1800);
 		setTimeout(function(){ $('.thank-box').slideUp(750); }, 2500);
