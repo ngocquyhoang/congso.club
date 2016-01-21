@@ -14,25 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-// $(document).ready(function(){
-//     var facebookShareUrl = window.location.href;
-//     $('.facebook-share-button').attr("href", "http://www.facebook.com/sharer.php?u=" + facebookShareUrl);
-// });
 
-// scroll top 
-$(window).scroll(function() {
-if ($(this).scrollTop() > 1){  
-    $('header').addClass("sticky");
-    $('.main-content').addClass("sticky");
-  }
-  else{
-    $('header').removeClass("sticky");
-    $('.main-content').removeClass("sticky");
-  }
-});
 $(document).ready(function() {
 	showThankbox();	
 });
+// contact form
 function showThankbox () {
 	$('.follow button#send-email').click(function() {
 		// call ajax

@@ -1,6 +1,25 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%#= notice %></p> -->
+<script type="text/javascript">
+  // function(){ $('.funny-section .image-box').width() }
 
-<h1>Listing Offices</h1>
+</script>
+<%# @offices.each do |office| %>
+<div class="page-secction funny-section">
+  <h3 class="title">This is my application</h3>
+  <h4 class="owner">by Le thi nam</h4>
+  <h5 class="create-time">28/11/2015</h5>
+  <div class="image-box">
+    <img src="http://blog.mailtravel.co.uk/wp-content/uploads/2013/02/140401556-600-x-400.jpg" alt="" class="image-funny">
+    <div class="image-shadow">
+      <!-- <span class="like-count"> 3 </span> -->
+      <%= image_tag("like-black.png", class: "like-icon") %>
+    </div>
+  </div>
+  
+  
+</div>
+<%# end %>
+
 
 <table>
   <thead>

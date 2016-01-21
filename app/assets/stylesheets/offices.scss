@@ -1,3 +1,47 @@
 // Place all the styles related to the offices controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.funny-section{
+	padding: 2em 0 2.5em;
+	font-size: 1.2em;
+	font-family: 'Stag';
+	color: #000;
+}
+.funny-section .title{
+	font-size: 1.8em;
+	font-weight: normal;
+	margin: 0.3em 0;
+}
+.funny-section .owner{
+	font-weight: normal;
+	font-size: 1.2em;
+	font-style: italic;
+	margin: 0.2em 0;
+}
+.funny-section .create-time{
+	font-weight: normal;
+	font-size: 1.0em;
+	margin: 0.2em 0 1em;
+}
+.funny-section .image-box{
+	position: relative;
+	display: inline-block;
+}
+.funny-section .image-box img.image-funny{
+	z-index: 1;
+}
+.funny-section .image-box .image-shadow{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+	height: 100%;
+}
+.funny-section .like-count{
+	font-weight: normal;
+	font-size: 1.8em;
+	margin: 0.2em 0;
+}
+
