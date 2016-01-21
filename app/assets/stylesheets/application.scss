@@ -80,12 +80,38 @@ html, body{
 ::selection {
     color: #000; 
 }
+/*setting for notice*/
+.notice-box{
+	width: 100%;
+	position: fixed;
+	top: 0em;
+	padding-top: 1.5em;
+	z-index: 100;
+	text-align: center;
+	font-family: 'Stag';
+	color: #000;
+	display: none;
+}
+.notice-box .notice-content{
+	width: 45em;
+	display: inline-block;
+	padding: 2em 3em;
+}
+.notice-box .notice-content .notice-text .text{
+	font-size: 1.5em;
+}
+.notice-box .success{
+	border: 1px solid #2E7D32;
+	background-color: #81C784;
+}
+.notice-box .error{
+	border: 1px solid #C62828;
+	background-color: #E57373;
+}
 /*setting for header*/
 header{
-  /*position: fixed;*/
   width: 100%;
   height: 80px;
-  /*background: rgba(51, 92, 125, 0.65);*/
   background: rgba(116, 77, 36, 0.8);
   color: #fff;
   position: relative;
@@ -129,6 +155,7 @@ div.main-content{
 /*animation for sticky*/
 header.sticky{
 	position: fixed;
+	z-index: 10;
 	height: 51px;
 }
 header.sticky .logo-text{
@@ -260,7 +287,7 @@ div.main-content.sticky{
 	float: left;
 }
 /*thank box setting*/
-.slide-box{
+/*.slide-box{
 	width: 100%;
 	height: 300%;
 	background-color: rgba(0,0,0,0.70);
@@ -288,3 +315,4 @@ div.main-content.sticky{
 .thank-box{
 	display: none;
 }
+*/

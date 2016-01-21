@@ -35,21 +35,50 @@ $(document).ready(function() {
 });
 function showThankbox () {
 	$('.follow button#send-email').click(function() {
-		$('.thank-box').slideDown(750);
 		// call ajax
 		var name = $('.follow-us-by-mail .follow .name').val();
 		var email = $('.follow-us-by-mail .follow .email').val();
 		$.ajax({
 	      url: "/offices/sendmail",
 	      type: "POST",
-	      dataType: "script",
+	      dataType: "json",
 	      data: {"name": name, "email": email},
+	      success: function(data) {
+        	if (typeof data["notice"] != 'undefined') {
+        		$('.notice-box .notice-content').addClass('success');
+        		$('.notice-box .notice-content .notice-text .text').html('Cảm ơn bạn đã ghé thăm');
+        		$('.follow-us-by-mail .follow input').val("");
+        	} else{
+        		$('.notice-box .notice-content').addClass('error');
+        		// show error
+        		var eM = "";
+        		if (data["errorMessage"].length == 1) {
+        			eM = data["errorMessage"][0];
+        		}else{
+        			eM = data["errorMessage"][0] + "<br />" + data["errorMessage"][1];
+        		};
+        		$('.notice-box .notice-content .notice-text .text').html(eM);
+        		// clear data
+        		if(data["clearDataField"].length == 1){
+        			$('.follow-us-by-mail .follow .' + data["clearDataField"][0]).val("");
+        		}else{
+        			// clear all
+        			$('.follow-us-by-mail .follow input').val("");
+        		}
+        		// focus error field
+        		if (data["focusElement"] != "") {
+        			$('.follow-us-by-mail .follow .' + data["focusElement"]).focus();
+        		};
+        	};
+        }
 	    });
 		// end call
-		setTimeout(function(){ $('.thank-box .loadding-logo').hide(50); }, 1750);
-		setTimeout(function(){ $('.thank-box .thank-text').show(50); }, 1800);
-		setTimeout(function(){ $('.thank-box').slideUp(750); }, 2500);
-		setTimeout(function(){ $('.thank-box .loadding-logo').show(); }, 3250);
-		setTimeout(function(){ $('.thank-box .thank-text').hide(); }, 3250);
+		// show in view
+		setTimeout(function(){ $('.notice-box').show( "slide", {direction:'up'}, 750 ); }, 50);
+		setTimeout(function(){ $('.notice-box').hide( "slide", {direction:'up'}, 750 ); }, 1800);
+		// remove class and clear data
+		setTimeout(function(){
+			$('.notice-box .notice-content').removeClass('success error');
+		}, 2550);
 	});
 }

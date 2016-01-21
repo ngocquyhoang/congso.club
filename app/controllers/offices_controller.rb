@@ -23,17 +23,38 @@ class OfficesController < ApplicationController
   end
   
   def sendmail
-    if params[:name].present? && params[:email].present?
-      # save
-      @newContact = Contact.new()
-      byebug
-      @newContact = Contact.new(params);
-      if @newContact.save
-        @newContact.notice = "Save successfully !"
-      else
-        @newContact.notice = "Save false !"
+    @newContact = Contact.new( name: params[:name], email: params[:email])
+    # ERROR
+    clearDataField = []
+    # save form
+    if @newContact.save
+      render json:{notice: "Success !"}
+    else
+      # short messages
+      errorMessage = []
+      focusElement = ""
+      # push name error message
+      if @newContact.errors["name"][0].present?
+        errorMessage.push('Tên của bạn không nên bỏ trống');
+        focusElement = "name"
+        clearDataField.push("name")
       end
-      # validate on model
+      # push email error
+      if @newContact.errors["email"][0].present?
+        if @newContact.errors["email"][0] == "can't be blank"
+          errorMessage.push('Email của bạn không nên bỏ trống');
+        else
+          errorMessage.push('Email bạn nhập không đúng định dạng');
+        end
+        # focusElement
+        if focusElement == ""
+          focusElement = "email"
+        else
+          focusElement = "name"
+        end
+        clearDataField.push("email")
+      end
+      render json:{errorMessage: errorMessage, focusElement: focusElement, clearDataField: clearDataField}
     end
   end
   
