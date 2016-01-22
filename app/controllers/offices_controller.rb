@@ -10,7 +10,7 @@ class OfficesController < ApplicationController
   # GET /offices/1
   # GET /offices/1.json
   def show
-    productDomain = "congso-ngocquyhoang.c9users.io"
+    productDomain = "localhost:3000"
     @currentUrl = "https://" + productDomain + "/offices/" + @office.slug
   end
   # like button
