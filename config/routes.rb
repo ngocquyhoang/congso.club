@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :offices
   post 'offices/like'
-  post 'offices/dislike'
   post 'offices/sendmail'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

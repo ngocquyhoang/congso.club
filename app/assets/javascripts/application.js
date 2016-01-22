@@ -17,6 +17,7 @@
 
 $(document).ready(function() {
 	showThankbox();	
+    likeImage();
 });
 // contact form
 function showThankbox () {
@@ -67,4 +68,27 @@ function showThankbox () {
 			$('.notice-box .notice-content').removeClass('success error');
 		}, 2550);
 	});
-}
+};
+function likeImage () {
+    // like button
+    $('.page-secction .image-box .image-shadow .like-icon').click(function() {
+        if ($(this).attr("name") == "liked") {
+            // do nothing
+        }else{
+            // call ajax
+            idPost = $(this).attr('name');
+            $.ajax({
+                url: "/offices/like",
+                type: "POST",
+                dataType: "script",
+                data: {"idPost": idPost},
+            });
+            //set value and add class
+            likeCount = parseInt($('.funny-section#' + idPost + ' .image-box .image-shadow .like-count').html());
+            $('.funny-section#' + idPost + ' .image-box .image-shadow .like-count').html(likeCount + 1);
+            // disable lile button ann add class liked
+            $(this).addClass('liked');
+            $(this).attr("name","liked");
+        };
+    });
+};

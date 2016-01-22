@@ -6,7 +6,6 @@ class CreateOffices < ActiveRecord::Migration
       t.text        :image
       t.text        :slug
       t.integer     :like,      null:false, default: 0
-      t.integer     :dislike,   null:false, default: 0
 
       t.timestamps null: false
     end

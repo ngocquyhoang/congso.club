@@ -58,13 +58,6 @@ class OfficesController < ApplicationController
     end
   end
   
-  def dislike
-    if params[:idPost].present?
-      dislikeCount = Office.find(params[:idPost])
-      dislikeCount.dislike = dislikeCount.dislike + 1
-      dislikeCount.save
-    end
-  end
   # GET /offices/new
   def new
     @office = Office.new

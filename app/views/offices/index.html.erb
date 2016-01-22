@@ -1,87 +1,25 @@
-<!-- <p id="notice"><%#= notice %></p> -->
-<script type="text/javascript">
-  // function(){ $('.funny-section .image-box').width() }
 
-</script>
-<%# @offices.each do |office| %>
-<div class="page-secction funny-section">
-  <h3 class="title">This is my application</h3>
-  <h4 class="owner">by Le thi nam</h4>
-  <h5 class="create-time">28/11/2015</h5>
-  <div class="image-box">
-    <img src="http://blog.mailtravel.co.uk/wp-content/uploads/2013/02/140401556-600-x-400.jpg" alt="" class="image-funny">
-    <div class="image-shadow">
-      <!-- <span class="like-count"> 3 </span> -->
-      <%= image_tag("like-black.png", class: "like-icon") %>
+<% @offices.each do |office| %>
+  <div class="page-secction funny-section" id="<%= office.id %>">
+    <h3 class="title">
+      <%#= link_to 'Edit', edit_office_path(office) %>
+      <%#= link_to 'Destroy', office, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to(office) do %>
+        <%= office.title.capitalize %>
+      <% end %>
+    </h3>
+    <h4 class="owner">by <%= office.owner.capitalize %></h4>
+    <h5 class="create-time"><%= office.created_at.in_time_zone(7).strftime("in %B - %d - %Y") %></h5>
+    <div class="image-box">
+      <img src="<%= office.image %>" alt="<%= office.slug %>" class="image-funny" name"">
+      <div class="image-shadow">
+        <div>
+          <span class="like-count"><%= office.like %></span>
+          <div class="like-icon" name="<%= office.id %>" ></div>
+        </div>
+      </div>
     </div>
   </div>
-  
-  
-</div>
-<%# end %>
-
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Owner</th>
-      <th>Image</th>
-      <th>Like</th>
-      <th>Dislike</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @offices.each do |office| %>
-      <tr>
-        <td><%= office.title %></td>
-        <td><%= office.owner %></td>
-        <td><%= office.image %></td>
-        <td class= "like"><button class= "like" id="<%= office.id %>" >Like</button> | <span class= "like<%= office.id %>" ><%= office.like %></span></td>
-        <td class= "dislike"><button class= "dislike" id="<%= office.id %>" >Dislike</button> | <span class= "dislike<%= office.id %>" ><%= office.dislike %></span></td>
-        <td><%= link_to 'Show', office %></td>
-        <td><%= link_to 'Edit', edit_office_path(office) %></td>
-        <td><%= link_to 'Destroy', office, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-<!--call ajax-->
-<script type="text/javascript">
-  // like button
-  $('button.like').click(function() {
-    // call ajax
-    idPost = $(this).attr('id');
-    $.ajax({
-      url: "/offices/like",
-      type: "POST",
-      dataType: "script",
-      data: {"idPost": idPost},
-    });
-    //set value and add class
-    likeCount = parseInt($('td.like span.like' + idPost ).html());
-    $('td.like span.like' + idPost ).html(likeCount + 1);
-    $(this).addClass('liked');
-  });
-  // dislike button
-  $('button.dislike').click(function() {
-    // call ajax
-    idPost = $(this).attr('id');
-    $.ajax({
-      url: "/offices/dislike",
-      type: "POST",
-      dataType: "script",
-      data: {"idPost": idPost},
-    });
-    //set value and add class
-    dislikeCount = parseInt($('td.dislike span.dislike' + idPost ).html());
-    $('td.dislike span.dislike' + idPost ).html(dislikeCount + 1);
-    $(this).addClass('disliked');
-  });
-</script>
-
-<%= link_to 'New Office', new_office_path %>
+<% end %>
+<hr />
+<%#= link_to 'New Office', new_office_path %>
