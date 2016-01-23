@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  get 'contact/index'
 
   resources :offices
   post 'offices/like'
   post 'offices/sendmail'
 
   get 'contact', to: 'contact#index'
+  get 'zorba', to: 'zorba#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

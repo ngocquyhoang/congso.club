@@ -44,7 +44,7 @@
           <ul>
             <li><%= link_to "Trang chủ", root_url %></li>
             <li><%= link_to "Liên hệ", contact_path %></li>
-            <li><%= link_to "Đăng nhập", root_url %></li>
+            <li><%= link_to "Đăng nhập", contact_path %></li>
             <div class="clear-fix"></div>
           </ul>
         </div>
@@ -78,7 +78,9 @@
       <div class="design-by">
         <div>
           <h2 id="design-text" class="page-title">Design by </h2>
-          <a href="#"><%= image_tag("per-logo.png", class: "zorba-logo") %></a>
+          <%= link_to (zorba_path) do %>
+            <%= image_tag("per-logo.png", class: "zorba-logo") %>
+          <% end %>
           <div class="clear-fix"></div>
         </div>
       </div>

@@ -1,0 +1,103 @@
+// Place all the styles related to the zorba controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/*setting for general*/
+.contact-page .page-secction{
+	padding: 3em 0 3.5em;
+}
+.contact-page{
+	font-family: 'Stag';
+}
+.contact-page .page-center{
+	display: inline-block;
+	text-align: center;
+}
+/*about me setting*/
+.contact-page .about-me{
+	margin-top: 3em;
+}
+.contact-page .about-me .avatar{
+	width: 12em;
+	height: 12em;
+	border-radius: 6em;
+	border: 1px solid #ff4455;
+	float: left;
+}
+.contact-page .about-me .infomation{
+	width: 40em;
+	height: 12em;
+	background-color: #ff4455;
+	margin-left: 2em;
+	float: left;
+}
+/*why-is-zorba*/
+.contact-page .why-is-zorba .zorba-text{
+	width: 40em;
+	height: 12em;
+	background-color: #ff4455;
+	float: left;
+}
+.contact-page .why-is-zorba .zorba-image{
+	width: 12em;
+	height: 12em;
+	margin-left: 2em;
+	border: 1px solid #ff4455;
+	float: left;
+}
+/*social box*/
+.contact-page .connect-to-me .social-box{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.contact-page .connect-to-me .social-box ul{
+	list-style: none;
+}
+.contact-page .connect-to-me .social-box ul a{
+	float: left;
+	text-decoration: none;
+	position: relative;
+}
+.contact-page .connect-to-me .social-box ul a:hover span{
+	visibility: visible;
+}
+.contact-page .connect-to-me .social-box ul a span{
+	color: #fff;
+	background-color: #ff4455;
+	padding: 0.5em 1em;
+	font-size: 1.2em;
+	visibility: hidden;
+	position: absolute;
+}
+.contact-page .connect-to-me .social-box ul li{
+	width: 80px;
+	height: 80px;
+	margin: 0 1em;
+}
+.contact-page .connect-to-me h2.title{
+	font-size: 2em;
+	font-weight: normal;
+}
+.contact-page .connect-to-me .social-box ul li.github{
+	background-image: url("github.png");
+}
+.contact-page .connect-to-me .social-box ul li.twitter{
+	background-image: url("twitter.png");
+}
+.contact-page .connect-to-me .social-box ul li.facebook{
+	background-image: url("facebook.png");
+}
+.contact-page .connect-to-me .social-box ul li.google-plus{
+	background-image: url("google-plus.png");
+}
+.contact-page .connect-to-me .social-box ul li.dribbble{
+	background-image: url("dribbble.png");
+}
+.contact-page .connect-to-me .social-box ul li.skype{
+	background-image: url("skype.png");
+}
+.contact-page .connect-to-me .social-box ul li.pinterest{
+	background-image: url("pinterest.png");
+}
+.contact-page .connect-to-me .social-box ul li.youtube{
+	background-image: url("youtube.png");
+}
