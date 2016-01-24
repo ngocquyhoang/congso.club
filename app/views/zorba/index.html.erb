@@ -5,7 +5,23 @@
 			<%= image_tag("ngocquy-avatar.jpg", class: "avatar")%>
 			<div class="infomation">
 				<div class="info-slide">
-					
+					<ul class="slide-content">
+						<li class="active" name="1">1</li>
+						<li class="" name="2">2</li>
+						<li class="" name="3">3</li>
+					</ul>
+					<div class="control">
+						<ul class="slider-control">
+							<li class="active" name="1"></li>
+							<li class="" name="2"></li>
+							<li class="" name="3"></li>
+							<div class="clear-fix"></div>
+						</ul>
+					</div>
+					<div class="slider-button">
+						<div class="button prev" ></div>
+						<div class="button next" ></div>
+					</div>
 				</div>
 			</div>
 			<div class="clear-fix"></div>
@@ -15,11 +31,10 @@
 	<div class="page-secction">
 		<div class="page-center why-is-zorba">
 			<div class="zorba-text">
-
+				<h5>Why is zorba ?</h5>
+				<p>Lorem ipsum dolor sit amet, nec cu timeam copiosae scriptorem, mel ne quis vivendum. Eos ex quaerendum comprehensam, est ne alienum dignissim dissentiet, agam congue persecuti an pro. Perpetua dissentiunt no mel. Ius vide lobortis id, vix at odio patrioque. Duo congue dissentiet an, te adhuc probatus mnesarchum vis.</p>
 			</div>
-			<div class="zorba-image">
-
-			</div>
+			<%= image_tag("zorba-story.jpg", class: "zorba-image") %>
 			<div class="clear-fix"></div>
 		</div>
 	</div>
@@ -29,17 +44,79 @@
 			<h2 class="title">Connect to me on Social network</h2>
 			<div class="page-center social-box">
 				<ul>
-					<a href="" target="blank"><li class="icon github"></li><br /><span>Github</span></a>
-					<a href="#" target="blank"><li class="icon twitter"></li><br /><span>twitter</span></a>
-					<a href="#" target="blank"><li class="icon facebook"></li><br /><span>facebook</span></a>
-					<a href="#" target="blank"><li class="icon google-plus"></li><br /><span>google-plus</span></a>
-					<a href="#" target="blank"><li class="icon dribbble"></li><br /><span>dribbble</span></a>
-					<a href="#" target="blank"><li class="icon skype"></li><br /><span>skype</span></a>
-					<a href="#" target="blank"><li class="icon pinterest"></li><br /><span>pinterest</span></a>
-					<a href="#" target="blank"><li class="icon youtube"></li><br /><span>youtube</span></a>
+					<a href="https://github.com/ngocquyhoang" target="blank"><li class="icon github"></li><br /><span>Github</span></a>
+					<a href="https://twitter.com/malloryandbob" target="blank"><li class="icon twitter"></li><br /><span>Twitter</span></a>
+					<a href="https://www.facebook.com/ngocquyhoang.93" target="blank"><li class="icon facebook"></li><br /><span>Facebook</span></a>
+					<a href="https://plus.google.com/u/0/101396476640771423396/posts" target="blank"><li class="icon google-plus"></li><br /><span>G+</span></a>
+					<a href="" target="blank"><li class="icon dribbble"></li><br /><span>Dribbble</span></a>
+					<a href="" target="blank"><li class="icon skype"></li><br /><span>Skype</span></a>
+					<a href="" target="blank"><li class="icon pinterest"></li><br /><span>Pinterest</span></a>
+					<a href="" target="blank"><li class="icon youtube"></li><br /><span>Youtube</span></a>
 				</ul>
 			</div>
 			<div class="clear-fix"></div>
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	function nextSlide () {
+		var currentSelector = $('.infomation .info-slide .slide-content').find('.active');
+		var currentId = currentSelector.attr('name');
+		if (currentId == "1") {
+			$('.infomation .info-slide .slide-content').find('li[name="2"]').addClass('active');
+			$('.infomation .info-slide .slider-control li').removeClass('active');
+			$('.infomation .info-slide .slider-control').find('li[name="2"]').addClass('active');
+		}else{
+			if (currentId == "2") {
+				$('.infomation .info-slide .slide-content').find('li[name="3"]').addClass('active');
+				$('.infomation .info-slide .slider-control li').removeClass('active');
+				$('.infomation .info-slide .slider-control').find('li[name="3"]').addClass('active');
+			}else{
+				$('.infomation .info-slide .slide-content').find('li[name="1"]').addClass('active');
+				$('.infomation .info-slide .slider-control li').removeClass('active');
+				$('.infomation .info-slide .slider-control').find('li[name="1"]').addClass('active');
+			};
+		};
+		currentSelector.removeClass('active');
+	}
+	function prevSlide () {
+		var currentSelector = $('.infomation .info-slide .slide-content').find('.active');
+		var currentId = currentSelector.attr('name');
+		if (currentId == "1") {
+			$('.infomation .info-slide .slide-content').find('li[name="3"]').addClass('active');
+			$('.infomation .info-slide .slider-control li').removeClass('active');
+			$('.infomation .info-slide .slider-control').find('li[name="3"]').addClass('active');
+		}else{
+			if (currentId == "2") {
+				$('.infomation .info-slide .slide-content').find('li[name="1"]').addClass('active');
+				$('.infomation .info-slide .slider-control li').removeClass('active');
+				$('.infomation .info-slide .slider-control').find('li[name="1"]').addClass('active');
+			}else{
+				$('.infomation .info-slide .slide-content').find('li[name="2"]').addClass('active');
+				$('.infomation .info-slide .slider-control li').removeClass('active');
+				$('.infomation .info-slide .slider-control').find('li[name="2"]').addClass('active');
+			};
+		};
+		currentSelector.removeClass('active');
+	}
+	function selectSlide () {
+		$('.infomation .info-slide .slider-control li').click(function() {
+			var selectId = $(this).attr('name');
+			$('.infomation .info-slide .slider-control li').removeClass('active');
+			$(this).addClass('active');
+			$('.infomation .info-slide .slide-content li').removeClass('active');
+			$('.infomation .info-slide .slide-content').find('li[name="' + selectId + '"]').addClass('active');
+		});
+	}
+	$(document).ready(function() {
+		// call auto netx
+		$('.infomation .info-slide .slider-button .next').click(function() {
+			nextSlide();
+		});
+		$('.infomation .info-slide .slider-button .prev').click(function() {
+			prevSlide();
+		});
+		selectSlide();
+		setInterval(function(){ nextSlide(); }, 3000);
+	});
+</script>

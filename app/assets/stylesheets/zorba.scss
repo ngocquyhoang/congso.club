@@ -25,21 +25,83 @@
 }
 .contact-page .about-me .infomation{
 	width: 40em;
-	height: 12em;
-	background-color: #ff4455;
+	height: 15em;
 	margin-left: 2em;
 	float: left;
 }
+.contact-page .about-me .infomation .info-slide{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.contact-page .about-me .infomation .info-slide .slide-content{
+	list-style: none;
+}
+.contact-page .about-me .infomation .info-slide .slide-content li{
+	width: 40em;
+	height: 15em;
+	position: absolute;
+	z-index: 10;
+}
+.contact-page .about-me .infomation .info-slide .slide-content li.active{
+	z-index: 11;
+}
+.contact-page .about-me .infomation .info-slide .slider-control{
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+.contact-page .about-me .infomation .info-slide .slider-control li{
+	width: 0.5em;
+	height: 0.5em;
+	border-radius: 100px;
+	background-color: #fff;
+	margin: 0 1em;
+	float: left;
+	border: 0.1em solid #ff4455;
+}
+.contact-page .about-me .infomation .info-slide .slider-control li.active{
+	background-color: #ff4455;
+}
+.contact-page .about-me .infomation .info-slide div.control{
+	width: 100%;
+	position: absolute;
+	z-index: 20;
+	bottom: 0.7em;
+}
+.contact-page .about-me .infomation .info-slide .slider-button .button{
+	width: 20px;
+	height: 55px;
+	background-color: #225;
+	position: absolute;
+	z-index: 20;
+}
+.contact-page .about-me .infomation .info-slide .slider-button .button.next{
+	top: 4.5em;
+	right: 1em;
+}
+.contact-page .about-me .infomation .info-slide .slider-button .button.prev{
+	top: 4.5em;
+	left: 1em;
+}
 /*why-is-zorba*/
 .contact-page .why-is-zorba .zorba-text{
-	width: 40em;
-	height: 12em;
-	background-color: #ff4455;
+	width: 44em;
 	float: left;
 }
+.contact-page .why-is-zorba .zorba-text h5{
+	font-size: 1.8em;
+	font-weight: normal;
+	color: #000;
+	margin-bottom: 1em;
+}
+.contact-page .why-is-zorba .zorba-text p{
+	font-size: 1.5em;
+	text-align: left;
+}
 .contact-page .why-is-zorba .zorba-image{
-	width: 12em;
 	height: 12em;
+	width: 8em;
 	margin-left: 2em;
 	border: 1px solid #ff4455;
 	float: left;
@@ -66,7 +128,6 @@
 	padding: 0.5em 1em;
 	font-size: 1.2em;
 	visibility: hidden;
-	position: absolute;
 }
 .contact-page .connect-to-me .social-box ul li{
 	width: 80px;
