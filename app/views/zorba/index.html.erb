@@ -6,9 +6,26 @@
 			<div class="infomation">
 				<div class="info-slide">
 					<ul class="slide-content">
-						<li class="active" name="1">1</li>
-						<li class="" name="2">2</li>
-						<li class="" name="3">3</li>
+						<li class="active" name="1">
+							<h5>Hello! My name is Ngoc Quy Hoang</h5>
+							<p>I'm a Front-end Developer</p>
+							<p>So I'm a Designer too</p>
+							<p>Now ! I'm a Student in Hanoi University of Science and Technology</p>
+						</li>
+						<li class="" name="2">
+							<h5>My Information</h5>
+							<p>Email : ngocquyhoang.93@gmail.com</p>
+							<p>Skype : hiworld_quyhn</p>
+							<p>Address : Nhan my , My dinh, Ha noi</p>
+							<p>Phone : 0964149843</p>
+						</li>
+						<li class="" name="3">
+							<h5>Connect to me</h5>
+							<p>Twitter : <a target="blank" href="https://twitter.com/malloryandbob">@malloryandbob</a></p>
+							<p>Github : <a target="blank" href="https://github.com/ngocquyhoang">ngocquyhoang </a></p>
+							<p>Chatwork : <a target="blank" href="https://www.chatwork.com/ngocquyhoang">ngocquyhoang </a></p>
+							<p>Facebook : <a target="blank" href="https://www.facebook.com/ngocquyhoang.93">ngocquyhoang.93 </a></p>
+						</li>
 					</ul>
 					<div class="control">
 						<ul class="slider-control">
@@ -58,65 +75,3 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
-	function nextSlide () {
-		var currentSelector = $('.infomation .info-slide .slide-content').find('.active');
-		var currentId = currentSelector.attr('name');
-		if (currentId == "1") {
-			$('.infomation .info-slide .slide-content').find('li[name="2"]').addClass('active');
-			$('.infomation .info-slide .slider-control li').removeClass('active');
-			$('.infomation .info-slide .slider-control').find('li[name="2"]').addClass('active');
-		}else{
-			if (currentId == "2") {
-				$('.infomation .info-slide .slide-content').find('li[name="3"]').addClass('active');
-				$('.infomation .info-slide .slider-control li').removeClass('active');
-				$('.infomation .info-slide .slider-control').find('li[name="3"]').addClass('active');
-			}else{
-				$('.infomation .info-slide .slide-content').find('li[name="1"]').addClass('active');
-				$('.infomation .info-slide .slider-control li').removeClass('active');
-				$('.infomation .info-slide .slider-control').find('li[name="1"]').addClass('active');
-			};
-		};
-		currentSelector.removeClass('active');
-	}
-	function prevSlide () {
-		var currentSelector = $('.infomation .info-slide .slide-content').find('.active');
-		var currentId = currentSelector.attr('name');
-		if (currentId == "1") {
-			$('.infomation .info-slide .slide-content').find('li[name="3"]').addClass('active');
-			$('.infomation .info-slide .slider-control li').removeClass('active');
-			$('.infomation .info-slide .slider-control').find('li[name="3"]').addClass('active');
-		}else{
-			if (currentId == "2") {
-				$('.infomation .info-slide .slide-content').find('li[name="1"]').addClass('active');
-				$('.infomation .info-slide .slider-control li').removeClass('active');
-				$('.infomation .info-slide .slider-control').find('li[name="1"]').addClass('active');
-			}else{
-				$('.infomation .info-slide .slide-content').find('li[name="2"]').addClass('active');
-				$('.infomation .info-slide .slider-control li').removeClass('active');
-				$('.infomation .info-slide .slider-control').find('li[name="2"]').addClass('active');
-			};
-		};
-		currentSelector.removeClass('active');
-	}
-	function selectSlide () {
-		$('.infomation .info-slide .slider-control li').click(function() {
-			var selectId = $(this).attr('name');
-			$('.infomation .info-slide .slider-control li').removeClass('active');
-			$(this).addClass('active');
-			$('.infomation .info-slide .slide-content li').removeClass('active');
-			$('.infomation .info-slide .slide-content').find('li[name="' + selectId + '"]').addClass('active');
-		});
-	}
-	$(document).ready(function() {
-		// call auto netx
-		$('.infomation .info-slide .slider-button .next').click(function() {
-			nextSlide();
-		});
-		$('.infomation .info-slide .slider-button .prev').click(function() {
-			prevSlide();
-		});
-		selectSlide();
-		setInterval(function(){ nextSlide(); }, 3000);
-	});
-</script>

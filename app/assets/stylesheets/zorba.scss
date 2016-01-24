@@ -43,8 +43,25 @@
 	position: absolute;
 	z-index: 10;
 }
+.contact-page .about-me .infomation .info-slide .slide-content li h5{
+	font-size: 1.5em;
+	font-family: 'Stag';
+	font-weight: normal;
+	margin: 1em 0;
+}
+.contact-page .about-me .infomation .info-slide .slide-content li p{
+	font-size: 1.2em;
+	margin: 0.5em 0;
+	text-align: left;
+	padding-left: 3em;
+}
+.contact-page .about-me .infomation .info-slide .slide-content li p a{
+	text-decoration: none;
+	color: #000;
+}
 .contact-page .about-me .infomation .info-slide .slide-content li.active{
 	z-index: 11;
+	background-color: #f5f5f5;
 }
 .contact-page .about-me .infomation .info-slide .slider-control{
 	list-style: none;
