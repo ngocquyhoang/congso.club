@@ -89,17 +89,18 @@
 .contact-page .about-me .infomation .info-slide .slider-button .button{
 	width: 20px;
 	height: 55px;
-	background-color: #225;
 	position: absolute;
 	z-index: 20;
 }
 .contact-page .about-me .infomation .info-slide .slider-button .button.next{
 	top: 4.5em;
 	right: 1em;
+	background-image: url("next.png");
 }
 .contact-page .about-me .infomation .info-slide .slider-button .button.prev{
 	top: 4.5em;
 	left: 1em;
+	background-image: url("prev.png");
 }
 /*why-is-zorba*/
 .contact-page .why-is-zorba .zorba-text{
