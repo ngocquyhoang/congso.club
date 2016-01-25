@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :offices
+  resources :offices, only: [:show, :like, :sendmail, :index]
+  
+  scope '/admin' do
+    resources :offices
+  end
+
   post 'offices/like'
   post 'offices/sendmail'
   post 'contact/message'

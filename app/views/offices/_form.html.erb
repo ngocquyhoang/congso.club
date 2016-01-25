@@ -1,29 +1,28 @@
-<%= form_for(@office) do |f| %>
-  <% if @office.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@office.errors.count, "error") %> prohibited this office from being saved:</h2>
+<div class="image-form">
+  <%= form_for(@office) do |f| %>
+    <% if @office.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@office.errors.count, "error") %> prohibited this office from being saved:</h2>
 
-      <ul>
-      <% @office.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <ul>
+        <% @office.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.text_field :title, :placeholder => "Tiêu đề"%>
+    </div>
+    <div class="field">
+      <%= f.text_field :owner, :placeholder => "Người gửi (để trống nếu là admin gửi)" %>
+    </div>
+    <div class="field">
+      <%= f.file_field :image %>
+    </div>
+    <div class="actions">
+      <%= f.submit 'Tạo ảnh mới', :class => 'create-image' %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_area :title %>
-  </div>
-  <div class="field">
-    <%= f.label :owner %><br>
-    <%= f.text_area :owner %>
-  </div>
-  <div class="field">
-    <%= f.label :image %><br>
-    <%= f.file_field :image %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

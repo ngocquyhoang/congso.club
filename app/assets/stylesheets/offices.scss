@@ -101,3 +101,83 @@
 	font-family: 'Stag';
 	margin-left: 1em;
 }
+/*new image*/
+.new-image{
+	text-align: center;
+}
+.new-image .page-title{
+	font-size: 2.0em;
+	font-family: 'Stag';
+	font-weight: normal;
+}
+.new-image .new-image-box{
+	display: inline-block;
+	margin: 7em 0 8em;
+}
+/*edit */
+.edit-image{
+	text-align: center;
+}
+.edit-image .page-title{
+	font-size: 2.0em;
+	font-family: 'Stag';
+	font-weight: normal;
+}
+.edit-image .edit-image-box{
+	display: inline-block;
+	margin: 7em 0 8em;
+}
+/*form setting*/
+.image-form{
+
+}
+.image-form .field{
+	margin: 1em 0;
+}
+.image-form .field input[type="text"]{
+	height: 3em;
+	padding: 0 2em;
+	color: #000;
+	line-height: 1.5em;
+	font-size: 1.2em;
+	width: 20em;
+	border: 1px solid #000;
+	font-family: 'Stag';
+	background-color: rgba(255,255,255,0);
+}
+.image-form .actions input[type="submit"]{
+	font-size: 1.2em;
+	color: #000;
+	border: 1px solid #000;
+	padding: 1em 3em;
+	font-family: 'Stag';
+	background-color: rgba(255,255,255,0.0);
+	transition: all 0.7s ease;
+}
+.image-form .actions input[type="submit"]:hover{
+	background-color: #ff4455;
+	border: 1px solid #ff4455;
+	color: #fff;
+}
+.image-form .field input[type="text"]:focus{
+	border: 1px solid #ff4455;
+	outline: none;
+}
+.image-form .field input[type="text"]::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+  color: #000;
+}
+.image-form .field input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  color: #000;
+}
+.image-form .field input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+}
+.image-form .field input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+.image-form .field input[type="text"]::-ms-input-placeholder { /* Edge */
+  color: #000;
+}
+.image-form .field input[type="text"]:placeholder-shown { /* Standard one last! */
+  color: #000;
+}
