@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :offices
   post 'offices/like'
   post 'offices/sendmail'
+  post 'contact/message'
 
   get 'contact', to: 'contact#index'
   get 'zorba', to: 'zorba#index'

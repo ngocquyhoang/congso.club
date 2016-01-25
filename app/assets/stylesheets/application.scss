@@ -133,6 +133,13 @@ header .header-box h1.logo-text{
 	float: left;
 	margin-left: 1.5em;
 }
+header .header-box a{
+	color: #fff;
+	text-decoration: none;
+}
+header .header-box a:hover{
+	text-decoration: none;
+}
 header .header-box .header-navigation-bar{
 	position: absolute;
 	top: 12px;

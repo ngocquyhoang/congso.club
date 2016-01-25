@@ -5,7 +5,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
-    <%= favicon_link_tag 'logo-icon.png' %>
+    <%= favicon_link_tag 'favico.png' %>
   </head>
   <body>
     <!--facebook sdk-->
@@ -38,11 +38,14 @@
     <!-- header -->
     <header>
       <div class="header-box">
-        <h1 class="logo-text">Congso.club</h1>
+        <%= link_to(root_url) do%>
+          <h1 class="logo-text">Congso.club</h1>
+        <% end %>
         <div class="clear-fix"></div>
         <div class="header-navigation-bar">
           <ul>
             <li><%= link_to "Trang chủ", root_url %></li>
+            <li><%= link_to "Về chúng tôi", zorba_path %></li>
             <li><%= link_to "Liên hệ", contact_path %></li>
             <li><%= link_to "Đăng nhập", contact_path %></li>
             <div class="clear-fix"></div>
