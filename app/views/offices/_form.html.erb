@@ -1,5 +1,6 @@
 <div class="image-form">
   <%= form_for(@office) do |f| %>
+    <!-- do notice on other view -->
     <% if @office.errors.any? %>
       <div id="error_explanation">
         <h2><%= pluralize(@office.errors.count, "error") %> prohibited this office from being saved:</h2>
@@ -19,10 +20,18 @@
       <%= f.text_field :owner, :placeholder => "Người gửi (để trống nếu là admin gửi)" %>
     </div>
     <div class="field">
-      <%= f.file_field :image %>
+      <div class="add-image-button"></div>
+      <span class="add-image-notice">xxx</span>
+      <%= f.file_field :image, :class => "hidden-element add-image-field" %>
     </div>
     <div class="actions">
       <%= f.submit 'Tạo ảnh mới', :class => 'create-image' %>
     </div>
   <% end %>
 </div>
+<script type="text/javascript">
+    $('.image-form .field .add-image-button').click(function() {
+      $('.image-form .field input[type="file"].add-image-field').click();
+      $('.add-image-notice').html($('.image-form .field input[type="file"].add-image-field').value);
+    });
+</script>
