@@ -46,6 +46,10 @@ html, body{
 	background-color: #F5F5F5;
 	font-size: 15px;
 }
+*{
+	border-radius: 0px;
+
+}
 .page-secction{
 	width: 100%;
 	min-height: 100px;
@@ -186,6 +190,7 @@ header .header-navigation-bar ul li a{
 	width: 15em;
 	margin: 0 0.5em;
 	font-family: 'Stag';
+	border-radius: 0px;
 }
 .follow-us-by-mail .follow input[type="text"]:focus{
 	border: 1px solid #fff;

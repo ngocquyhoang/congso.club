@@ -146,9 +146,41 @@
 	background-color: rgba(255,255,255,0);
 }
 .image-form .field .add-image-button{
-	width: 5em;
-	height: 5em;
-	border: 1px solid #ff4455;
+	width: 6em;
+	height: 6em;
+	border: 1px solid #000;
+	float: left;
+	font-size: 1.2em;
+}
+.image-form .field .add-image-infomation{
+	float: left;
+	height: 6em;
+	width: 18em;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-left: 0px;
+	font-size: 1.2em;
+}
+.image-form .field .add-image-infomation ul{
+	list-style: none;
+}
+.image-form .field .add-image-infomation ul li{
+	color: #000;
+	padding: 1em 0.5em;
+	font-size: 1em;
+	font-family: 'Stag';
+	text-align: left;
+}
+.image-form .field .add-image-infomation ul li.success{
+	background-image: url('success.png');
+	background-repeat: no-repeat;
+    	background-position: right center;
+}
+.image-form .field .add-image-infomation ul li.error{
+	background-image: url('success.png');
+	background-repeat: no-repeat;
+    	background-position: right center;
 }
 .image-form .actions input[type="submit"]{
 	font-size: 1.2em;

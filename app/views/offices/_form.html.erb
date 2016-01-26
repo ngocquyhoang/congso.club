@@ -1,37 +1,37 @@
 <div class="image-form">
-  <%= form_for(@office) do |f| %>
-    <!-- do notice on other view -->
-    <% if @office.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(@office.errors.count, "error") %> prohibited this office from being saved:</h2>
+	<%= form_for(@office) do |f| %>
+		<!-- do notice on other view -->
+		<% if @office.errors.any? %>
+			<div id="error_explanation">
+				<h2><%= pluralize(@office.errors.count, "error") %> prohibited this office from being saved:</h2>
+				<ul>
+					<% @office.errors.full_messages.each do |message| %>
+						<li><%= message %></li>
+					<% end %>
+				</ul>
+			</div>
+		<% end %>
 
-        <ul>
-        <% @office.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-        </ul>
-      </div>
-    <% end %>
-
-    <div class="field">
-      <%= f.text_field :title, :placeholder => "Tiêu đề"%>
-    </div>
-    <div class="field">
-      <%= f.text_field :owner, :placeholder => "Người gửi (để trống nếu là admin gửi)" %>
-    </div>
-    <div class="field">
-      <div class="add-image-button"></div>
-      <span class="add-image-notice">xxx</span>
-      <%= f.file_field :image, :class => "hidden-element add-image-field" %>
-    </div>
-    <div class="actions">
-      <%= f.submit 'Tạo ảnh mới', :class => 'create-image' %>
-    </div>
-  <% end %>
+		<div class="field">
+			<%= f.text_field :title, :placeholder => "Tiêu đề", :class => "title-image" %>
+		</div>
+		<div class="field">
+			<%= f.text_field :owner, :placeholder => "Người gửi (để trống nếu là admin gửi)", :class => "owner-image" %>
+		</div>
+		<div class="field">
+			<div class="add-image-button"></div>
+			<div class="add-image-infomation">
+				<ul>
+					<li class="type">Ảnh có định dạng : PNG JPG hoặc GIF</li>
+					<li class="size">Dung lượng ảnh không quá 10 Mb</li>
+				</ul>
+			</div>
+			<div class="clear-fix"></div>
+			<span class="add-image-notice">xxx</span>
+			<%= f.file_field :image, :class => "hidden-element add-image-field" %>
+		</div>
+		<div class="actions">
+			<%= f.submit 'Tạo ảnh mới', :class => 'create-image', :disabled => "true" %>
+		</div>
+	<% end %>
 </div>
-<script type="text/javascript">
-    $('.image-form .field .add-image-button').click(function() {
-      $('.image-form .field input[type="file"].add-image-field').click();
-      $('.add-image-notice').html($('.image-form .field input[type="file"].add-image-field').value);
-    });
-</script>
