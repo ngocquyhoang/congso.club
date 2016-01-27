@@ -239,34 +239,32 @@ function addNewImage () {
 		}else{
 			$('.image-form .field .add-image-infomation ul li.size').addClass('success');
 		};
-		if (type !== "image/png" || type !== "image/jpeg" || type !== "image/gif") {
-			$('.image-form .field .add-image-infomation ul li.type').addClass('error');
-		} else{
+		if (type === "image/png" || type === "image/jpeg" || type === "image/gif") {
 			$('.image-form .field .add-image-infomation ul li.type').addClass('success');
+		} else{
+			$('.image-form .field .add-image-infomation ul li.type').addClass('error');
 		};
 	});
-	var  title = $('.image-form .field input.title-image').val();
-	var  owner = $('.image-form .field input.owner-image').val();
 };
 function validateAddNewImageForm () {
-	$('.add-image-notice').click(function() {
-		var  title = $('.image-form .field input.title-image').val();
-		var  owner = $('.image-form .field input.owner-image').val();
-		var imageFile = $('.image-form .field input[type="file"].add-image-field').val();
-		if (title == "") {
-			// name empty
-			showNotice("error", "Bạn chưa nhập tiêu đề cho ảnh ");
-			$('.image-form .field input.title-image').focus();
+	var  title = $('.image-form .field input.title-image').val();
+	var imageFile = $('.image-form .field input[type="file"].add-image-field').val();
+	if (title == "") {
+		// name empty
+		showNotice("error", "Bạn chưa nhập tiêu đề cho ảnh ");
+		$('.image-form .field input.title-image').focus();
+		return false;
+	}else{
+		if ($('.image-form .field .add-image-infomation ul').find('.success').length == 2) {
+			// pass
+			return true;
 		}else{
-			if (imageFile !== "") {
-				if (addNewImageErrorArray.length === 0) {
-					alert("pass");
-				}else{
-					alert("reeor");
-				};
-			}else{
+			if ($('.image-form .field .add-image-infomation ul').find('.error').length == 0 ) {
 				showNotice("error", "Bạn chưa chọn ảnh sẽ hiển thị");
+				return false;
+			}else{
+				return false;
 			};
 		};
-	});
+	};
 }
