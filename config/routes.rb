@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-
+	# tell devise using custom controller
+	devise_for :admins, controllers: { sessions: "admins/sessions"}, :path => 'admin', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
 	resources :offices
 	# , only: [:show, :like, :sendmail, :index]
 

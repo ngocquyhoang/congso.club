@@ -60,8 +60,13 @@ class OfficesController < ApplicationController
   
 	# GET /offices/new
 	def new
-		# must have role
-		@office = Office.new
+		if admin_signed_in?
+			# must have role
+			puts("dkmddddddddddddddddddddddddddddddddddddddddddddddddddd")
+			@office = Office.new
+		else
+			redirect_to root_url
+		end
 	end
 
 	# GET /offices/1/edit
