@@ -24,6 +24,5 @@ module App
     config.active_record.raise_in_transactional_callbacks = true
     # add custom validators path
     config.autoload_paths += %W["#{config.root}/lib/validators/"]
-    config.paths['app/views'] << "app/views/devise"
   end
 end
