@@ -2,12 +2,10 @@ Rails.application.routes.draw do
 	# tell devise using custom controller
 	devise_for :admins, :path => 'admin', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
 	resources :offices
-	# , only: [:show, :like, :sendmail, :index]
-
 	post 'offices/like'
 	post 'offices/sendmail'
 	post 'contact/message'
-
+	get 'development', to: 'development#index'
 	get 'contact', to: 'contact#index'
 	get 'zorba', to: 'zorba#index'
 	# The priority is based upon order of creation: first created -> highest priority.

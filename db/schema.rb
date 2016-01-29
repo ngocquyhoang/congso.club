@@ -66,6 +66,7 @@ ActiveRecord::Schema.define(version: 20160128075506) do
     t.text     "image",      limit: 65535
     t.text     "slug",       limit: 65535
     t.integer  "like",       limit: 4,     default: 0, null: false
+    t.integer  "view",       limit: 4,     default: 0, null: false
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false
   end

@@ -1,94 +1,103 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Congso.club</title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-    <%= favicon_link_tag 'favico.png' %>
-  </head>
-  <body>
-    <!--facebook sdk-->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '717508901713184',
-          xfbml      : true,
-          version    : 'v2.5'
-        });
-      };
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/vi_VN/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!--end call facebook sdk-->
-    <!-- notice box -->
-    <div class="notice-box">
-      <div class="notice-content">
-        <div class="notice-text">
-          <p class="text">Notice box</p>    
-        </div>
-      </div>
-    </div>
-    <!-- end notice box -->
-    <!-- header -->
-    <header>
-      <div class="header-box">
-        <%= link_to(root_url) do%>
-          <h1 class="logo-text">Congso.club</h1>
-        <% end %>
-        <div class="clear-fix"></div>
-        <div class="header-navigation-bar">
-          <ul>
-            <li><%= link_to "Trang chủ", root_url %></li>
-            <li><%= link_to "Về chúng tôi", zorba_path %></li>
-            <li><%= link_to "Liên hệ", contact_path %></li>
-            <li><%= link_to "Đăng nhập", contact_path %></li>
-            <div class="clear-fix"></div>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <!-- end header -->
-    <!-- main content -->
-    <div class="main-content">
-      <%= yield %>
-    </div>
-    <!-- end main content -->
-    <!-- follow box -->
-    <div class="page-secction follow-us-by-mail">
-      <h2 class="page-title">Đăng kí để cười nhiều hơn mỗi ngày</h2>
-      <div class="follow">
-        <input class= "name" type="text" name="name" value="" placeholder="Tên của bạn">
-        <input class= "email" type="text" name="email" value="" placeholder="Email">
-        <button id="send-email" >Theo dõi</button>
-        <div class="clear-fix"></div>
-      </div>
-    </div>
-    <!-- footer -->
-    <footer class="page-secction footer-page">
-      <ul>
-        <a target="blank" href="https://www.facebook.com/ngocquyhoang.93"><li class="icon facebook"></li></a>
-        <a target="blank" href="https://twitter.com/malloryandbob"><li class="icon twitter"></li></a>
-        <a target="blank" href="https://plus.google.com/u/0/101396476640771423396"><li class="icon googleplus"></li></a>
-        <a target="blank" href="https://www.youtube.com/channel/UCio7sbHpBKOJShbBkDmcs2w"><li class="icon youtube"></li></a>
-        <div class="clear-fix"></div>
-      </ul>
-      <div class="design-by">
-        <div>
-          <h2 id="design-text" class="page-title">Design by </h2>
-          <%= link_to (zorba_path) do %>
-            <%= image_tag("per-logo.png", class: "zorba-logo") %>
-          <% end %>
-          <div class="clear-fix"></div>
-        </div>
-      </div>
-      <hr />
-    </footer>
-    <!-- end footer -->
-  </body>
+	<html>
+	<head>
+		<title>Congso.club</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+		<%= favicon_link_tag 'favico.png' %>
+	</head>
+	<body>
+		<!--facebook sdk-->
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId      : '717508901713184',
+					xfbml      : true,
+					version    : 'v2.5'
+				});
+			};
+			(function(d, s, id){
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {return;}
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/vi_VN/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!--end call facebook sdk-->
+		<!-- notice box -->
+		<div class="notice-box">
+			<div class="notice-content">
+				<div class="notice-text">
+					<p class="text">Notice box</p>    
+				</div>
+			</div>
+		</div>
+		<!-- end notice box -->
+		<!-- header -->
+		<header>
+		<div class="header-box">
+			<%= link_to(root_url) do%>
+				<h1 class="logo-text">Congso.club</h1>
+			<% end %>
+			<div class="clear-fix"></div>
+			<div class="header-navigation-bar">
+				<ul>
+					<li><%= link_to "Trang chủ", root_url %></li>
+					<li><%= link_to "Về chúng tôi", zorba_path %></li>
+					<li><%= link_to "Liên hệ", contact_path %></li>
+					<% if admin_signed_in? %>
+						<li><%= link_to "Trang quản trị", development_path %></li>
+					<% end %>
+					<li>
+						<% if admin_signed_in? %>
+							<%= link_to "Đăng xuất", destroy_admin_session_path, :method => :delete %>
+						<% else %>
+							<%= link_to "Đăng nhập", new_admin_session_path %>
+						<% end %>
+					</li>
+					<div class="clear-fix"></div>
+				</ul>
+			</div>
+		</div>
+		</header>
+		<!-- end header -->
+		<!-- main content -->
+		<div class="main-content">
+			<%= yield %>
+		</div>
+		<!-- end main content -->
+		<!-- follow box -->
+		<div class="page-secction follow-us-by-mail">
+			<h2 class="page-title">Đăng kí để cười nhiều hơn mỗi ngày</h2>
+			<div class="follow">
+				<input class= "name" type="text" name="name" value="" placeholder="Tên của bạn">
+				<input class= "email" type="text" name="email" value="" placeholder="Email">
+				<button id="send-email" >Theo dõi</button>
+				<div class="clear-fix"></div>
+			</div>
+		</div>
+		<!-- footer -->
+		<footer class="page-secction footer-page">
+			<ul>
+				<a target="blank" href="https://www.facebook.com/ngocquyhoang.93"><li class="icon facebook"></li></a>
+				<a target="blank" href="https://twitter.com/malloryandbob"><li class="icon twitter"></li></a>
+				<a target="blank" href="https://plus.google.com/u/0/101396476640771423396"><li class="icon googleplus"></li></a>
+				<a target="blank" href="https://www.youtube.com/channel/UCio7sbHpBKOJShbBkDmcs2w"><li class="icon youtube"></li></a>
+				<div class="clear-fix"></div>
+			</ul>
+			<div class="design-by">
+				<div>
+					<h2 id="design-text" class="page-title">Design by </h2>
+					<%= link_to (zorba_path) do %>
+						<%= image_tag("per-logo.png", class: "zorba-logo") %>
+					<% end %>
+					<div class="clear-fix"></div>
+				</div>
+			</div>
+			<hr />
+		</footer>
+		<!-- end footer -->
+	</body>
 </html>

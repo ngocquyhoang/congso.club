@@ -154,7 +154,7 @@ header .header-navigation-bar ul{
 }
 header .header-navigation-bar ul li{
 	float: left;
-	padding: 0.75em 2em;
+	padding: 0.75em 1.5em;
 	border-top: 1px solid #fff;
 	border-bottom: 1px solid #fff;
 	font-size: 1.3em;
@@ -275,4 +275,41 @@ header .header-navigation-bar ul li a{
 .footer-page .zorba-logo{
 	height: 4.0em;
 	float: left;
+}
+// setting for login page
+.login-page{
+	font-family: 'Stag';
+	text-align: center;
+	font-size: 1.5em;
+}
+.login-page .login-box{
+	padding: 4em 0 4.5em;
+	width: 30em;
+	display: inline-block;
+	// background-color: #245;
+}
+.login-page .login-box .page-title{
+	font-weight: normal;
+	font-size: 1.5em;
+	background-color: #351;
+	padding: 0.5em 0;
+}
+.login-page .login-box .field input{
+	width: 100%;
+	font-size: 1.5em;
+	border: 1px solid #000;
+	// padding: 0.25em 0.5em;
+}
+.login-page .login-box .field{
+	padding: 0 2em;
+	margin-bottom: 1.5em;
+}
+.login-page .login-box .actions input{
+	width: 100%;
+	font-size: 1.5em;
+	color: #000;
+	font-family: 'Stag';
+	padding: 0.5em 0;
+	background-color: #351;
+	border: 0px;
 }

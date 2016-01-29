@@ -1,6 +1,5 @@
 class OfficesController < ApplicationController
 	before_action :set_office, only: [:show, :edit, :update, :destroy]
-
 	# GET /offices
 	# GET /offices.json
 	def index
@@ -12,6 +11,10 @@ class OfficesController < ApplicationController
 	def show
 		productDomain = "localhost:3000"
 		@currentUrl = "https://" + productDomain + "/offices/" + @office.slug
+		# add to database
+		post = Office.find(@office.id)
+		post.view += 1
+		post.save
 	end
 	# like button
 	def like
@@ -62,7 +65,6 @@ class OfficesController < ApplicationController
 	def new
 		if admin_signed_in?
 			# must have role
-			puts("dkmddddddddddddddddddddddddddddddddddddddddddddddddddd")
 			@office = Office.new
 		else
 			redirect_to root_url
@@ -71,50 +73,68 @@ class OfficesController < ApplicationController
 
 	# GET /offices/1/edit
 	def edit
+		if admin_signed_in?
+
+		else
+			redirect_to root_url
+		end
 	end
 
 	# POST /offices
 	# POST /offices.json
 	def create
-		# must have role
-		# add params if don't have owner
-		imageParams = office_params
-		if imageParams[:owner] == ""
-			imageParams[:owner] = "Admin congso.club"
-		end
-		@office = Office.new(imageParams)
-		respond_to do |format|
-			if @office.save
-				format.html { redirect_to @office, notice: 'Office was successfully created.' }
-				format.json { render :show, status: :created, location: @office }
-			else
-				format.html { render :new }
-				format.json { render json: @office.errors, status: :unprocessable_entity }
+		if admin_signed_in?
+			# add params if don't have owner
+			if office_params[:title].present? && office_params[:image].present?
+				imageParams = office_params
+				if imageParams[:owner] == ""
+					imageParams[:owner] = "Admin congso.club"
+				end
+				@office = Office.new(imageParams)
+				respond_to do |format|
+					if @office.save
+						format.html { redirect_to @office, notice: 'Office was successfully created.' }
+						format.json { render :show, status: :created, location: @office }
+					else
+						format.html { render :new }
+						format.json { render json: @office.errors, status: :unprocessable_entity }
+					end
+				end
 			end
+		else
+			redirect_to root_url
 		end
 	end
 
   # PATCH/PUT /offices/1
   # PATCH/PUT /offices/1.json
 	def update
-		respond_to do |format|
-			if @office.update(office_params)
-				format.html { redirect_to @office, notice: 'Office was successfully updated.' }
-				format.json { render :show, status: :ok, location: @office }
-			else
-				format.html { render :edit }
-				format.json { render json: @office.errors, status: :unprocessable_entity }
+		if admin_signed_in?
+			respond_to do |format|
+				if @office.update(office_params)
+					format.html { redirect_to @office, notice: 'Office was successfully updated.' }
+					format.json { render :show, status: :ok, location: @office }
+				else
+					format.html { render :edit }
+					format.json { render json: @office.errors, status: :unprocessable_entity }
+				end
 			end
+		else
+			redirect_to root_url
 		end
 	end
 
 	# DELETE /offices/1
 	# DELETE /offices/1.json
 	def destroy
-		@office.destroy
-		respond_to do |format|
-			format.html { redirect_to offices_url, notice: 'Office was successfully destroyed.' }
-			format.json { head :no_content }
+		if admin_signed_in?
+			@office.destroy
+			respond_to do |format|
+				format.html { redirect_to offices_url, notice: 'Office was successfully destroyed.' }
+				format.json { head :no_content }
+			end
+		else
+			redirect_to root_url
 		end
 	end
 
@@ -128,4 +148,11 @@ class OfficesController < ApplicationController
 		def office_params
 			params.require(:office).permit(:title, :owner, :image)
 		end
+
+		def facebook_shares(url)
+			data = Net::HTTP.get(URI.parse("https://api.facebook.com/method/links.getStats?urls=#{URI.escape(url)}&format=json"))
+			data = JSON.parse(data)
+			data[0]
+		end
+
 end
