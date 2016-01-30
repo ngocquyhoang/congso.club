@@ -283,33 +283,65 @@ header .header-navigation-bar ul li a{
 	font-size: 1.5em;
 }
 .login-page .login-box{
-	padding: 4em 0 4.5em;
-	width: 30em;
+	width: 50%;
+	background-color: #685;
+	float: left;
+}
+.login-page .login-box > div{
+	padding: 3em 1.5em;
 	display: inline-block;
-	// background-color: #245;
+	border: 1px solid #000;
+	margin: 3em 0;
+}
+.login-page .right-image-box{
+	width: 50%;
+	background-color: #245;
+	float: left;
+	text-align: center;
+}
+.login-page .right-image-box .right-image{
+	display: inherit;
+	margin: 3em auto;
 }
 .login-page .login-box .page-title{
 	font-weight: normal;
 	font-size: 1.5em;
-	background-color: #351;
-	padding: 0.5em 0;
 }
 .login-page .login-box .field input{
-	width: 100%;
-	font-size: 1.5em;
-	border: 1px solid #000;
-	// padding: 0.25em 0.5em;
+	padding: 0.5em 1em;
+	font-size: 1.1em;
+	font-size: 'Stag';
 }
 .login-page .login-box .field{
-	padding: 0 2em;
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
 }
 .login-page .login-box .actions input{
-	width: 100%;
-	font-size: 1.5em;
-	color: #000;
-	font-family: 'Stag';
-	padding: 0.5em 0;
-	background-color: #351;
-	border: 0px;
+	padding: 0.5em 1em;
+	font-size: 1.1em;
+	font-family: 'Stag'
 }
+// .login-page .login-box .page-title{
+// 	font-weight: normal;
+// 	font-size: 1.5em;
+// 	background-color: #351;
+// 	padding: 0.5em 0;
+// }
+// .login-page .login-box .field input{
+// 	width: 100%;
+// 	font-size: 1.5em;
+// 	border: 1px solid #000;
+// 	// padding: 0.25em 0.5em;
+// }
+// .login-page .login-box .field{
+// 	padding: 0 2em;
+// 	margin-bottom: 1.5em;
+// }
+// .login-page .login-box .actions input{
+// 	width: 100%;
+// 	font-size: 1.5em;
+// 	color: #000;
+// 	font-family: 'Stag';
+// 	padding: 0.5em 0;
+// 	background-color: #351;
+// 	border: 0px;
+// }

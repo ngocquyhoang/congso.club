@@ -1,16 +1,23 @@
 <div class="login-page">
 	<div class="login-box">
-		<h2 class="page-title">Trang quản trị</h2>
-		<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-			<div class="field">
-				<%= f.email_field :email, autofocus: true %>
-			</div>
-			<div class="field">
-				<%= f.password_field :password, autocomplete: "off" %>
-			</div>
-			<div class="actions">
-			<%= f.submit "Đăng nhập" %>
-			</div>
-		<% end %>
+		<div>
+			<h2 class="page-title">Trang quản trị</h2>
+			<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+				<div class="field">
+					<%= f.email_field :email, autofocus: true %>
+				</div>
+				<div class="field">
+					<%= f.password_field :password, autocomplete: "off" %>
+				</div>
+				<div class="actions">
+				<%= f.submit "Đăng nhập" %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+	<div class="right-image-box">
+		<img class="right-image" src="http://hqbdsinfo-26fd.kxcdn.com/wp-content/uploads/2015/05/TTP_4854-Copy-400x600.jpg" alt="">
+	</div>
+	<div class="clear-fix">
 	</div>
 </div>
