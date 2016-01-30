@@ -43,7 +43,11 @@
 	clear: both;
 }
 html, body{
-	background-color: #F5F5F5;
+	/*background-color: #F5F5F5;*/
+	background-image: url('bg-coffee-1.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
 	font-size: 15px;
 }
 *{
@@ -122,7 +126,10 @@ hr{
 /*setting for header*/
 header{
 	width: 100%;
-	background-color: #ff4455;
+	background-image: url('bg-place-3.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
 	height: 79px;
 	color: #fff;
 	position: fixed;
@@ -132,7 +139,7 @@ header .header-box{
 	position: relative;
 }
 header .header-box h1.logo-text{
-	font-family: 'Genica';
+	font-family: 'Hero';
 	font-size: 3em;
 	float: left;
 	margin-left: 1.5em;
@@ -166,30 +173,35 @@ header .header-navigation-bar ul li a{
 }
 .main-content{
 	padding-top: 79px;
+	background-color: #F5F5F5;
 }
 /*setting for follow form*/
 .follow-us-by-mail{
 	font-family: 'Stag';
-	background-color: #ff4455;
-	padding: 3.5em 0em 4em;
+	/*background-color: #ff4455;*/
+	padding: 5em 0em 5em;
 	color: #fff;
 }
 .page-title{
 	font-size: 2.0em;
 	font-weight: normal;
 	margin-bottom: 1em;
+	font-family: 'Hero';
+}
+.follow-us-by-mail .page-title{
+	color: #fff;
 }
 .follow-us-by-mail .follow input[type="text"]{
 	height: 3em;
 	padding: 0 2em;
-	background-color: rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.3);
 	color: #fff;
-	border: 1px solid #ff4455;
+	border: 1px solid #fff;
 	line-height: 1.5em;
 	font-size: 1.2em;
 	width: 15em;
 	margin: 0 0.5em;
-	font-family: 'Stag';
+	font-family: 'Hero';
 	border-radius: 0px;
 }
 .follow-us-by-mail .follow input[type="text"]:focus{
@@ -202,13 +214,13 @@ header .header-navigation-bar ul li a{
 	border: 1px solid #fff;
 	line-height: 1.5em;
 	font-size: 1.2em;
-	color: #ff4455;
-	background-color: #fff;
+	color: #000;
+	background-color: rgba(255,255,255,0.7);
 	margin: 0 0.5em;
-	font-family: 'Stag';
+	font-family: 'Hero';
 }
 .follow-us-by-mail .follow button:hover{
-	background-color: rgba(255,255,255,0.75);
+	background-color: rgba(255,255,255,0.3);
 }
 .follow-us-by-mail .follow button:active{
 	outline: none;
@@ -216,6 +228,8 @@ header .header-navigation-bar ul li a{
 /*setting for footer*/
 .footer-page{
 	padding: 3.5em 0 0em;
+	background-color: #F5F5F5;
+	display: inline-block;
 }
 .footer-page ul{
 	list-style: none;
@@ -233,7 +247,7 @@ header .header-navigation-bar ul li a{
 	transition: all 0.7s ease;
 }
 .footer-page ul .icon.facebook:hover{
-	background-color: #F5F5F5;
+	/*background-color: #F5F5F5;*/
 	background-image: url('/assets/facebook-full-color.png');
 }
 .footer-page ul .icon.twitter{
@@ -271,6 +285,7 @@ header .header-navigation-bar ul li a{
 	margin-top: 14px;
 	margin-right: 15px;
 	margin-bottom: 0px;
+	font-weight: normal;
 }
 .footer-page .zorba-logo{
 	height: 4.0em;
@@ -320,28 +335,3 @@ header .header-navigation-bar ul li a{
 	font-size: 1.1em;
 	font-family: 'Stag'
 }
-// .login-page .login-box .page-title{
-// 	font-weight: normal;
-// 	font-size: 1.5em;
-// 	background-color: #351;
-// 	padding: 0.5em 0;
-// }
-// .login-page .login-box .field input{
-// 	width: 100%;
-// 	font-size: 1.5em;
-// 	border: 1px solid #000;
-// 	// padding: 0.25em 0.5em;
-// }
-// .login-page .login-box .field{
-// 	padding: 0 2em;
-// 	margin-bottom: 1.5em;
-// }
-// .login-page .login-box .actions input{
-// 	width: 100%;
-// 	font-size: 1.5em;
-// 	color: #000;
-// 	font-family: 'Stag';
-// 	padding: 0.5em 0;
-// 	background-color: #351;
-// 	border: 0px;
-// }
