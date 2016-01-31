@@ -1,6 +1,11 @@
 .message-page{
 	text-align: center;
 	font-family: 'Stag';
+	background-color: rgba(255, 255, 255, 0.5);
+	background-image: url('bg-coffee-4.jpg');
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-position: center; 
 }
 .message-page-box{
 	width: 65em;
@@ -38,7 +43,7 @@
 }
 .message-page .message-page-box .message-box .field textarea:focus{
 	outline: none;
-	border: 1px solid #ff4455;
+	border: 1px solid #007AFF;
 }
 .message-page .message-box input[type="text"]{
 	height: 3em;
@@ -61,8 +66,8 @@
 	transition: all 0.7s ease;
 }
 .message-page .message-page-box .message-box .field .send-messages:hover{
-	background-color: #ff4455;
-	border: 1px solid #ff4455;
+	background-color: #007AFF;
+	border: 1px solid #007AFF;
 	color: #fff;
 }
 .message-page .message-page-box .message-box .field{
@@ -71,7 +76,7 @@
 }
 .message-page .message-box input[type="text"]:focus{
 	outline: none;
-	border: 1px solid #ff4455;
+	border: 1px solid #007AFF;
 }
 .message-page .message-box .message{
 	width: 32em;

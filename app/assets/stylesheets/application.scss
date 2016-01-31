@@ -43,7 +43,6 @@
 	clear: both;
 }
 html, body{
-	/*background-color: #F5F5F5;*/
 	background-image: url('bg-coffee-1.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -86,7 +85,8 @@ html, body{
     color: #ff4455;
 }
 ::selection {
-    color: #000; 
+    color: #fff;
+    background-color: #000;
 }
 hr{
 	width: 70%;
@@ -130,7 +130,7 @@ header{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center; 
-	height: 79px;
+	height: 4em;
 	color: #fff;
 	position: fixed;
 	z-index: 50;
@@ -153,7 +153,7 @@ header .header-box a:hover{
 }
 header .header-box .header-navigation-bar{
 	position: absolute;
-	top: 12px;
+	top: 0.25em;
 	right: 1.5em;
 }
 header .header-navigation-bar ul{
@@ -162,23 +162,21 @@ header .header-navigation-bar ul{
 header .header-navigation-bar ul li{
 	float: left;
 	padding: 0.75em 1.5em;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
 	font-size: 1.3em;
-	font-family: 'Stag';
+	font-family: 'Hero';
 }
 header .header-navigation-bar ul li a{
 	color: #fff;
 	text-decoration: none;
 }
 .main-content{
-	padding-top: 79px;
+	padding-top: 4em;
 	background-color: #F5F5F5;
 }
 /*setting for follow form*/
 .follow-us-by-mail{
 	font-family: 'Stag';
-	/*background-color: #ff4455;*/
+	background-color: rgba(0, 0, 0, 0.4);
 	padding: 5em 0em 5em;
 	color: #fff;
 }
@@ -187,9 +185,6 @@ header .header-navigation-bar ul li a{
 	font-weight: normal;
 	margin-bottom: 1em;
 	font-family: 'Hero';
-}
-.follow-us-by-mail .page-title{
-	color: #fff;
 }
 .follow-us-by-mail .follow input[type="text"]{
 	height: 3em;
@@ -205,8 +200,8 @@ header .header-navigation-bar ul li a{
 	border-radius: 0px;
 }
 .follow-us-by-mail .follow input[type="text"]:focus{
-	border: 1px solid #fff;
 	outline: none;
+	box-shadow: 0 0 0.5em rgba(255, 255, 255, 1);
 }
 .follow-us-by-mail .follow button{
 	height: 3em;
@@ -214,13 +209,13 @@ header .header-navigation-bar ul li a{
 	border: 1px solid #fff;
 	line-height: 1.5em;
 	font-size: 1.2em;
-	color: #000;
-	background-color: rgba(255,255,255,0.7);
+	color: #fff;
+	background-color: rgba(255,255,255,0.3);
 	margin: 0 0.5em;
 	font-family: 'Hero';
 }
 .follow-us-by-mail .follow button:hover{
-	background-color: rgba(255,255,255,0.3);
+	box-shadow: 0 0 0.5em rgba(255, 255, 255, 1);
 }
 .follow-us-by-mail .follow button:active{
 	outline: none;
@@ -247,7 +242,6 @@ header .header-navigation-bar ul li a{
 	transition: all 0.7s ease;
 }
 .footer-page ul .icon.facebook:hover{
-	/*background-color: #F5F5F5;*/
 	background-image: url('/assets/facebook-full-color.png');
 }
 .footer-page ul .icon.twitter{
