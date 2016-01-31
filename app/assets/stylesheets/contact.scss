@@ -1,16 +1,15 @@
 .message-page{
 	text-align: center;
-	font-family: 'Stag';
+	font-family: 'Hero';
 	background-color: rgba(255, 255, 255, 0.5);
-	background-image: url('bg-coffee-4.jpg');
+	background-image: url('bg-coffee-5.jpg');
 	background-repeat: no-repeat;
-	/*background-attachment: fixed;*/
 	background-position: center; 
 }
 .message-page-box{
 	width: 65em;
 	display: inline-block;
-	margin: 7em 0 8em;
+	margin: 8em 0 9em;
 }
 .embed-logo{
 	width: 30em;
@@ -36,7 +35,7 @@
 	background-color: rgba(255,255,255, 0);
 	border: 1px solid #000;
 	font-size: 1.2em;
-	font-family: 'Stag';
+	font-family: 'Hero';
 	line-height: 1.5em;
 	padding-top: 0.6em;
 	padding-bottom: 0.6em;
@@ -44,6 +43,7 @@
 .message-page .message-page-box .message-box .field textarea:focus{
 	outline: none;
 	border: 1px solid #007AFF;
+	box-shadow: 0 0 0.5em #007AFF;
 }
 .message-page .message-box input[type="text"]{
 	height: 3em;
@@ -53,7 +53,7 @@
 	font-size: 1.2em;
 	width: 20em;
 	border: 1px solid #000;
-	font-family: 'Stag';
+	font-family: 'Hero';
 	background-color: rgba(255,255,255,0);
 }
 .message-page .message-page-box .message-box .field .send-messages{
@@ -61,14 +61,12 @@
 	color: #000;
 	border: 1px solid #000;
 	padding: 1em 3em;
-	font-family: 'Stag';
+	font-family: 'Hero';
 	background-color: rgba(255,255,255,0.0);
-	transition: all 0.7s ease;
 }
 .message-page .message-page-box .message-box .field .send-messages:hover{
-	background-color: #007AFF;
+	box-shadow: 0 0 0.5em #007AFF;
 	border: 1px solid #007AFF;
-	color: #fff;
 }
 .message-page .message-page-box .message-box .field{
 	text-align: right;
@@ -77,6 +75,7 @@
 .message-page .message-box input[type="text"]:focus{
 	outline: none;
 	border: 1px solid #007AFF;
+	box-shadow: 0 0 0.5em #007AFF;
 }
 .message-page .message-box .message{
 	width: 32em;

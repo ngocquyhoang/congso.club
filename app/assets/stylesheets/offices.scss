@@ -104,15 +104,19 @@
 /*new image*/
 .new-image{
 	text-align: center;
+	background-image: url('bg-place-5.jpg');
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: center; 
 }
 .new-image .page-title{
 	font-size: 2.0em;
-	font-family: 'Stag';
+	font-family: 'Hero';
 	font-weight: normal;
 }
 .new-image .new-image-box{
 	display: inline-block;
-	margin: 7em 0 8em;
+	margin: 8em 0 9em;
 }
 /*edit */
 .edit-image{
@@ -120,45 +124,52 @@
 }
 .edit-image .page-title{
 	font-size: 2.0em;
-	font-family: 'Stag';
+	font-family: 'Hero';
 	font-weight: normal;
 }
 .edit-image .edit-image-box{
 	display: inline-block;
-	margin: 7em 0 8em;
+	margin: 8em 0 9em;
 }
 /*form setting*/
 .image-form{
 
 }
 .image-form .field{
-	margin: 1em 0;
+	margin: 1.5em 0;
 }
 .image-form .field input[type="text"]{
 	height: 3em;
 	padding: 0 2em;
-	color: #000;
+	color: #fff;
 	line-height: 1.5em;
 	font-size: 1.2em;
 	width: 20em;
-	border: 1px solid #000;
-	font-family: 'Stag';
+	border: 1px solid #fff;
+	font-family: 'Hero';
 	background-color: rgba(255,255,255,0);
 }
 .image-form .field .add-image-button{
 	width: 6em;
 	height: 6em;
-	border: 1px solid #000;
+	border: 1px solid #fff;
 	float: left;
 	font-size: 1.2em;
+}
+.image-form .field.add-img-file-box{
+	background-color: rgba(255,255,255,0.4);
+}
+.image-form .field.add-img-file-box:hover{
+	box-shadow: 0 0 0.5em #fff;
+	background-color: rgba(255,255,255,0.1);
 }
 .image-form .field .add-image-infomation{
 	float: left;
 	height: 6em;
 	width: 18em;
-	border-top: 1px solid #000;
-	border-right: 1px solid #000;
-	border-bottom: 1px solid #000;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
 	border-left: 0px;
 	font-size: 1.2em;
 }
@@ -166,10 +177,10 @@
 	list-style: none;
 }
 .image-form .field .add-image-infomation ul li{
-	color: #000;
-	padding: 1em 0.5em;
+	color: #fff;
+	padding: 0.8em 0.5em;
 	font-size: 1em;
-	font-family: 'Stag';
+	font-family: 'Hero';
 	text-align: left;
 }
 .image-form .field .add-image-infomation ul li.success{
@@ -182,39 +193,42 @@
 	background-repeat: no-repeat;
     	background-position: right center;
 }
+.image-form .actions{
+	padding-top: 1.5em;
+}
 .image-form .actions input[type="submit"]{
 	font-size: 1.2em;
-	color: #000;
-	border: 1px solid #000;
+	color: #fff;
+	border: 1px solid #fff;
 	padding: 1em 3em;
-	font-family: 'Stag';
-	background-color: rgba(255,255,255,0.0);
-	transition: all 0.7s ease;
+	font-family: 'Hero';
+	background-color: rgba(255,255,255,0.4);
 }
 .image-form .actions input[type="submit"]:hover{
-	background-color: #ff4455;
-	border: 1px solid #ff4455;
-	color: #fff;
+	box-shadow: 0 0 0.5em #fff;
+	border: 1px solid #fff;
+	background-color: rgba(255,255,255,0.1);
 }
 .image-form .field input[type="text"]:focus{
-	border: 1px solid #ff4455;
+	box-shadow: 0 0 0.5em #fff;
+	border: 1px solid #fff;
 	outline: none;
 }
 .image-form .field input[type="text"]::-webkit-input-placeholder { /* Safari, Chrome and Opera */
-  color: #000;
+  color: #fff;
 }
 .image-form .field input[type="text"]:-moz-placeholder { /* Firefox 18- */
-  color: #000;
+  color: #fff;
 }
 .image-form .field input[type="text"]::-moz-placeholder { /* Firefox 19+ */
-  color: #000;
+  color: #fff;
 }
 .image-form .field input[type="text"]:-ms-input-placeholder { /* IE 10+ */
-  color: #000;
+  color: #fff;
 }
 .image-form .field input[type="text"]::-ms-input-placeholder { /* Edge */
-  color: #000;
+  color: #fff;
 }
 .image-form .field input[type="text"]:placeholder-shown { /* Standard one last! */
-  color: #000;
+  color: #fff;
 }

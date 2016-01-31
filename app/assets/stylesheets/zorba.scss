@@ -6,7 +6,9 @@
 	padding: 3em 0 3.5em;
 }
 .contact-page{
-	font-family: 'Stag';
+	font-family: 'Hero';
+	background-position: center; 
+	background-image: url('bg-coffee-3.jpg');
 }
 .contact-page .page-center{
 	display: inline-block;
@@ -15,6 +17,9 @@
 /*about me setting*/
 .contact-page .about-me{
 	margin-top: 3em;
+	background-color: rgba(255,255,255,0.45);
+	padding: 2em;
+	border: 1px solid #fff;
 }
 .contact-page .about-me .avatar{
 	width: 12em;
@@ -45,7 +50,7 @@
 }
 .contact-page .about-me .infomation .info-slide .slide-content li h5{
 	font-size: 1.5em;
-	font-family: 'Stag';
+	font-family: 'Hero';
 	font-weight: normal;
 	margin: 1em 0;
 }
@@ -61,7 +66,8 @@
 }
 .contact-page .about-me .infomation .info-slide .slide-content li.active{
 	z-index: 11;
-	background-color: #f5f5f5;
+	background-color: #fff;
+	border: 1px solid #007AFF;
 }
 .contact-page .about-me .infomation .info-slide .slider-control{
 	list-style: none;
@@ -103,6 +109,11 @@
 	background-image: url("prev.png");
 }
 /*why-is-zorba*/
+.contact-page .why-is-zorba{
+	border: 1px solid #fff;
+	padding: 2em;
+	background-color: rgba(255,255,255,0.45);
+}
 .contact-page .why-is-zorba .zorba-text{
 	width: 44em;
 	float: left;
@@ -125,6 +136,9 @@
 	float: left;
 }
 /*social box*/
+.contact-page .connect-to-me{
+	margin-bottom: 3em;
+}
 .contact-page .connect-to-me .social-box{
 	margin-top: 2em;
 	margin-bottom: 2em;
@@ -135,17 +149,6 @@
 .contact-page .connect-to-me .social-box ul a{
 	float: left;
 	text-decoration: none;
-	position: relative;
-}
-.contact-page .connect-to-me .social-box ul a:hover span{
-	visibility: visible;
-}
-.contact-page .connect-to-me .social-box ul a span{
-	color: #fff;
-	background-color: #007AFF;
-	padding: 0.5em 1em;
-	font-size: 1.2em;
-	visibility: hidden;
 }
 .contact-page .connect-to-me .social-box ul li{
 	width: 80px;
