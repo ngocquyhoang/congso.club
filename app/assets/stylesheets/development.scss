@@ -10,7 +10,6 @@
 	width: 70em;
 	min-height: 10em;
 	margin: 3.5em auto;
-	padding: 1em 1.5em;
 }
 .development-page h2{
 	font-weight: normal;
@@ -27,14 +26,11 @@
 	text-align: center;
 	font-size: 1.15em;
 }
-.development-page .all-message .all-messages-table .id{
-	width: 5%;
-}
 .development-page .all-message .all-messages-table .name {
 	width: 40%;
 }
 .development-page .all-message .all-messages-table .time{
-	width: 25%;
+	width: 30%;
 }
 .development-page .all-message .all-messages-table .show{
 	width: 15%;
@@ -48,7 +44,7 @@
 }
 .development-page .all-message .all-messages-table .tb-data-left{
 	text-align: left;
-	padding-left: 1em;
+	padding-left: 2.5em;
 }
 .development-page .all-message .all-messages-table th{
 	font-size: 1.2em;
@@ -79,6 +75,7 @@
 	background-color: #fff;
 	margin: 5em auto;
 	overflow-y: hidden;
+	display: none;
 }
 .development-page .show-modal-box .modal-content-box .modal-header{
 	position: relative;

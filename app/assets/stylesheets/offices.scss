@@ -114,7 +114,6 @@
 	text-align: center;
 	background-image: url('bg-place-5.jpg');
 	color: #fff;
-	background-repeat: no-repeat;
 	background-position: center; 
 }
 .new-image .page-title{
@@ -129,6 +128,9 @@
 /*edit */
 .edit-image{
 	text-align: center;
+	background-image: url('bg-place-2.jpg');
+	background-position: center;
+	color: #fff;
 }
 .edit-image .page-title{
 	font-size: 2.0em;
@@ -163,6 +165,9 @@
 	border: 1px solid #fff;
 	float: left;
 	font-size: 1.2em;
+	background-image: url('add-line-light.png');
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .image-form .field.add-img-file-box{
 	background-color: rgba(255,255,255,0.4);

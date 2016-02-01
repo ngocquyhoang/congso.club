@@ -6,7 +6,6 @@
 		<table class="all-messages-table" cellspacing="0" cellpadding="0" >
 			<thead>
 				<tr>
-					<th class="id">ID</th>
 					<th class="name">Tên</th>
 					<th class="time">Thời gian</th>
 					<th class="show">Xem</th>
@@ -16,26 +15,25 @@
 			<tbody>
 				<% @allMessage.each do |message| %>
 					<tr>
-						<td><%= message.id %></td>
 						<td class="tb-data-left"><%= message.name.capitalize %></td>
 						<td class="">
-							<% case  Time.now - message.created_at %>
+							<% case time =  Time.now - message.created_at %>
 							<% when 0..5%>
 								<%= "Vài giây trước"%>
 							<% when 5..3600%>
-								<%= "#{(case/60).round} #{case/86400).round} phút trước"%>
+								<%= "#{(time/60).round} phút trước"%>
 							<% when 3600..86400%>
-								<%= "#{(case/3600).round} giờ trước"%>
+								<%= "#{(time/3600).round} giờ trước"%>
 							<% else %>
-								<% if (case/86400).round == "1" %>
+								<% if (time/86400).round == "1" %>
 									<%= "Hôm qua"%>
 								<% else %>
-									<%= "#{(case/86400).round} ngày trước"%>
+									<%= "#{(time/86400).round} ngày trước"%>
 								<% end %>
 							<% end %>
 						</td>
-						<td class="show-button" onclick="showMessage(id)">Đọc tin nhắn</td>
-						<td class="delete-button" onclick="return deleteButton(id)">Xóa tin nhắn</td>
+						<td class="show-button" onclick="showMessage(<%= message.id %>)">Đọc tin nhắn</td>
+						<td class="delete-button" onclick="return deleteMessage(<%= message.id %>)">Xóa tin nhắn</td>
 	 				</tr>
  				<% end %>
 			</tbody>
@@ -53,7 +51,7 @@
 				<!-- modal title -->
 				<h3 class="modal-title">Tin nhắn</h3>
 				<!-- modal close button -->
-				<div class="close-button"></div>
+				<div class="close-button" onclick="closeMessage()"></div>
 			</div>
 			<!-- modal content box -->
 			<div class="modal-content">
@@ -77,3 +75,20 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	function showMessage (message_id) {
+		// show modal box
+		$('.development-page .show-modal-box').show();
+		$('.development-page .show-modal-box .modal-content-box').slideDown(600);
+		// call ajax
+	}
+	function closeMessage () {
+		$('.development-page .show-modal-box .modal-content-box').slideUp(600);
+		setTimeout(function(){ $('.development-page .show-modal-box').hide(); }, 600);
+	}
+	function deleteMessage (message_id) {
+		// show comfirm-box
+		$('.development-page .comfirm-box').show();
+		$('.development-page .comfirm-box > div').slideDown(600);
+	}
+</script>
