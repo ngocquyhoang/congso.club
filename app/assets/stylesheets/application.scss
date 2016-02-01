@@ -82,11 +82,11 @@ html, body{
   color: #fff;
 }
 ::-moz-selection { /* Code for Firefox */
-    color: #ff4455;
+	color: #ff4455;
 }
 ::selection {
-    color: #fff;
-    background-color: #000;
+	color: #fff;
+	background-color: #000;
 }
 hr{
 	width: 70%;
@@ -287,45 +287,61 @@ header .header-navigation-bar ul li a{
 }
 // setting for login page
 .login-page{
-	font-family: 'Stag';
+	font-family: 'HeroHero';
 	text-align: center;
 	font-size: 1.5em;
+	background-image: url('bg-coffee-6.jpg');
+	background-position: center;
 }
 .login-page .login-box{
 	width: 50%;
-	background-color: #685;
+	// background-color: #685;
 	float: left;
 }
 .login-page .login-box > div{
-	padding: 3em 1.5em;
+	padding: 3em 3.5em;
 	display: inline-block;
 	border: 1px solid #000;
-	margin: 3em 0;
+	margin: 5em 0;
+	background-color: rgba(0,0,0,0.3);
 }
 .login-page .right-image-box{
 	width: 50%;
-	background-color: #245;
 	float: left;
 	text-align: center;
-}
-.login-page .right-image-box .right-image{
-	display: inherit;
-	margin: 3em auto;
 }
 .login-page .login-box .page-title{
 	font-weight: normal;
 	font-size: 1.5em;
+	color: #fff;
 }
 .login-page .login-box .field input{
+	width: 14em;
 	padding: 0.5em 1em;
 	font-size: 1.1em;
-	font-size: 'Stag';
+	font-family: 'Hero';
+	background-color: rgba(255,255,255,0.3);
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 0px;
 }
 .login-page .login-box .field{
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 }
 .login-page .login-box .actions input{
 	padding: 0.5em 1em;
-	font-size: 1.1em;
-	font-family: 'Stag'
+	font-size: 1.0em;
+	font-family: 'Hero';
+	color: #fff;
+	border-radius: 0px;
+	background-color: rgba(255,255,255,0.3);
+	border: 1px solid #fff;
+}
+.login-page .login-box .field input:focus{
+	outline: none;
+	box-shadow: 0 0 0.5em rgba(255, 255, 255, 1);
+}
+.login-page .login-box .actions input:hover{
+	outline: none;
+	box-shadow: 0 0 0.5em rgba(255, 255, 255, 1);
 }

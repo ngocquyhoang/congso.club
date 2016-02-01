@@ -1,3 +1,181 @@
 // Place all the styles related to the development controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.development-page{
+	font-family: 'Hero';
+	padding: 6em 0 7em;
+	text-align: center;
+}
+.development-page .dev-section{
+	width: 70em;
+	min-height: 10em;
+	margin: 3.5em auto;
+	padding: 1em 1.5em;
+}
+.development-page h2{
+	font-weight: normal;
+	font-size: 2em;
+}
+// setting for messate model
+.development-page .all-message h3{
+	font-weight: normal;
+	font-size: 1.5em;
+	margin-bottom: 1.25em;
+}
+.development-page .all-message .all-messages-table{
+	width: 100%;
+	text-align: center;
+	font-size: 1.15em;
+}
+.development-page .all-message .all-messages-table .id{
+	width: 5%;
+}
+.development-page .all-message .all-messages-table .name {
+	width: 40%;
+}
+.development-page .all-message .all-messages-table .time{
+	width: 25%;
+}
+.development-page .all-message .all-messages-table .show{
+	width: 15%;
+}
+.development-page .all-message .all-messages-table .delete{
+	width: 15%;
+}
+.development-page .all-message .all-messages-table td{
+	border-bottom: 1px solid #007AFF;
+	padding: 0.5em 0;
+}
+.development-page .all-message .all-messages-table .tb-data-left{
+	text-align: left;
+	padding-left: 1em;
+}
+.development-page .all-message .all-messages-table th{
+	font-size: 1.2em;
+	font-weight: normal;
+	color: #fff;
+	padding: 0.5em 0;
+	background-color: #DCC7B1;
+	border-top: 1px solid #007AFF;
+	border-bottom: 1px solid #007AFF;
+}
+.development-page .all-message .all-messages-table tr:nth-child(even){
+	background-color: #f7eade;
+}
+// setting for show modal box
+.development-page .show-modal-box{
+	width: 100%;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.39);
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.development-page .show-modal-box .modal-content-box{
+	width: 75%;
+	height: 34.45em;
+	background-color: #fff;
+	margin: 5em auto;
+	overflow-y: hidden;
+}
+.development-page .show-modal-box .modal-content-box .modal-header{
+	position: relative;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+.development-page .show-modal-box .modal-content-box .modal-header .modal-title{
+	font-weight: normal;
+	font-size: 1.55em;
+	padding: 0.45em 0;
+	background-color: rgba(0, 122, 255, 1);
+	color: #fff;
+}
+.development-page .show-modal-box .modal-content-box .modal-header .close-button{
+	position: absolute;
+	top: 1.65em;
+	right: 1em;
+	width: 2em;
+	height: 2em;
+	// background-color: #245;
+	background-image: url('close-button-light.png');
+	background-position: center;
+}
+.development-page .show-modal-box .modal-content-box .modal-content{
+	overflow-y: auto;
+	height: 23em;
+}
+.development-page .show-modal-box .modal-content-box .modal-content .message p{
+	text-align: left;
+	padding:0 3em;
+	font-size: 1.15em;
+	margin: 0.65em 0;
+}
+.development-page .show-modal-box .modal-content-box .modal-content .message .name::before { 
+	content: "Người gửi : ";
+}
+.development-page .show-modal-box .modal-content-box .modal-content .message .email::before {
+	content: "Email : ";
+}
+.development-page .show-modal-box .modal-content-box .modal-content .message .send-time::before {
+	content: "Thời gian gửi : ";
+}
+.development-page .show-modal-box .modal-content-box .modal-content .message .message::before {
+	content: "Nội dung thư : ";
+}
+.development-page .show-modal-box .modal-content-box .modal-footer{
+	padding-top: 1.35em;
+}
+.development-page .show-modal-box .modal-content-box .modal-footer .delete-button{
+	padding: 0.45em 1.15em;
+	font-size: 1.45em;
+	font-family: 'Hero';
+	border-radius: 0px;
+	border: 1px solid #007AFF;
+	background-color: #007AFF;
+	color: #fff;
+	transition: all 0.7s ease;
+}
+.development-page .show-modal-box .modal-content-box .modal-footer .delete-button:hover{
+	background-color: rgba(0, 122, 255, 0);
+	color: #007AFF;
+}
+// setting for comfirm box
+.development-page .comfirm-box{
+	z-index: 200;
+	width: 100%;
+	background-color: rgba(0,0,0,0.39);
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.development-page .comfirm-box > div{
+	width: 35em;
+	background-color: #fff;
+	border-radius: 0px;
+	margin: 15em auto;
+	padding: 3em 0;
+}
+.development-page .comfirm-box > div h3{
+	font-size: 1.55em;
+	font-weight: normal;
+	padding: 0 0 1em;
+}
+.development-page .comfirm-box > div > button{
+	padding: 0.75em 1.5em;
+	font-size: 1.15em;
+	margin: 0 1em;
+}
+.development-page .comfirm-box > div .true-button{
+	background-color: #4CD964;
+	color: #fff;
+	border: 0px; 
+}
+.development-page .comfirm-box > div .false-button{
+	background-color: #FF3B30;
+	color: #fff;
+	border: 0px; 
+}

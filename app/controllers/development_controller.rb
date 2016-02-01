@@ -1,7 +1,6 @@
 class DevelopmentController < ApplicationController
 	def index
-		# view message
-		# view contact
-		# view all image
+		# show message
+		@allMessage = Message.all
 	end
 end

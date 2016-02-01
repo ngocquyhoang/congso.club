@@ -1,12 +1,79 @@
-<div>
-	<h2>Trang quản trị</h2>
-	<div>
+<div class="development-page">
+	<h2>Trang quản trị - Development</h2>
+	<div class="all-message dev-section">
 		<!-- show all image -->
+		<h3>Tin nhắn</h3>
+		<table class="all-messages-table" cellspacing="0" cellpadding="0" >
+			<thead>
+				<tr>
+					<th class="id">ID</th>
+					<th class="name">Tên</th>
+					<th class="time">Thời gian</th>
+					<th class="show">Xem</th>
+					<th class="delete">Xóa</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @allMessage.each do |message| %>
+					<tr>
+						<td><%= message.id %></td>
+						<td class="tb-data-left"><%= message.name.capitalize %></td>
+						<td class="">
+							<% case  Time.now - message.created_at %>
+							<% when 0..5%>
+								<%= "Vài giây trước"%>
+							<% when 5..3600%>
+								<%= "#{(case/60).round} #{case/86400).round} phút trước"%>
+							<% when 3600..86400%>
+								<%= "#{(case/3600).round} giờ trước"%>
+							<% else %>
+								<% if (case/86400).round == "1" %>
+									<%= "Hôm qua"%>
+								<% else %>
+									<%= "#{(case/86400).round} ngày trước"%>
+								<% end %>
+							<% end %>
+						</td>
+						<td class="show-button" onclick="showMessage(id)">Đọc tin nhắn</td>
+						<td class="delete-button" onclick="return deleteButton(id)">Xóa tin nhắn</td>
+	 				</tr>
+ 				<% end %>
+			</tbody>
+		</table>
 	</div>
-	<div>
+	<div class="dev-section">
 		<!-- show contact -->
 	</div>
-	<div>
+	<div class="dev-section">
 		<!-- show message -->
+	</div>
+	<div class="show-modal-box">
+		<div class="modal-content-box">
+			<div class="modal-header">
+				<!-- modal title -->
+				<h3 class="modal-title">Tin nhắn</h3>
+				<!-- modal close button -->
+				<div class="close-button"></div>
+			</div>
+			<!-- modal content box -->
+			<div class="modal-content">
+				<div class="message">
+					<p class="name">Lorem Ipsum is simply dummy text</p>
+					<p class="email">It has survived not only</p>
+					<p class="send-time">Lorem Ipsum is simply dummy text</p>
+					<p class="message">Lorem Ipsum is simply dummy text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="delete-button" onclick="">Xóa tin nhắn</button>
+			</div>
+		</div>
+	</div>
+	<div class="comfirm-box">
+		<div >
+			<h3>Bạn có chắc chắn muốn xóa ?</h3>
+			<button class="false-button">Không</button>
+			<button class="true-button">Có</button>
+		</div>
 	</div>
 </div>

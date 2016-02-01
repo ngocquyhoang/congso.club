@@ -48,6 +48,18 @@
 	position: absolute;
 	z-index: 10;
 }
+.contact-page .about-me .infomation .info-slide .slide-content li[name="1"]{
+	background-image: url('bg-coffee-6.jpg');
+	background-position: center;
+}
+.contact-page .about-me .infomation .info-slide .slide-content li[name="2"]{
+	background-image: url('bg-coffee-1.jpg');
+	background-position: center;
+}
+.contact-page .about-me .infomation .info-slide .slide-content li[name="3"]{
+	background-image: url('bg-coffee-3.jpg');
+	background-position: center;
+}
 .contact-page .about-me .infomation .info-slide .slide-content li h5{
 	font-size: 1.5em;
 	font-family: 'Hero';
@@ -66,7 +78,6 @@
 }
 .contact-page .about-me .infomation .info-slide .slide-content li.active{
 	z-index: 11;
-	background-color: #fff;
 	border: 1px solid #007AFF;
 }
 .contact-page .about-me .infomation .info-slide .slider-control{
@@ -78,7 +89,6 @@
 	width: 0.5em;
 	height: 0.5em;
 	border-radius: 100px;
-	background-color: #fff;
 	margin: 0 1em;
 	float: left;
 	border: 0.1em solid #007AFF;
