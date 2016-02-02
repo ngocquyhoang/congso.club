@@ -13,7 +13,6 @@ class DevelopmentController < ApplicationController
 		if params[:idMessage].present?
 			messageDelete = Message.find {params[:idMessage]}
 			messageDelete.destroy
-			render @allMessage
 		end
 	end
 end

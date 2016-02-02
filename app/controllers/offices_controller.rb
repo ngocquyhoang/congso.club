@@ -3,7 +3,7 @@ class OfficesController < ApplicationController
 	# GET /offices
 	# GET /offices.json
 	def index
-		@offices = Office.all
+		@offices = Office.all.order(created_at: :desc)
 	end
 
 	# GET /offices/1

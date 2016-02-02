@@ -14,7 +14,7 @@
 			</thead>
 			<tbody>
 				<% @allMessage.each do |message| %>
-					<tr>
+					<tr name="messagerowid<%= message.id %>">
 						<td class="tb-data-left"><%= message.name.capitalize %></td>
 						<td class=""><%= time_ago_in_words(message.created_at) %> trước</td>
 						<td class="show-button" onclick="showMessage(<%= message.id %>)">Đọc tin nhắn</td>
@@ -26,6 +26,7 @@
 	</div>
 	<div class="dev-section">
 		<!-- show contact -->
+		<h3>Liên hệ</h3>
 	</div>
 	<div class="dev-section">
 		<!-- show message -->
@@ -57,63 +58,3 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
-	function showMessage (message_id) {
-		// show modal box
-		$('.development-page .show-modal-box').show();
-		$('.development-page .show-modal-box .modal-content-box').slideDown(600);
-		// call ajax
-		$.ajax({
-			url: "/development/showmessage",
-			type: "POST",
-			dataType: "json",
-			data: {"idMessage": message_id},
-			success: function(data) {
-				// show value
-				$('.development-page .show-modal-box .modal-content-box .modal-content .message .name').html(data["name"]);
-				$('.development-page .show-modal-box .modal-content-box .modal-content .message .email').html(data["mail"]);
-				$('.development-page .show-modal-box .modal-content-box .modal-content .message .send-time').html(data["send_time"]);
-				$('.development-page .show-modal-box .modal-content-box .modal-content .message .message').html(data["message"]);
-			}
-		});
-	}
-	function closeMessage () {
-		$('.development-page .show-modal-box .modal-content-box').slideUp(600);
-		setTimeout(function(){ 
-			$('.development-page .show-modal-box').hide(); 
-			$('.development-page .show-modal-box .modal-content-box .modal-content .message p').html(""); 
-		}, 600);
-	}
-	function deleteMessage (message_id) {
-		// show comfirm-box
-		$('.development-page .comfirm-box').show();
-		$('.development-page .comfirm-box > div').slideDown(600);
-		// set value
-		$('.development-page .comfirm-box .true-button').attr('name', message_id);
-	}
-	function confirmDelete (value) {
-		if (value) {
-			// call ajax
-			idMessage = $('.development-page .comfirm-box .true-button').attr('name');
-			$.ajax({
-				url: "/development/deletemessage",
-				type: "POST",
-				dataType: "json",
-				data: {"idMessage": idMessage},
-				success: function(data) {
-					// show value
-				}
-			});
-			// close form
-			closeComfirm();
-		}else{
-			// close form
-			closeComfirm();
-		};
-	}
-	function closeComfirm () {
-		$('.development-page .comfirm-box > div').slideUp(600);
-		setTimeout(function(){ $('.development-page .comfirm-box').hide(); }, 600);
-		$('.development-page .comfirm-box .true-button').attr('name', "");
-	}
-</script>

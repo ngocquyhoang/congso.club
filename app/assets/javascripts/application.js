@@ -16,161 +16,132 @@
 //= require_tree .
 
 $(document).ready(function() {
-	// contact page
-	sendMessage();
-	// add new follow 
-	addNewFollow();	
-	// like image
-	likeImage();
 	// about page - zorba
-	zorbaSlider();
+	setInterval(function(){ nextSlide(); }, 3000);
 	// add new image
 	addNewImage();
 });
 // contact form
 function addNewFollow () {
-	$('.follow button#send-email').click(function() {
-		// call ajax
-		var name = $('.follow-us-by-mail .follow .name').val();
-		var email = $('.follow-us-by-mail .follow .email').val();
-		$.ajax({
-			url: "/offices/sendmail",
-			type: "POST",
-			dataType: "json",
-			data: {"name": name, "email": email},
-			success: function(data) {
-				if (typeof data["notice"] != 'undefined') {
-					showNotice("success", "Cảm ơn bạn đã ghé thăm");
-					$('.follow-us-by-mail .follow input').val("");
-				} else{
-					// show error
-					var eM = "";
-					if (data["errorMessage"].length == 1) {
-						eM = data["errorMessage"][0];
-					}else{
-						eM = data["errorMessage"][0] + "<br />" + data["errorMessage"][1];
-					};
-				showNotice("error", eM);
-					// clear data
-					if(data["clearDataField"].length == 1){
-						$('.follow-us-by-mail .follow .' + data["clearDataField"][0]).val("");
-					}else{
-						// clear all
-						$('.follow-us-by-mail .follow input').val("");
-					}
-					// focus error field
-					if (data["focusElement"] != "") {
-						$('.follow-us-by-mail .follow .' + data["focusElement"]).focus();
-					};
+	var name = $('.follow-us-by-mail .follow .name').val();
+	var email = $('.follow-us-by-mail .follow .email').val();
+	$.ajax({
+		url: "/offices/sendmail",
+		type: "POST",
+		dataType: "json",
+		data: {"name": name, "email": email},
+		success: function(data) {
+			if (typeof data["notice"] != 'undefined') {
+				showNotice("success", "Cảm ơn bạn đã ghé thăm");
+				$('.follow-us-by-mail .follow input').val("");
+			} else{
+				// show error
+				var eM = "";
+				if (data["errorMessage"].length == 1) {
+					eM = data["errorMessage"][0];
+				}else{
+					eM = data["errorMessage"][0] + "<br />" + data["errorMessage"][1];
 				};
-			}
-		});
-		// end call
+			showNotice("error", eM);
+				// clear data
+				if(data["clearDataField"].length == 1){
+					$('.follow-us-by-mail .follow .' + data["clearDataField"][0]).val("");
+				}else{
+					// clear all
+					$('.follow-us-by-mail .follow input').val("");
+				}
+				// focus error field
+				if (data["focusElement"] != "") {
+					$('.follow-us-by-mail .follow .' + data["focusElement"]).focus();
+				};
+			};
+		}
 	});
 };
-function likeImage () {
+function likeImage (param_this, idPost) {
 	// like button
-	$('.page-secction .image-box .image-shadow .like-icon').click(function() {
-		if ($(this).attr("name") == "liked") {
-			// do nothing
-		}else{
-			// call ajax
-			idPost = $(this).attr('name');
-			$.ajax({
-				url: "/offices/like",
-				type: "POST",
-				dataType: "script",
-				data: {"idPost": idPost},
-			});
-			//set value and add class
-			likeCount = parseInt($('.funny-section#' + idPost + ' .image-box .image-shadow .like-count').html());
-			$('.funny-section#' + idPost + ' .image-box .image-shadow .like-count').html(likeCount + 1);
-			// disable lile button ann add class liked
-			$(this).addClass('liked');
-			$(this).attr("name","liked");
-		};
-	});
+	if ($(param_this).attr("name") == "liked") {
+		// do nothing
+	}else{
+		// call ajax
+		$.ajax({
+			url: "/offices/like",
+			type: "POST",
+			dataType: "script",
+			data: {"idPost": idPost},
+		});
+		//set value and add class
+		likeCount = parseInt($('.funny-section#' + idPost + ' .image-box .image-shadow .like-count').html());
+		$('.funny-section#' + idPost + ' .image-box .image-shadow .like-count').html(likeCount + 1);
+		// disable lile button ann add class liked
+		$(param_this).addClass('liked');
+		$(param_this).attr("name","liked");
+	};
 };
 // send message (contact page)
 function sendMessage () {
-	$('.message-page .message-page-box .message-box button.send-messages').click(function() {
-		var name = $('.message-page .message-page-box .message-box input[name="name"]').val();
-		var email = $('.message-page .message-page-box .message-box input[name="email"]').val();
-		var message = $('.message-page .message-page-box .message-box textarea').val();
-		// check value
-		if (name == "") {
-			showNotice("error", "Có vẻ như bạn chưa nhập tên của mình");
-			$('.message-page .message-page-box .message-box input[name="name"]').focus();
+	var name = $('.message-page .message-page-box .message-box input[name="name"]').val();
+	var email = $('.message-page .message-page-box .message-box input[name="email"]').val();
+	var message = $('.message-page .message-page-box .message-box textarea').val();
+	// check value
+	if (name == "") {
+		showNotice("error", "Có vẻ như bạn chưa nhập tên của mình");
+		$('.message-page .message-page-box .message-box input[name="name"]').focus();
+	}else{
+		// validate requied
+		if (email == "") {
+			showNotice("error", "Cho chúng tôi biết Email của bạn để có thể trả lời thư của bạn khi cần");
+			$('.message-page .message-page-box .message-box input[name="email"]').focus();
 		}else{
-			// validate requied
-			if (email == "") {
-				showNotice("error", "Cho chúng tôi biết Email của bạn để có thể trả lời thư của bạn khi cần");
-				$('.message-page .message-page-box .message-box input[name="email"]').focus();
+			// validate message
+			if (message == "") {
+				// message error
+				showNotice("error", "Bạn muốn nói gì với chúng tôi vậy ?");
+				$('.message-page .message-page-box .message-box textarea').focus();
 			}else{
-				// validate message
-				if (message == "") {
-					// message error
-					showNotice("error", "Bạn muốn nói gì với chúng tôi vậy ?");
-					$('.message-page .message-page-box .message-box textarea').focus();
+				// validate email type
+				if (!isValidEmailAddress( email )) {
+					showNotice("error", "Có vẻ như email bạn nhập chưa chính xác");
+					$('.message-page .message-page-box .message-box input[name="email"]').val("");
+					$('.message-page .message-page-box .message-box input[name="email"]').focus();
 				}else{
-					// validate email type
-					if (!isValidEmailAddress( email )) {
-						showNotice("error", "Có vẻ như email bạn nhập chưa chính xác");
-						$('.message-page .message-page-box .message-box input[name="email"]').val("");
-						$('.message-page .message-page-box .message-box input[name="email"]').focus();
-					}else{
-						// pass js and call ajax
-						if (name !== "" && email !== "" && message !== "") {
-							// call ajax
-							$.ajax({
-								url: "/contact/message",
-								type: "POST",
-								dataType: "json",
-								data: {"name": name, "email": email, "message" : message},
-								success: function(data) {
-									if (data["notice"] == "success") {
-										showNotice("success", "Cảm ơn bạn đã dành thời gian cho chúng tôi.<br />Chúc bạn một ngày tốt lành !");
-										$('.message-page .message-page-box .message-box input').val("");
-										$('.message-page .message-page-box .message-box textarea').val("");
-									}else{
-										showNotice("error", "Đã có lỗi xảy ra trong quá trình gửi, mong bạn vui lòng thử lại !");
-										$('.message-page .message-page-box .message-box input').val("");
-										$('.message-page .message-page-box .message-box textarea').val("");
-									};
-								}
-							});
-						};
+					// pass js and call ajax
+					if (name !== "" && email !== "" && message !== "") {
+						// call ajax
+						$.ajax({
+							url: "/contact/message",
+							type: "POST",
+							dataType: "json",
+							data: {"name": name, "email": email, "message" : message},
+							success: function(data) {
+								if (data["notice"] == "success") {
+									showNotice("success", "Cảm ơn bạn đã dành thời gian cho chúng tôi.<br />Chúc bạn một ngày tốt lành !");
+									$('.message-page .message-page-box .message-box input').val("");
+									$('.message-page .message-page-box .message-box textarea').val("");
+								}else{
+									showNotice("error", "Đã có lỗi xảy ra trong quá trình gửi, mong bạn vui lòng thử lại !");
+									$('.message-page .message-page-box .message-box input').val("");
+									$('.message-page .message-page-box .message-box textarea').val("");
+								};
+							}
+						});
 					};
 				};
 			};
 		};
-	});
+	};
 }
 // validate email by js
 function isValidEmailAddress(emailAddress) {
 	var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
 	return pattern.test(emailAddress);
 };
-// zorba slide
-function zorbaSlider () {
-	$('.infomation .info-slide .slider-button .next').click(function() {
-		nextSlide();
-	});
-	$('.infomation .info-slide .slider-button .prev').click(function() {
-		prevSlide();
-	});
-	selectSlide();
-	setInterval(function(){ nextSlide(); }, 3000);
+function selectSlide(slide_number){
+	$('.infomation .info-slide .slider-control li').removeClass('active');
+	$('.infomation .info-slide .slider-control li[name="' + slide_number + '"]').addClass('active');
+	$('.infomation .info-slide .slide-content li').removeClass('active');
+	$('.infomation .info-slide .slide-content li[name="' + slide_number + '"]').addClass('active');
 }
-function selectSlide () {
-	$('.infomation .info-slide .slider-control li').click(function() {
-		var selectId = $(this).attr('name');
-		$('.infomation .info-slide .slider-control li').removeClass('active');
-		$(this).addClass('active');
-		$('.infomation .info-slide .slide-content li').removeClass('active');
-		$('.infomation .info-slide .slide-content').find('li[name="' + selectId + '"]').addClass('active');
-	});
-};
 function prevSlide () {
 	var currentSelector = $('.infomation .info-slide .slide-content').find('.active');
 	var currentId = currentSelector.attr('name');
@@ -267,4 +238,64 @@ function validateAddNewImageForm () {
 			};
 		};
 	};
+}
+// development function
+function showMessage (message_id) {
+	// show modal box
+	$('.development-page .show-modal-box').show();
+	$('.development-page .show-modal-box .modal-content-box').slideDown(600);
+	// call ajax
+	$.ajax({
+		url: "/development/showmessage",
+		type: "POST",
+		dataType: "json",
+		data: {"idMessage": message_id},
+		success: function(data) {
+			// show value
+			$('.development-page .show-modal-box .modal-content-box .modal-content .message .name').html(data["name"]);
+			$('.development-page .show-modal-box .modal-content-box .modal-content .message .email').html(data["mail"]);
+			$('.development-page .show-modal-box .modal-content-box .modal-content .message .send-time').html(data["send_time"]);
+			$('.development-page .show-modal-box .modal-content-box .modal-content .message .message').html(data["message"]);
+		}
+	});
+}
+function closeMessage () {
+	$('.development-page .show-modal-box .modal-content-box').slideUp(600);
+	setTimeout(function(){ 
+		$('.development-page .show-modal-box').hide(); 
+		$('.development-page .show-modal-box .modal-content-box .modal-content .message p').html(""); 
+	}, 600);
+}
+function deleteMessage (message_id) {
+	// show comfirm-box
+	$('.development-page .comfirm-box').show();
+	$('.development-page .comfirm-box > div').slideDown(600);
+	// set value
+	$('.development-page .comfirm-box .true-button').attr('name', message_id);
+}
+function confirmDelete (value) {
+	if (value) {
+		// call ajax
+		idMessage = $('.development-page .comfirm-box .true-button').attr('name');
+		$.ajax({
+			url: "/development/deletemessage",
+			type: "POST",
+			dataType: "json",
+			data: {"idMessage": idMessage},
+			success: function(data) {
+				// delete
+				alert("ok");
+			}
+		});
+		// close form
+		closeComfirm();
+	}else{
+		// close form
+		closeComfirm();
+	};
+}
+function closeComfirm () {
+	$('.development-page .comfirm-box > div').slideUp(600);
+	setTimeout(function(){ $('.development-page .comfirm-box').hide(); }, 600);
+	$('.development-page .comfirm-box .true-button').attr('name', "");
 }
