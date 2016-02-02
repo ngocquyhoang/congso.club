@@ -16,22 +16,7 @@
 				<% @allMessage.each do |message| %>
 					<tr>
 						<td class="tb-data-left"><%= message.name.capitalize %></td>
-						<td class="">
-							<% case time =  Time.now - message.created_at %>
-							<% when 0..5%>
-								<%= "Vài giây trước"%>
-							<% when 5..3600%>
-								<%= "#{(time/60).round} phút trước"%>
-							<% when 3600..86400%>
-								<%= "#{(time/3600).round} giờ trước"%>
-							<% else %>
-								<% if (time/86400).round == "1" %>
-									<%= "Hôm qua"%>
-								<% else %>
-									<%= "#{(time/86400).round} ngày trước"%>
-								<% end %>
-							<% end %>
-						</td>
+						<td class=""><%= time_ago_in_words(message.created_at) %> trước</td>
 						<td class="show-button" onclick="showMessage(<%= message.id %>)">Đọc tin nhắn</td>
 						<td class="delete-button" onclick="return deleteMessage(<%= message.id %>)">Xóa tin nhắn</td>
 	 				</tr>
@@ -56,22 +41,19 @@
 			<!-- modal content box -->
 			<div class="modal-content">
 				<div class="message">
-					<p class="name">Lorem Ipsum is simply dummy text</p>
-					<p class="email">It has survived not only</p>
-					<p class="send-time">Lorem Ipsum is simply dummy text</p>
-					<p class="message">Lorem Ipsum is simply dummy text It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+					<p class="name"></p>
+					<p class="email"></p>
+					<p class="send-time"></p>
+					<p class="message"></p>
 				</div>
-			</div>
-			<div class="modal-footer">
-				<button class="delete-button" onclick="">Xóa tin nhắn</button>
 			</div>
 		</div>
 	</div>
 	<div class="comfirm-box">
 		<div >
 			<h3>Bạn có chắc chắn muốn xóa ?</h3>
-			<button class="false-button">Không</button>
-			<button class="true-button">Có</button>
+			<button class="false-button" onclick="confirmDelete(false)">Không</button>
+			<button class="true-button" name="" onclick="confirmDelete(true)">Có</button>
 		</div>
 	</div>
 </div>
@@ -81,14 +63,57 @@
 		$('.development-page .show-modal-box').show();
 		$('.development-page .show-modal-box .modal-content-box').slideDown(600);
 		// call ajax
+		$.ajax({
+			url: "/development/showmessage",
+			type: "POST",
+			dataType: "json",
+			data: {"idMessage": message_id},
+			success: function(data) {
+				// show value
+				$('.development-page .show-modal-box .modal-content-box .modal-content .message .name').html(data["name"]);
+				$('.development-page .show-modal-box .modal-content-box .modal-content .message .email').html(data["mail"]);
+				$('.development-page .show-modal-box .modal-content-box .modal-content .message .send-time').html(data["send_time"]);
+				$('.development-page .show-modal-box .modal-content-box .modal-content .message .message').html(data["message"]);
+			}
+		});
 	}
 	function closeMessage () {
 		$('.development-page .show-modal-box .modal-content-box').slideUp(600);
-		setTimeout(function(){ $('.development-page .show-modal-box').hide(); }, 600);
+		setTimeout(function(){ 
+			$('.development-page .show-modal-box').hide(); 
+			$('.development-page .show-modal-box .modal-content-box .modal-content .message p').html(""); 
+		}, 600);
 	}
 	function deleteMessage (message_id) {
 		// show comfirm-box
 		$('.development-page .comfirm-box').show();
 		$('.development-page .comfirm-box > div').slideDown(600);
+		// set value
+		$('.development-page .comfirm-box .true-button').attr('name', message_id);
+	}
+	function confirmDelete (value) {
+		if (value) {
+			// call ajax
+			idMessage = $('.development-page .comfirm-box .true-button').attr('name');
+			$.ajax({
+				url: "/development/deletemessage",
+				type: "POST",
+				dataType: "json",
+				data: {"idMessage": idMessage},
+				success: function(data) {
+					// show value
+				}
+			});
+			// close form
+			closeComfirm();
+		}else{
+			// close form
+			closeComfirm();
+		};
+	}
+	function closeComfirm () {
+		$('.development-page .comfirm-box > div').slideUp(600);
+		setTimeout(function(){ $('.development-page .comfirm-box').hide(); }, 600);
+		$('.development-page .comfirm-box .true-button').attr('name', "");
 	}
 </script>

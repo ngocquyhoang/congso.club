@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 	post 'offices/like'
 	post 'offices/sendmail'
 	post 'contact/message'
+	post 'development/showmessage'
+	post 'development/deletemessage'
 	get 'development', to: 'development#index'
 	get 'contact', to: 'contact#index'
 	get 'zorba', to: 'zorba#index'

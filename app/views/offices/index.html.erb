@@ -9,7 +9,7 @@
 				<% end %>
 			</h3>
 			<h4 class="owner">by <%= office.owner.capitalize %></h4>
-			<h5 class="create-time"><%= office.created_at.in_time_zone(7).strftime("in %B - %d - %Y") %></h5>
+			<h5 class="create-time"><%= time_ago_in_words(office.created_at) %> trước</h5>
 			<div class="image-box">
 				<img src="<%= office.image %>" alt="<%= office.slug %>" class="image-funny" name"">
 				<div class="image-shadow">

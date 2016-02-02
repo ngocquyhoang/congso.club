@@ -101,7 +101,7 @@
 }
 .development-page .show-modal-box .modal-content-box .modal-content{
 	overflow-y: auto;
-	height: 23em;
+	height: 28em;
 }
 .development-page .show-modal-box .modal-content-box .modal-content .message p{
 	text-align: left;
@@ -120,23 +120,6 @@
 }
 .development-page .show-modal-box .modal-content-box .modal-content .message .message::before {
 	content: "Nội dung thư : ";
-}
-.development-page .show-modal-box .modal-content-box .modal-footer{
-	padding-top: 1.35em;
-}
-.development-page .show-modal-box .modal-content-box .modal-footer .delete-button{
-	padding: 0.45em 1.15em;
-	font-size: 1.45em;
-	font-family: 'Hero';
-	border-radius: 0px;
-	border: 1px solid #007AFF;
-	background-color: #007AFF;
-	color: #fff;
-	transition: all 0.7s ease;
-}
-.development-page .show-modal-box .modal-content-box .modal-footer .delete-button:hover{
-	background-color: rgba(0, 122, 255, 0);
-	color: #007AFF;
 }
 // setting for comfirm box
 .development-page .comfirm-box{
