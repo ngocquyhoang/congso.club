@@ -6,7 +6,7 @@
 			<%= @office.title.capitalize %>
 		</h3>
 		<h4 class="owner">by <%= @office.owner.capitalize %></h4>
-		<h5 class="create-time"><%= @office.created_at.in_time_zone(7).strftime("in %B - %d - %Y") %></h5>
+		<h5 class="create-time"><%= time_ago_in_words(@office.created_at).capitalize %> trước</h5>
 		<div class="image-box">
 			<img src="<%= @office.image %>" alt="<%= @office.slug %>" class="image-funny" name"">
 			<div class="image-shadow">
@@ -20,9 +20,8 @@
 	<div class="page-secction">
 		<a class="facebook-share-button" target="top" href="<%= "http://www.facebook.com/sharer.php?u=" + @currentUrl %>">
 		Chia sẻ trên Facebook 
-			<span><%#= facebook_shares(@currentUrl)['share_count'] %></span>
+			
 		</a>
-		<span class="facebook-share-count" >55<%#= facebook_shares(@currentUrl)['share_count'] %></span>
 	</div>
 	<div class="page-secction">
 		<div class="fb-comments" data-href="<%= @currentUrl %>" data-numposts="10"></div>

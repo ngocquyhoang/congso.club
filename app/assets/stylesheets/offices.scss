@@ -1,6 +1,7 @@
 // Place all the styles related to the offices controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//require "will_paginate-bootstrap"
 .home-page{
 	padding: 2em 0 6em;
 }
@@ -8,10 +9,32 @@
 	padding: 2em 0 6em;
 }
 .funny-section{
-	padding: 2em 0 3em;
+	padding: 1.5em 0 1.2em;
 	font-size: 1.2em;
 	font-family: 'Hero';
 	color: #000;
+}
+.funny-section .image-button{
+	margin-top: 1em;
+	display: inline-block;
+}
+.funny-section .image-button > a{
+	height: 3em;
+	line-height: 3em;
+	padding: 0 1.5em;
+	border: 1px solid #000;
+	float: left;
+	margin: 0 1.2em;
+	color: #007AFF;
+	text-decoration: none;
+	border: 1px solid #007AFF;
+}
+.funny-section .image-button > img{
+	// display: inline-flex;
+	border: 1px solid #007AFF;
+	height: 3em;
+	float: left;
+	margin: 0 1.2em;
 }
 .funny-section .title{
 	font-size: 1.8em;
@@ -31,7 +54,7 @@
 .funny-section .create-time{
 	font-weight: normal;
 	font-size: 1.0em;
-	font-family: 'Stag';
+	font-family: 'Hero';
 	margin: 0.2em 0 1em;
 }
 .funny-section .image-box{
@@ -92,12 +115,16 @@
 	font-size: 1.8em;
 	margin: 0.2em 0;
 }
+.share-secction{
+	text-align: center;
+	// padding-top: 1em;
+}
 .facebook-share-button{
-	padding: 1em 2.5em;
+	padding: 0.5em 2.5em;
 	color: #fff;
-	background-color: #ff4455;
+	background-color: #007AFF;
 	font-size: 1.5em;
-	font-family: 'Stag';
+	font-family: 'Hero';
 	text-decoration: none;
 }
 .facebook-share-count{
@@ -244,4 +271,74 @@
 }
 .image-form .field input[type="text"]:placeholder-shown { /* Standard one last! */
   color: #fff;
+}
+// setting for pagination scss
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 1.5em 0;
+    border-radius: 4px;
+}
+.pagination > li {
+    display: inline;
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    margin-left: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 0.7em 1.4em;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #007AFF;
+    background-color: #ffffff;
+    border: 1px solid #007AFF;
+    margin-left: -1px;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 2;
+    color: #ffffff;
+    background-color: #007AFF;
+    border-color: #007AFF;
+    cursor: default;
+}
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 0.7em 1.4em;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #007AFF;
+    background-color: #ffffff;
+    border: 1px solid #007AFF;
+    margin-left: -1px;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    color: #777777;
+    background-color: #ffffff;
+    border-color: #007AFF;
+    cursor: not-allowed;
+}
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 0.7em 1.4em;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #007AFF;
+    background-color: #ffffff;
+    border: 1px solid #007AFF;
+    margin-left: -1px;
+}
+.paging-secction{
+	text-align: center;
+	font-family: 'Hero';
+	font-size: 1.1em;
 }

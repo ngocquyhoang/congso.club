@@ -18,6 +18,14 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+# paginate
+gem 'will_paginate'
+# theme
+gem 'will_paginate-bootstrap'
+# css
+# gem 'less-rails-bootstrap'
+# gem
+# gem 'therubyracer'
 # add devise gem 
 gem 'devise'
 # add admin gem

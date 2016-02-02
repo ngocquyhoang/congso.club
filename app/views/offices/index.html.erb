@@ -8,7 +8,7 @@
 					<%= office.title.capitalize %>
 				<% end %>
 			</h3>
-			<h4 class="owner">by <%= office.owner.capitalize %></h4>
+			<h4 class="owner">Đăng bởi <%= office.owner.capitalize %></h4>
 			<h5 class="create-time"><%= time_ago_in_words(office.created_at).capitalize %> trước</h5>
 			<div class="image-box">
 				<img src="<%= office.image %>" alt="<%= office.slug %>" class="image-funny" name"">
@@ -19,6 +19,16 @@
 					</div>
 				</div>
 			</div>
+			<div class="clear-fix"></div>
+			<div class="image-button">
+				<%= image_tag("like-button.png") %>
+				<%= link_to 'Bình luận',  office, :target => "_blank"%>
+				<%= link_to 'Chia sẻ',  office, :target => "_blank"%>
+			</div>
+			<div class="clear-fix"></div>
 		</div>
 	<% end %>
+	<div class="paging-secction">
+		<%= will_paginate @offices, renderer: BootstrapPagination::Rails %>
+	</div>
 </div>

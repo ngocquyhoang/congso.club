@@ -4,12 +4,13 @@ class OfficesController < ApplicationController
 	# GET /offices.json
 	def index
 		@offices = Office.all.order(created_at: :desc)
+		@offices = Office.paginate(:page => params[:page], :per_page => 5).order(created_at: :desc)
 	end
 
 	# GET /offices/1
 	# GET /offices/1.json
 	def show
-		productDomain = "localhost:3000"
+		productDomain = "congso.club"
 		@currentUrl = "https://" + productDomain + "/offices/" + @office.slug
 		# add to database
 		post = Office.find(@office.id)

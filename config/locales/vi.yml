@@ -271,3 +271,7 @@ vi:
       long: "%d %B, %Y %H:%M"
       short: "%d %b %H:%M"
     pm: chiều
+  will_paginate:
+    previous_label: "Trang trước"
+    next_label: "Trang sau"
+    page_gap: "&hellip;"
