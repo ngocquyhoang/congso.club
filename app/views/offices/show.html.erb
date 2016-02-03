@@ -5,7 +5,6 @@
 			<%#= link_to 'Destroy', office, method: :delete, data: { confirm: 'Are you sure?' } %>
 			<%= @office.title.capitalize %>
 		</h3>
-		<h4 class="owner">by <%= @office.owner.capitalize %></h4>
 		<h5 class="create-time"><%= time_ago_in_words(@office.created_at).capitalize %> trước</h5>
 		<div class="image-box">
 			<img src="<%= @office.image %>" alt="<%= @office.slug %>" class="image-funny" name"">

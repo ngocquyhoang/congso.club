@@ -58,25 +58,45 @@ function addNewFollow () {
 		}
 	});
 };
-function likeImage (param_this, idPost) {
+function likeImage (type_entries, param_this, idPost) {
 	// like button
-	if ($(param_this).attr("name") == "liked") {
-		// do nothing
+	if(type_entries == "icon"){
+		if ($(param_this).attr("name") == "liked") {
+			// do nothing
+		}else{
+			// call ajax
+			$.ajax({
+				url: "/offices/like",
+				type: "POST",
+				dataType: "script",
+				data: {"idPost": idPost},
+			});
+			//set value and add class
+			likeCount = parseInt($('.funny-section#' + idPost + ' .image-box .image-shadow .like-count').html());
+			$('.funny-section#' + idPost + ' .image-box .image-shadow .like-count').html(likeCount + 1);
+			// disable lile button ann add class liked
+			$(param_this).attr("name","liked");
+			$('.home-page .page-secction .image-button > img[name="' + idPost + '"]').attr('name', 'liked');;
+		};
 	}else{
-		// call ajax
-		$.ajax({
-			url: "/offices/like",
-			type: "POST",
-			dataType: "script",
-			data: {"idPost": idPost},
-		});
-		//set value and add class
-		likeCount = parseInt($('.funny-section#' + idPost + ' .image-box .image-shadow .like-count').html());
-		$('.funny-section#' + idPost + ' .image-box .image-shadow .like-count').html(likeCount + 1);
-		// disable lile button ann add class liked
-		$(param_this).addClass('liked');
-		$(param_this).attr("name","liked");
+		if ($(param_this).attr("name") == "liked") {
+			// do nothing
+		}else{
+			// call ajax
+			$.ajax({
+				url: "/offices/like",
+				type: "POST",
+				dataType: "script",
+				data: {"idPost": idPost},
+			});
+			likeCount = parseInt($('.funny-section#' + idPost + ' .image-box .image-shadow .like-count').html());
+			$('.funny-section#' + idPost + ' .image-box .image-shadow .like-count').html(likeCount + 1);
+			// display in view
+			$(param_this).attr("name","liked");
+			$('.funny-section#' + idPost + ' .image-box .image-shadow .like-icon').attr('name', 'liked');;
+		}
 	};
+	
 };
 // send message (contact page)
 function sendMessage () {

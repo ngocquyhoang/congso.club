@@ -3,6 +3,7 @@ class OfficesController < ApplicationController
 	# GET /offices
 	# GET /offices.json
 	def index
+		@productDomain = "congso.club"
 		@offices = Office.all.order(created_at: :desc)
 		@offices = Office.paginate(:page => params[:page], :per_page => 5).order(created_at: :desc)
 	end

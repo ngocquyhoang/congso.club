@@ -4,6 +4,9 @@
 //require "will_paginate-bootstrap"
 .home-page{
 	padding: 2em 0 6em;
+	background-image: url('bg-coffee-6-shadow.png');
+	background-position: center;
+	background-attachment: fixed;
 }
 .image-content{
 	padding: 2em 0 6em;
@@ -36,8 +39,11 @@
 	float: left;
 	margin: 0 1.2em;
 }
+.funny-section .image-button > img[name="liked"]{
+	background-color: rgba(0,0,0,0.2);
+}
 .funny-section .title{
-	font-size: 1.8em;
+	font-size: 1.55em;
 	font-weight: normal;
 	margin: 0.3em 0;
 }
@@ -107,7 +113,7 @@
 .funny-section .image-box .image-shadow > div .like-icon:hover{
 	background-image: url('like-full-color.png');
 }
-.funny-section .image-box .image-shadow > div .like-icon.liked{
+.funny-section .image-box .image-shadow > div .like-icon[name="liked"]{
 	background-image: url('like-full-color.png');
 }
 .funny-section .like-count{
@@ -121,8 +127,8 @@
 }
 .facebook-share-button{
 	padding: 0.5em 2.5em;
-	color: #fff;
-	background-color: #007AFF;
+	color: #007AFF;
+	border: 1px solid #007AFF;
 	font-size: 1.5em;
 	font-family: 'Hero';
 	text-decoration: none;

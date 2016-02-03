@@ -37,30 +37,29 @@
 		<!-- end notice box -->
 		<!-- header -->
 		<header>
-		<div class="header-box">
-			<%= link_to(root_url) do%>
-				<h1 class="logo-text">Congso.club</h1>
-			<% end %>
-			<div class="clear-fix"></div>
-			<div class="header-navigation-bar">
-				<ul>
-					<li><%= link_to "Trang chủ", root_url %></li>
-					<li><%= link_to "Về chúng tôi", zorba_path %></li>
-					<li><%= link_to "Liên hệ", contact_path %></li>
-					<% if admin_signed_in? %>
-						<li><%= link_to "Trang quản trị", development_path %></li>
-					<% end %>
-					<li>
+			<div class="header-box">
+				<%= link_to(root_url) do%>
+					<h1 class="logo-text">Congso.club</h1>
+				<% end %>
+				<div class="clear-fix"></div>
+				<div class="header-navigation-bar">
+					<ul>
+						<li><%= link_to "Về chúng tôi", zorba_path %></li>
+						<li><%= link_to "Liên hệ", contact_path %></li>
 						<% if admin_signed_in? %>
-							<%= link_to "Đăng xuất", destroy_admin_session_path, :method => :delete %>
-						<% else %>
-							<%= link_to "Đăng nhập", new_admin_session_path %>
+							<li><%= link_to "Trang quản trị", development_path %></li>
 						<% end %>
-					</li>
-					<div class="clear-fix"></div>
-				</ul>
+						<li>
+							<% if admin_signed_in? %>
+								<%= link_to "Đăng xuất", destroy_admin_session_path, :method => :delete %>
+							<% else %>
+								<%= link_to "Đăng nhập", new_admin_session_path %>
+							<% end %>
+						</li>
+						<div class="clear-fix"></div>
+					</ul>
+				</div>
 			</div>
-		</div>
 		</header>
 		<!-- end header -->
 		<!-- main content -->
@@ -96,7 +95,9 @@
 					<div class="clear-fix"></div>
 				</div>
 			</div>
-			<hr />
+			<div class="hiworld">
+				Power of <a href="http://hiworld.com.vn/" target="_blank">Hiworld.JSC</a>
+			</div>
 		</footer>
 		<!-- end footer -->
 	</body>
