@@ -12,7 +12,7 @@ class OfficesController < ApplicationController
 	# GET /offices/1.json
 	def show
 		productDomain = "congso.club"
-		@currentUrl = "https://" + productDomain + "/offices/" + @office.slug
+		@currentUrl = productDomain + "/offices/" + @office.slug
 		# add to database
 		post = Office.find(@office.id)
 		post.view += 1

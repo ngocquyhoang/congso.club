@@ -22,7 +22,7 @@
 			<div class="clear-fix"></div>
 			<div class="image-button">
 				<%= image_tag("like-button-ver-2.png", :onClick => "likeImage ('button', this, #{office.id})".html_safe , :name => "#{office.id}" ) %>
-				<a href="<%= "http://www.facebook.com/sharer.php?u=https://" + @productDomain + "/offices/" + office.slug %>" title="Comment" target="blank">Chia sẻ</a>
+				<a href="<%= "http://www.facebook.com/sharer.php?u=" + @productDomain + "/offices/" + office.slug %>" title="Comment" target="blank">Chia sẻ</a>
 				<%= link_to 'Bình luận',  office, :target => "_blank"%>
 			</div>
 			<div class="clear-fix"></div>
