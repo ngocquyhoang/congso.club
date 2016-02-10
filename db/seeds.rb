@@ -6,6 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 # createAdmin
-Admin.create(name: 'Hoàng Ngọc Quý', address: 'Số 348 Mỹ Đình Hà Nội', phone: '0964 149 843', nickname: 'ngocquyhoang - Admin', gender: 'Nam', age: '23', role: 'Admin', email: 'congsoadmin@gmail.com', password: 'Cbr1000R10yen')
+Admin.create(name: 'Hoàng Ngọc Quý', address: 'Số 348 Mỹ Đình Hà Nội', phone: '0964 149 843', nickname: 'ngocquyhoang - Admin', gender: 'Nam', age: '23', role: 'Admin', email: 'admin@congso.com', password: 'congsoadminCbr1000R10yen')
 # create development
-# Admin.create(name: 'Hoàng Ngọc Quý', address: 'Số 348 Mỹ Đình Hà Nội', phone: '0964 149 843', nickname: 'ngocquyhoang - Development', gender: 'Nam', age: '23', role: 'Development', email: 'ngocquyhoang.93@gmail.com', password: 'Cbr1000R10yen')
+# Admin.create(name: 'Hoàng Ngọc Quý', address: 'Số 348 Mỹ Đình Hà Nội', phone: '0964 149 843', nickname: 'ngocquyhoang - Development', gender: 'Nam', age: '23', role: 'Development', email: 'ngocquyhoang.93@gmail.com', password: '')
