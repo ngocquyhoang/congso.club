@@ -16,19 +16,19 @@
 /*general setting*/
 @font-face {
   font-family: 'Genica';    
-  src: url('Genica.otf');
+  src: asset_url('Genica.otf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Hero';    
-  src: url('Hero.ttf');
+  src: asset_url('Hero.ttf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Stag';    
-  src: url('Stag.ttf');
+  src: asset_url('Stag.ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -43,7 +43,7 @@
 	clear: both;
 }
 html, body{
-	background-image: url('bg-coffee-1.jpg');
+	background-image: asset_url('bg-coffee-1.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center; 
@@ -132,7 +132,7 @@ header{
 }
 header .header-box{
 	position: relative;
-	background-image: url('bg-place-3.jpg');
+	background-image: asset_url('bg-place-3.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center; 
@@ -242,32 +242,32 @@ header .header-navigation-bar ul li a{
 	margin: 0 1em;
 }
 .footer-page ul .icon.facebook{
-	background-image: url('/assets/facebook-black.png');
+	background-image: asset_url('facebook-black.png');
 	transition: all 0.7s ease;
 }
 .footer-page ul .icon.facebook:hover{
-	background-image: url('/assets/facebook-full-color.png');
+	background-image: asset_url('facebook-full-color.png');
 }
 .footer-page ul .icon.twitter{
-	background-image: url('/assets/twitter-black.png');
+	background-image: asset_url('twitter-black.png');
 	transition: all 0.7s ease;
 }
 .footer-page ul .icon.twitter:hover{
-	background-image: url('/assets/twitter-full-color.png');
+	background-image: asset_url('twitter-full-color.png');
 }
 .footer-page ul .icon.googleplus{
-	background-image: url('/assets/googleplus-black.png');
+	background-image: asset_url('googleplus-black.png');
 	transition: all 0.7s ease;
 }
 .footer-page ul .icon.googleplus:hover{
-	background-image: url('/assets/googleplus-full-color.png');
+	background-image: asset_url('googleplus-full-color.png');
 }
 .footer-page ul .icon.youtube{
-	background-image: url('/assets/youtube-black.png');
+	background-image: asset_url('youtube-black.png');
 	transition: all 0.7s ease;
 }
 .footer-page ul .icon.youtube:hover{
-	background-image: url('/assets/youtube-full-color.png');
+	background-image: asset_url('youtube-full-color.png');
 }
 .footer-page .design-by{
 	font-family: 'Hero';
@@ -294,7 +294,7 @@ header .header-navigation-bar ul li a{
 	font-size: 1.5em;
 	font-family: 'Hero';
 	background-color: rgba(0,0,0,0.55);
-	background-image: url('bg-place-5.jpg');
+	background-image: asset_url('bg-place-5.jpg');
 	background-position: center;
 	padding: 0.25em 0;
 	color: #fff;
@@ -308,7 +308,7 @@ header .header-navigation-bar ul li a{
 	font-family: 'HeroHero';
 	text-align: center;
 	font-size: 1.5em;
-	background-image: url('bg-coffee-6.jpg');
+	background-image: asset_url('bg-coffee-6.jpg');
 	background-position: center;
 }
 .login-page .login-box{

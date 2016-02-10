@@ -4,7 +4,7 @@
 //require "will_paginate-bootstrap"
 .home-page{
 	padding: 2em 0 6em;
-	background-image: url('bg-coffee-6-shadow.png');
+	background-image: asset_url('bg-coffee-6-shadow.png');
 	background-position: center;
 	background-attachment: fixed;
 }
@@ -107,14 +107,14 @@
 	margin-left: 24px;
 	width: 48px;
 	height: 48px;
-	background-image: url('like-while.png');
+	background-image: asset_url('like-while.png');
 	transition: all 0.7s ease;
 }
 .funny-section .image-box .image-shadow > div .like-icon:hover{
-	background-image: url('like-full-color.png');
+	background-image: asset_url('like-full-color.png');
 }
 .funny-section .image-box .image-shadow > div .like-icon[name="liked"]{
-	background-image: url('like-full-color.png');
+	background-image: asset_url('like-full-color.png');
 }
 .funny-section .like-count{
 	font-weight: normal;
@@ -145,7 +145,7 @@
 /*new image*/
 .new-image{
 	text-align: center;
-	background-image: url('bg-place-5.jpg');
+	background-image: asset_url('bg-place-5.jpg');
 	color: #fff;
 	background-position: center; 
 }
@@ -161,7 +161,7 @@
 /*edit */
 .edit-image{
 	text-align: center;
-	background-image: url('bg-place-2.jpg');
+	background-image: asset_url('bg-place-2.jpg');
 	background-position: center;
 	color: #fff;
 }
@@ -198,7 +198,7 @@
 	border: 1px solid #fff;
 	float: left;
 	font-size: 1.2em;
-	background-image: url('add-line-light.png');
+	background-image: asset_url('add-line-light.png');
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -230,12 +230,12 @@
 	text-align: left;
 }
 .image-form .field .add-image-infomation ul li.success{
-	background-image: url('success.png');
+	background-image: asset_url('success.png');
 	background-repeat: no-repeat;
     	background-position: right center;
 }
 .image-form .field .add-image-infomation ul li.error{
-	background-image: url('error.png');
+	background-image: asset_url('error.png');
 	background-repeat: no-repeat;
     	background-position: right center;
 }

@@ -8,7 +8,7 @@
 .contact-page{
 	font-family: 'Hero';
 	background-position: center; 
-	background-image: url('bg-coffee-3.jpg');
+	background-image: asset_url('bg-coffee-3.jpg');
 }
 .contact-page .page-center{
 	display: inline-block;
@@ -49,15 +49,15 @@
 	z-index: 10;
 }
 .contact-page .about-me .infomation .info-slide .slide-content li[name="1"]{
-	background-image: url('bg-coffee-6.jpg');
+	background-image: asset_url('bg-coffee-6.jpg');
 	background-position: center;
 }
 .contact-page .about-me .infomation .info-slide .slide-content li[name="2"]{
-	background-image: url('bg-coffee-1.jpg');
+	background-image: asset_url('bg-coffee-1.jpg');
 	background-position: center;
 }
 .contact-page .about-me .infomation .info-slide .slide-content li[name="3"]{
-	background-image: url('bg-coffee-3.jpg');
+	background-image: asset_url('bg-coffee-3.jpg');
 	background-position: center;
 }
 .contact-page .about-me .infomation .info-slide .slide-content li h5{
@@ -111,12 +111,12 @@
 .contact-page .about-me .infomation .info-slide .slider-button .button.next{
 	top: 4.5em;
 	right: 1em;
-	background-image: url("next.png");
+	background-image: asset_url('next.png');
 }
 .contact-page .about-me .infomation .info-slide .slider-button .button.prev{
 	top: 4.5em;
 	left: 1em;
-	background-image: url("prev.png");
+	background-image: asset_url('prev.png');
 }
 /*why-is-zorba*/
 .contact-page .why-is-zorba{
@@ -170,26 +170,26 @@
 	font-weight: normal;
 }
 .contact-page .connect-to-me .social-box ul li.github{
-	background-image: url("github.png");
+	background-image: asset_url("github.png");
 }
 .contact-page .connect-to-me .social-box ul li.twitter{
-	background-image: url("twitter.png");
+	background-image: asset_url("twitter.png");
 }
 .contact-page .connect-to-me .social-box ul li.facebook{
-	background-image: url("facebook.png");
+	background-image: asset_url("facebook.png");
 }
 .contact-page .connect-to-me .social-box ul li.google-plus{
-	background-image: url("google-plus.png");
+	background-image: asset_url("google-plus.png");
 }
 .contact-page .connect-to-me .social-box ul li.dribbble{
-	background-image: url("dribbble.png");
+	background-image: asset_url("dribbble.png");
 }
 .contact-page .connect-to-me .social-box ul li.skype{
-	background-image: url("skype.png");
+	background-image: asset_url("skype.png");
 }
 .contact-page .connect-to-me .social-box ul li.pinterest{
-	background-image: url("pinterest.png");
+	background-image: asset_url("pinterest.png");
 }
 .contact-page .connect-to-me .social-box ul li.youtube{
-	background-image: url("youtube.png");
+	background-image: asset_url("youtube.png");
 }
