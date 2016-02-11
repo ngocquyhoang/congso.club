@@ -1,61 +1,18 @@
-<% title "Trang quản trị - Zorba" %>
+<% title "Trang quản trị " %>
 <div class="development-page">
 	<h2>Trang quản trị - Development</h2>
-	<div class="all-message dev-section">
-		<!-- show all image -->
-		<h3>Tin nhắn</h3>
-		<table class="all-messages-table" cellspacing="0" cellpadding="0" >
-			<thead>
-				<tr>
-					<th class="name">Tên</th>
-					<th class="time">Thời gian</th>
-					<th class="show">Xem</th>
-					<th class="delete">Xóa</th>
-				</tr>
-			</thead>
-			<tbody>
-				<% @allMessage.each do |message| %>
-					<tr name="messagerowid<%= message.id %>">
-						<td class="tb-data-left"><%= message.name.capitalize %></td>
-						<td class=""><%= time_ago_in_words(message.created_at) %> trước</td>
-						<td class="show-button" onclick="showMessage(<%= message.id %>)">Đọc tin nhắn</td>
-						<td class="delete-button" onclick="return deleteMessage(<%= message.id %>)">Xóa tin nhắn</td>
-	 				</tr>
- 				<% end %>
-			</tbody>
-		</table>
-	</div>
-	<div class="dev-section">
-		<!-- show contact -->
-		<h3>Liên hệ</h3>
-	</div>
-	<div class="dev-section">
-		<!-- show message -->
-	</div>
-	<div class="show-modal-box">
-		<div class="modal-content-box">
-			<div class="modal-header">
-				<!-- modal title -->
-				<h3 class="modal-title">Tin nhắn</h3>
-				<!-- modal close button -->
-				<div class="close-button" onclick="closeMessage()"></div>
-			</div>
-			<!-- modal content box -->
-			<div class="modal-content">
-				<div class="message">
-					<p class="name"></p>
-					<p class="email"></p>
-					<p class="send-time"></p>
-					<p class="message"></p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="comfirm-box">
-		<div >
-			<h3>Bạn có chắc chắn muốn xóa ?</h3>
-			<button class="false-button" onclick="confirmDelete(false)">Không</button>
-			<button class="true-button" name="" onclick="confirmDelete(true)">Có</button>
+	<div class="dev-section main-content">
+		<div>
+			<%= link_to(development_message_path) do%>
+				<div class="main-element message"></div>
+			<% end %>
+			<%= link_to(development_contact_path) do%>
+				<div class="main-element contact"></div>
+			<% end %>
+			<%= link_to(development_image_path) do%>
+				<div class="main-element image"></div>
+			<% end %>
+			<div class="clear-fix"></div>
 		</div>
 	</div>
 </div>

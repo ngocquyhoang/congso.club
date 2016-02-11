@@ -158,3 +158,14 @@
 	color: #fff;
 	border: 0px; 
 }
+// setting for main content page
+.development-page .dev-section.main-content > div{
+	display: inline-block;
+}
+.development-page .dev-section.main-content .main-element{
+	width: 10em;
+	height: 10em;
+	background-color: #ff4455;
+	float: left;
+	margin: 0 3em;
+}
