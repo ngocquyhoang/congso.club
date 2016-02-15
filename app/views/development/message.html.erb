@@ -2,8 +2,8 @@
 <div class="development-page">
 	<h2>Trang quản trị - Tin nhắn</h2>
 	<div class="all-message dev-section">
+	<h3>Có tổng cộng <%= @allMessage.length %> tin nhắn</h3>
 		<!-- show all image -->
-		<h3>Tin nhắn</h3>
 		<table class="all-messages-table" cellspacing="0" cellpadding="0" >
 			<thead>
 				<tr>
@@ -24,6 +24,9 @@
  				<% end %>
 			</tbody>
 		</table>
+		<div class="paging-secction">
+			<%= will_paginate @allMessage_paging, renderer: BootstrapPagination::Rails %>
+		</div>
 	</div>
 	<div class="show-modal-box">
 		<div class="modal-content-box">

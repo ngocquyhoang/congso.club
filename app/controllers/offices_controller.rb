@@ -156,5 +156,4 @@ class OfficesController < ApplicationController
 			data = JSON.parse(data)
 			data[0]
 		end
-
 end

@@ -2,6 +2,48 @@
 <div class="development-page">
 	<h2>Trang quản trị - Quản lý ảnh</h2>
 	<div class="dev-section all-image">
-		
+		<h3>Có tổng cộng <%= @allImage.length %> ảnh</h3>
+		<!-- show all image -->
+		<table class="all-image-table" cellspacing="0" cellpadding="0" >
+			<tbody>
+				<% @allImage.each do |image| %>
+					<tr>
+						<td class="dev-image-content">
+							<div>
+								<img src="<%= image.image%>" alt="">
+								<div>
+									<p class="tit"><%= image.title.capitalize%></p>
+									<p class="sub">đăng bởi <%= image.owner.capitalize%></p>
+									<p class="sub">vào lúc <%= image.created_at.in_time_zone(7).strftime("%H:%M - %d - %m - %Y") %></p>
+									<p class="sub">
+										<%= image.like%>
+										<i class="fa fa-thumbs-o-up"></i>
+										<%= image.view%>
+										<i class="fa fa-eye"></i>
+										<%#= facebook_shares('http://apidock.com/rails/ActionView/Helpers/UrlHelper/link_to') %>
+										<i class="fa fa-comments-o"></i>
+										235
+										<i class="fa fa-share-square-o"></i>
+									</p>
+								</div>
+								<span class="clear-fix"></span>
+							</div>
+						</td>
+						<td class="dev-image-button">
+							<%= link_to "Xem", image, :target => "_blank" %>
+						</td>
+						<td class="dev-image-button">
+							<%= link_to 'Sửa', edit_office_path(image), :target => "_blank" %>
+						</td>
+						<td class="dev-image-button">
+							<%= link_to 'Xóa', image, method: :delete, data: { confirm: 'Chắc chắn muốn xóa ảnh này ?' } %>
+						</td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+		<div class="paging-secction">
+			<%= will_paginate @allImage_paging, renderer: BootstrapPagination::Rails %>
+		</div>
 	</div>
 </div>

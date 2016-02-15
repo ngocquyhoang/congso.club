@@ -2,6 +2,27 @@
 <div class="development-page">
 	<h2>Trang quản trị - Thông tin liên hệ</h2>
 	<div class="dev-section all-contact">
-		
+		<h3>Có tổng cộng <%= @allContact.length %> thông tin liên hệ</h3>
+		<table class="all-contact-table" cellspacing="0" cellpadding="0" >
+			<thead>
+				<tr>
+					<th class="name">Tên</th>
+					<th class="email">Email</th>
+					<th class="time">Thời gian Subscribe</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @allContact.each do |contact| %>
+					<tr>
+						<td class="name"><%= contact.name.capitalize %></td>
+						<td class="email"><%= contact.email %></td>
+						<td class="time"><%= time_ago_in_words(contact.created_at) %> trước</td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+		<div class="paging-secction">
+			<%= will_paginate @allContact_paging, renderer: BootstrapPagination::Rails %>
+		</div>
 	</div>
 </div>

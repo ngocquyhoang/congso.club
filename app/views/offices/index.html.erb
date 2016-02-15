@@ -3,8 +3,6 @@
 	<% @offices.each do |office| %>
 		<div class="page-secction funny-section" id="<%= office.id %>">
 			<h3 class="title">
-				<%#= link_to 'Edit', edit_office_path(office) %>
-				<%#= link_to 'Destroy', office, method: :delete, data: { confirm: 'Are you sure?' } %>
 				<%= link_to(office) do %>
 					<%= office.title.capitalize %>
 				<% end %>
