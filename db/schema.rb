@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160128075506) do
+ActiveRecord::Schema.define(version: 20160217012204) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "name",               limit: 255
@@ -69,6 +69,15 @@ ActiveRecord::Schema.define(version: 20160128075506) do
     t.integer  "view",       limit: 4,     default: 0, null: false
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false
+  end
+
+  create_table "view_pages", force: :cascade do |t|
+    t.integer  "home_page",              limit: 4, default: 0, null: false
+    t.integer  "zorba_page",             limit: 4, default: 0, null: false
+    t.integer  "contact_page",           limit: 4, default: 0, null: false
+    t.integer  "contributed_image_page", limit: 4, default: 0, null: false
+    t.datetime "created_at",                                   null: false
+    t.datetime "updated_at",                                   null: false
   end
 
 end

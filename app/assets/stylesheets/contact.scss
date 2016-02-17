@@ -13,7 +13,8 @@
 }
 .embed-logo{
 	width: 30em;
-	height: 30em;
+	height: auto;
+	min-height: 10em;
 	float: left;
 }
 .embed-logo .congso-logo{

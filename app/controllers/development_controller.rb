@@ -3,6 +3,14 @@ class DevelopmentController < ApplicationController
 	def index
 		
 	end
+	# view count
+	def view_count
+		@home_page = ViewPage.first.home_page
+		@zorba_page = ViewPage.first.zorba_page
+		@contact_page = ViewPage.first.contact_page
+		@contributed_image_page = ViewPage.first.contributed_image_page
+	end
+
 	# all image page
 	def image
 		@allImage = Office.all.order(created_at: :desc)

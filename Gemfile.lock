@@ -48,6 +48,7 @@ GEM
       activesupport (>= 3.2.0)
       json (>= 1.7)
       mime-types (>= 1.16)
+    chartkick (1.4.1)
     cloudinary (1.1.2)
       aws_cf_signer
       rest-client
@@ -82,6 +83,10 @@ GEM
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     i18n (0.7.0)
+    icheck-rails (1.0.2.2)
+      jquery-rails
+      rails (>= 3.1.0)
+      sass-rails
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -218,10 +223,12 @@ PLATFORMS
 DEPENDENCIES
   byebug
   carrierwave
+  chartkick
   cloudinary
   coffee-rails (~> 4.1.0)
   devise
   friendly_id (~> 5.1.0)
+  icheck-rails
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (~> 0.3.18)

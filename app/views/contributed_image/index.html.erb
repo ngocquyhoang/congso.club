@@ -1,0 +1,54 @@
+<% title "Gửi ảnh cho chúng tôi" %>
+<div class="contributed-image-page" id="contributed-image">
+	<div class="contributed-image-page-box">
+		<div class="contributed-image-box">
+			<h2 class="page-title">Gửi ảnh cho chúng tôi</h2>
+			<div class="field">
+				<input type="text" name="name" value="" placeholder="Tên của bạn">
+			</div>
+			<div class="field">
+				<input type="text" name="email" value="" placeholder="Email">
+			</div>
+			<div class="field">
+				<input type="text" name="email" value="" placeholder="Tiêu đề ảnh">
+			</div>
+			<div class="field">
+				<div class="select-box">
+					<p class="label">Ảnh bạn muốn gửi ?</p>
+					<div class="sel-el up-image">
+						<p>Tải ảnh của tôi lên ! </p>
+					</div>
+					<div class="sel-el add-link">
+						<p>Nhập vào đường dẫn ảnh </p>
+					</div>
+					<div class="sel-el add-idea">
+						<p>Tôi có ý tưởng <br /> Hãy tạo ra bức ảnh cho tôi !</p>
+						<input type="checkbox" class='icheck-me' data-skin="square" data-color="green">
+					</div>
+					<div class="clear-fix"></div>
+				</div>
+			</div>
+			<div class="field">
+				<textarea class="message" name="message" placeholder="Ghi chú"></textarea>
+			</div>
+			<div class="field">
+				<button type="" class="send-image" onclick="sendImage();">Gửi</button>
+			</div>
+		</div>
+		<div class="embed-logo">
+			<p class="question">Vì sao chúng tôi cần đến tên của bạn ?</p>
+			<p class="answer">Mỗi bức ảnh hay ý tưởng bạn gửi cho chúng tôi đều thuộc quền sở hữu của bạn. Chúng tôi tôn trọng điều đó. Vậy nên chúng tôi cần tên của bạn để hiển thị trên trang chủ của chúng tôi - như 1 lời cảm ơn của chúng tôi vì những đóng góp của bạn.</p>
+			<p class="question">Tên của bạn sẽ được hiển thị ở đâu ?</p>
+			<p  class="answer">ở đây này</p>
+			<p class="question">Tôi không muốn cung cấp tên của tôi ?</p>
+			<p  class="answer">Như đã nói ở trên, chúng tôi tôn trọng mọi quyết định của bạn. Cho nên trong trường hợp bạn không muốn cung cấp tên của mình, xin vui lòng không điền vào ô "Tên của bạn ". Bức ảnh của bạn sẽ được đăng dưới tên "Admin congso.club". Xin cảm ơn !</p>
+			<p class="question">Tôi có những câu hỏi khác ?</p>
+			<p  class="answer">Nếu bạn có những câu hỏi, góp ý ... bạn có thể liên hệ với chúng tôi ở đường dẫn :
+				<a href="http://congso.club/contact" title="congso.club" target="blank">http://congso.club/contact</a>
+				<br /><br />
+				hoặc vào trực tiếp trang <%= link_to "Liên hệ", contact_path, class: "contact-button", :target => "_blank" %>
+			</p>
+		</div>
+		<div class="clear-fix"></div>
+	</div>
+</div>

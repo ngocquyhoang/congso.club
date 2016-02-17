@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
 	# tell devise using custom controller
 	devise_for :admins, :path => 'admin', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
 	resources :offices
@@ -10,9 +11,11 @@ Rails.application.routes.draw do
 	get 'development/message', to: 'development#message'
 	get 'development/contact', to: 'development#contact'
 	get 'development/image', to: 'development#image'
+	get 'development/count', to: 'development#view_count'
 	get 'development', to: 'development#index'
 	get 'contact', to: 'contact#index'
 	get 'zorba', to: 'zorba#index'
+	get 'contributed-image', to: 'contributed_image#index'
 	# The priority is based upon order of creation: first created -> highest priority.
 	# See how all your routes lay out with "rake routes".
 

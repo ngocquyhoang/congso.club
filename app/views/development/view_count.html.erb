@@ -1,0 +1,9 @@
+<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+<% title "Trang quản trị - Thống kê truy cập" %>
+<div class="development-page">
+	<h2>Trang quản trị - Thống kê truy cập</h2>
+	<div class="dev-section all-image">
+		<%= pie_chart [ ["Trang chủ", "#{@home_page}"], ["Về chúng tôi", "#{@zorba_page}"], ["Liên hệ", "#{@contact_page}"], ["Đóng góp ảnh", "#{@contributed_image_page}"] ] %>
+		<%= column_chart [ ["Trang chủ", "#{@home_page}"], ["Về chúng tôi", "#{@zorba_page}"], ["Liên hệ", "#{@contact_page}"], ["Đóng góp ảnh", "#{@contributed_image_page}"]], stacked: true %>
+	</div>
+</div>
