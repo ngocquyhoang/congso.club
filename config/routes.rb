@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 	get 'development', to: 'development#index'
 	get 'contact', to: 'contact#index'
 	get 'zorba', to: 'zorba#index'
-	get 'contributed-image', to: 'contributed_image#index'
+	get 'send_image', to: 'contributed_image#index'
 	# The priority is based upon order of creation: first created -> highest priority.
 	# See how all your routes lay out with "rake routes".
 

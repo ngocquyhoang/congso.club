@@ -1,6 +1,9 @@
 // Place all the styles related to the contributed_image controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// import icheck
+@import 'icheck/square/green';
+
 #contributed-image{
 	// background-color: #ff4455;
 	background-image: none;
@@ -24,6 +27,7 @@
 }
 #contributed-image .embed-logo{
 	text-align: left;
+	padding-top: 3.5em;
 }
 #contributed-image .embed-logo .question{
 	font-size: 1.25em;
@@ -165,6 +169,11 @@
 	box-shadow: 0 0 0.5em #007AFF;
 	border: 1px solid #007AFF;
 }
+.contributed-image-page .contributed-image-page-box .contributed-image-box .field .send-image:active{
+	box-shadow: 0 0 0.5em #007AFF;
+	border: 1px solid #007AFF;
+	outline: none;
+}
 // setting for way to upload image
 #contributed-image .contributed-image-page-box .contributed-image-box .field .select-box{
 	text-align: center;
@@ -180,7 +189,100 @@
 	border: 1px solid #000;
 	float: left;
 	margin: 0 10px;
+	position: relative;
 }
 #contributed-image .contributed-image-page-box .contributed-image-box .field .select-box .sel-el p{
 	padding-top: 8px;
+}
+#contributed-image .contributed-image-page-box .contributed-image-box .field .select-box .sel-el > div{
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+}
+#contributed-image .select-box .sel-el.actived{
+	border: 1px solid #1B7E5A !important;
+	color: #1B7E5A !important;
+}
+#contributed-image .upload-image-data{
+	border: 1px solid #1B7E5A;
+}
+#contributed-image .modal-add-file{
+	font-size: 1.2em;
+	width: 24em;
+	margin: 1.25em 0;
+	display: none;
+}
+#contributed-image .upload-image-data .add-img-file-box .add-image-button{
+	width: 100px;
+	height: 100px;
+	background-color: #1B7E5A;
+	float: left;
+	background-image: asset_url('add-line-light.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#contributed-image .upload-image-data .add-img-file-box .add-image-infomation{
+	float: left;
+	padding-left: 1em;
+	color: #1B7E5A;
+}
+#contributed-image .upload-image-data .add-img-file-box .add-image-infomation ul{
+	list-style: none;
+}
+#contributed-image .upload-image-data .add-img-file-box .add-image-infomation ul li{
+	margin: 1em 0;
+}
+#contributed-image .add-link-data input{
+	font-size: 1em !important;
+	border: 1px solid #1B7E5A !important;
+	color: #1B7E5A !important;
+}
+#contributed-image .add-link-data input:focus{
+	box-shadow: 0 0 0.5em #1B7E5A;
+}
+#contributed-image .add-idea-data textarea{
+	font-size: 1em !important;
+	border: 1px solid #1B7E5A !important;
+	color: #1B7E5A !important;
+}
+#contributed-image .add-idea-data textarea:focus{
+	box-shadow: 0 0 0.5em #1B7E5A;
+}
+/*input type text place holder*/
+#contributed-image .add-link-data input[type="text"]::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+  color: #1B7E5A;
+}
+#contributed-image .add-link-data input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  color: #1B7E5A;
+}
+#contributed-image .add-link-data input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+  color: #1B7E5A;
+}
+#contributed-image .add-link-data input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+  color: #1B7E5A;
+}
+#contributed-image .add-link-data input[type="text"]::-ms-input-placeholder { /* Edge */
+  color: #1B7E5A;
+}
+#contributed-image .add-link-data input[type="text"]:placeholder-shown { /* Standard one last! */
+  color: #1B7E5A;
+}
+/*text area for place holder*/
+#contributed-image .add-idea-data textarea::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+  color: #1B7E5A;
+}
+#contributed-image .add-idea-data textarea:-moz-placeholder { /* Firefox 18- */
+  color: #1B7E5A;
+}
+#contributed-image .add-idea-data textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #1B7E5A;
+}
+#contributed-image .add-idea-data textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #1B7E5A;
+}
+#contributed-image .add-idea-data textarea::-ms-input-placeholder { /* Edge */
+  color: #1B7E5A;
+}
+#contributed-image .add-idea-data textarea:placeholder-shown { /* Standard one last! */
+  color: #1B7E5A;
 }

@@ -2,4 +2,4 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 #= require 'icheck'
-@import 'icheck/square/_all' //includes all color schemes
+

@@ -10,29 +10,55 @@
 				<input type="text" name="email" value="" placeholder="Email">
 			</div>
 			<div class="field">
-				<input type="text" name="email" value="" placeholder="Tiêu đề ảnh">
+				<input type="text" name="title" value="" placeholder="Tiêu đề ảnh">
 			</div>
 			<div class="field">
 				<div class="select-box">
 					<p class="label">Ảnh bạn muốn gửi ?</p>
-					<div class="sel-el up-image">
+					<div class="sel-el upload-image">
 						<p>Tải ảnh của tôi lên ! </p>
+						<div>
+							<input type="radio" value="upload-image" name="image-select" class='icheck-me' data-skin="square" data-color="green">
+						</div>
 					</div>
 					<div class="sel-el add-link">
 						<p>Nhập vào đường dẫn ảnh </p>
+						<div>
+							<input type="radio" value="add-link" name="image-select" class='icheck-me' data-skin="square" data-color="green">
+						</div>
 					</div>
 					<div class="sel-el add-idea">
 						<p>Tôi có ý tưởng <br /> Hãy tạo ra bức ảnh cho tôi !</p>
-						<input type="checkbox" class='icheck-me' data-skin="square" data-color="green">
+						<div>
+							<input type="radio" value="add-idea" name="image-select" class='icheck-me' data-skin="square" data-color="green">
+						</div>
 					</div>
 					<div class="clear-fix"></div>
 				</div>
+				<div class="modal-add-file upload-image-data">
+					<div class="add-img-file-box">
+						<div class="add-image-button"></div>
+						<div class="add-image-infomation">
+							<ul>
+								<li class="type">Ảnh có định dạng : PNG JPG GIF</li>
+								<li class="size">Dung lượng ảnh nhỏ hơn 10 Mb</li>
+							</ul>
+						</div>
+						<div class="clear-fix"></div>
+					</div>
+				</div>
+				<div class="modal-add-file add-link-data">
+					<input type="text" name="add-link" value="" placeholder="Đường dẫn ảnh https://...">
+				</div>
+				<div class="modal-add-file add-idea-data">
+					<textarea class="message" name="add-idea" placeholder="Ý tưởng của bạn "></textarea>
+				</div>
 			</div>
 			<div class="field">
-				<textarea class="message" name="message" placeholder="Ghi chú"></textarea>
+				<textarea class="message" name="noted" placeholder="Ghi chú"></textarea>
 			</div>
 			<div class="field">
-				<button type="" class="send-image" onclick="sendImage();">Gửi</button>
+				<button type="" class="send-image">Gửi</button>
 			</div>
 		</div>
 		<div class="embed-logo">
@@ -52,3 +78,4 @@
 		<div class="clear-fix"></div>
 	</div>
 </div>
+<%= javascript_include_tag "contributed" %>
