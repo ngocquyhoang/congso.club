@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 	post 'contact/message'
 	post 'development/showmessage'
 	post 'development/deletemessage'
+	post 'dev_sendimage', to: 'contributed_image#send_image'
 	get 'development/message', to: 'development#message'
 	get 'development/contact', to: 'development#contact'
 	get 'development/image', to: 'development#image'
@@ -16,6 +17,7 @@ Rails.application.routes.draw do
 	get 'contact', to: 'contact#index'
 	get 'zorba', to: 'zorba#index'
 	get 'send_image', to: 'contributed_image#index'
+	get 'thank_you', to: 'contributed_image#thank_you'
 	# The priority is based upon order of creation: first created -> highest priority.
 	# See how all your routes lay out with "rake routes".
 

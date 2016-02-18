@@ -101,51 +101,96 @@ $('#contributed-image button.send-image').click(function(event) {
 	var title = $('#contributed-image input[name="title"]').val();
 	var noted = $('#contributed-image textarea[name="noted"]').val();
 	var image_input_type_el = $('#contributed-image .select-box').find('.sel-el.actived');
-	var image_input_type = "";
-	image_input_type = image_input_type_el.attr('name');
-	// if (typeof image_input_type == "undefined") {
-	// 	alert("Bạn chưa nhập ảnh");
-	// } else{
-	// 	switch(image_input_type) {
-	// 		case "upload-image":
-	// 			var uploadImageboo = $('#contributed-image .add-image-button').hasClass('success');
-	// 			if (uploadImageboo) {
-	// 				var image = $('#contributed-image .add-image-button').hasClass('success');
-	// 			} else{
-
-	// 			};
-				
-	// 			alert(image);
-	// 			break;
-	// 		case "add-link":
-	// 			alert("Link");
-	// 			break;
-	// 		case "add-idea":
-	// 			alert("ý tưởng");
-	// 			break;
-	// 		default:
-	// 			alert("đã xảy ra lỗi");
-	// 	}
-	// };
-	if (checkSendMessageValue( email, title, image_input_type )) {
-		alert('call');
-	} else{
-		alert('no call');
+	var image_input_type = "false";
+	if (image_input_type_el.attr('name')) {
+		image_input_type = image_input_type_el.attr('name');
 	};
+	if (checkSendMessageValue( email, title, image_input_type )) {
+		if (image_input_type == "upload-image") { var image = $('#contributed-image .upload-image-data input.upload-image-file').val();};
+		if (image_input_type == "add-link") { var image = $('#contributed-image .add-link-data input').val();};
+		if (image_input_type == "add-idea") { var image = $('#contributed-image .add-idea-data textarea').val();};
+		$.ajax({
+			url: "/dev_sendimage",
+			type: "POST",
+			data: {"name": name, "email": email, "title": title, "noted": noted, "image_input_type": image_input_type, "image": image},
+			success: function(data) {
+				window.location.href = data["redirect_page"];
+			}
+		});
+	} 
 });
 function checkSendMessageValue ( email, title, image_input_type) {
 	if (email == "") {
-		// focus email field
-		alert("Bạn chưa nhập Email");
+		$('#contributed-image input[name="email"]').focus();
+		showNotice("error", "Bạn chưa nhập Email");
 		return false
 	} else{
 		if (!isValidEmailAddress(email)) {
-			// focus email
-			// false
-			return false;
+			$('#contributed-image input[name="email"]').focus();
+			showNotice("error", "Email không đúng định dạng");
+			return false
 		} else{
-			alert("email ok");
-			return true;
+			if (title == "") {
+				$('#contributed-image input[name="title"]').focus()
+				showNotice("error", "Có vẻ như bạn chưa nhập tiêu đề");
+				return false
+			} else{
+				if (image_input_type == "false") {
+					showNotice("error", "Hãy chọn 1 trong 3 phương thức nhập hình ảnh dưới đây");
+					return false
+				} else{
+					switch(image_input_type) {
+						case "upload-image":
+							if ($('#contributed-image .add-image-button').hasClass('error')) {
+								showNotice("error", "Ảnh của bạn không đủ điều kiện, vui lòng kiểm tra lại");
+								return false;
+							} else{
+								if ($('#contributed-image .add-image-button').hasClass('success')) {
+									return true
+								} else{
+									showNotice("error", "Bạn chưa Upload ảnh của mình lên");
+									return false;
+								};
+							};
+							break;
+						case "add-link":
+							var error = $('#contributed-image .add-link-data input').hasClass('error');
+							var success = $('#contributed-image .add-link-data input').hasClass('success');
+							if (error) {
+								$('#contributed-image .add-link-data input').focus();
+								return false
+							}else{
+								if (success) {
+									return true
+								}else{
+									$('#contributed-image .add-link-data input').focus();
+									showNotice("error", "Bạn chưa nhập đường dẫn ảnh");
+									return false
+								};
+							}
+							break;
+						case "add-idea":
+							var error = $('#contributed-image .add-idea-data textarea').hasClass('error');
+							var success = $('#contributed-image .add-idea-data textarea').hasClass('success');
+							if (error) {
+								$('#contributed-image .add-idea-data textarea').focus();
+								return false
+							} else{
+								if (success) {
+									return true
+								} else{
+									$('#contributed-image .add-idea-data textarea').focus();
+									showNotice("error", "Bạn chưa nhập ý tưởng");
+									return false
+								};
+							};
+							break;
+						default:
+							showNotice("error", "Đã xảy ra lỗi, vui lòng tải lại trang Web");
+							return false
+					};
+				};
+			};
 		};
 	};
 }

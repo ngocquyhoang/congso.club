@@ -330,3 +330,49 @@
 #contributed-image .add-idea-data textarea:placeholder-shown { /* Standard one last! */
   color: #1B7E5A;
 }
+// thank you box
+.thank-you-box{
+	text-align: center;
+	background-image: asset_url('bg-coffee-7.png') ;
+	background-repeat: repeat;
+	background-position: center center;
+}
+.thank-you-box .thank-you{
+	padding: 8em 0 10em;
+	background-color: rgba(0,0,0,0.35);
+	margin: 0 auto;
+}
+.thank-you-box .thank-you h2{
+	font-family: 'Hero';
+	font-weight: normal;
+	font-size: 3.5em;
+	color: #fff;
+	padding-bottom: 0.75em;
+}
+.thank-you-box .thank-you h3{
+	font-family: 'Hero';
+	font-weight: normal;
+	font-size: 2.25em;
+	color: #fff;
+	padding-bottom: 0.5em;
+}
+.thank-you-box .thank-you h4{
+	font-family: 'Hero';
+	font-weight: normal;
+	font-size: 1.5em;
+	color: #fff;
+	padding-bottom: 4em;
+}
+.thank-you-box .thank-you a{
+	font-family: 'Hero';
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.75em;
+	padding: 0.75em 1em;
+	border: 1px solid #fff;
+	border-radius: 0px;
+	background-color: rgba(255,255,255,0.5);
+}
+.thank-you-box .thank-you a:hover{
+	background-color: rgba(255,255,255,0.2);
+}
