@@ -15,19 +15,19 @@
 			<div class="field">
 				<div class="select-box">
 					<p class="label">Ảnh bạn muốn gửi ?</p>
-					<div class="sel-el upload-image">
+					<div class="sel-el upload-image" name="upload-image">
 						<p>Tải ảnh của tôi lên ! </p>
 						<div>
 							<input type="radio" value="upload-image" name="image-select" class='icheck-me' data-skin="square" data-color="green">
 						</div>
 					</div>
-					<div class="sel-el add-link">
+					<div class="sel-el add-link" name="add-link">
 						<p>Nhập vào đường dẫn ảnh </p>
 						<div>
 							<input type="radio" value="add-link" name="image-select" class='icheck-me' data-skin="square" data-color="green">
 						</div>
 					</div>
-					<div class="sel-el add-idea">
+					<div class="sel-el add-idea" name="add-idea">
 						<p>Tôi có ý tưởng <br /> Hãy tạo ra bức ảnh cho tôi !</p>
 						<div>
 							<input type="radio" value="add-idea" name="image-select" class='icheck-me' data-skin="square" data-color="green">
@@ -37,7 +37,8 @@
 				</div>
 				<div class="modal-add-file upload-image-data">
 					<div class="add-img-file-box">
-						<div class="add-image-button"></div>
+						<div class="add-image-button" onclick="$('#contributed-image input.upload-image-file').click();"></div>
+						<input type="file" name="upload-image" placeholder="" class="upload-image-file">
 						<div class="add-image-infomation">
 							<ul>
 								<li class="type">Ảnh có định dạng : PNG JPG GIF</li>
@@ -48,7 +49,7 @@
 					</div>
 				</div>
 				<div class="modal-add-file add-link-data">
-					<input type="text" name="add-link" value="" placeholder="Đường dẫn ảnh https://...">
+					<input type="text" name="add-link" placeholder="Đường dẫn ảnh https://...">
 				</div>
 				<div class="modal-add-file add-idea-data">
 					<textarea class="message" name="add-idea" placeholder="Ý tưởng của bạn "></textarea>

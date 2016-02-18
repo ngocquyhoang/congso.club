@@ -208,7 +208,7 @@
 }
 #contributed-image .modal-add-file{
 	font-size: 1.2em;
-	width: 24em;
+	width: 24.1em;
 	margin: 1.25em 0;
 	display: none;
 }
@@ -221,6 +221,19 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
+#contributed-image .upload-image-data .add-img-file-box .add-image-button.success{
+	background-image: asset_url('success-60x60.png');
+	background-color: rgba(0,0,0,0.0);
+	border-right: 1px solid #1B7E5A;
+}
+#contributed-image .upload-image-data .add-img-file-box .add-image-button.error{
+	background-image: asset_url('error-60x60.png');
+	background-color: rgba(0,0,0,0.0);
+	border-right: 1px solid #1B7E5A;
+}
+#contributed-image .upload-image-data .add-img-file-box input.upload-image-file{
+	display: none;
+}
 #contributed-image .upload-image-data .add-img-file-box .add-image-infomation{
 	float: left;
 	padding-left: 1em;
@@ -231,6 +244,27 @@
 }
 #contributed-image .upload-image-data .add-img-file-box .add-image-infomation ul li{
 	margin: 1em 0;
+	padding-right: 1.65em;
+}
+#contributed-image .upload-image-data .add-image-infomation ul li.success{
+	background-image: asset_url('success.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#contributed-image .upload-image-data .add-image-infomation ul li.error{
+	background-image: asset_url('error.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#contributed-image .add-link-data input.success{
+	background-image: asset_url('success.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+#contributed-image .add-link-data input.error{
+	background-image: asset_url('error.png');
+	background-repeat: no-repeat;
+	background-position: right center;
 }
 #contributed-image .add-link-data input{
 	font-size: 1em !important;
@@ -239,6 +273,16 @@
 }
 #contributed-image .add-link-data input:focus{
 	box-shadow: 0 0 0.5em #1B7E5A;
+}
+#contributed-image .add-idea-data textarea.success{
+	background-image: asset_url('success.png');
+	background-repeat: no-repeat;
+	background-position: right 0.6em;
+}
+#contributed-image .add-idea-data textarea.error{
+	background-image: asset_url('error.png');
+	background-repeat: no-repeat;
+	background-position: right 0.6em;
 }
 #contributed-image .add-idea-data textarea{
 	font-size: 1em !important;

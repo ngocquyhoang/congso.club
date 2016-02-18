@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= stub contributed
 
 $(document).ready(function() {
 	// about page - zorba
@@ -225,15 +226,24 @@ function addNewImage () {
 		// clear class
 		$('.image-form .field .add-image-infomation ul li').removeClass('error success');
 		// check value
+		var imagestrue = [];
 		if (size > 10000000) {
 			$('.image-form .field .add-image-infomation ul li.size').addClass('error');
 		}else{
 			$('.image-form .field .add-image-infomation ul li.size').addClass('success');
+			imagestrue.push("size");
 		};
 		if (type === "image/png" || type === "image/jpeg" || type === "image/gif") {
 			$('.image-form .field .add-image-infomation ul li.type').addClass('success');
+			imagestrue.push("type");
 		} else{
 			$('.image-form .field .add-image-infomation ul li.type').addClass('error');
+		};
+		$('.image-form .field .add-image-button').removeClass('error success');
+		if (imagestrue.length == 2) {
+			$('.image-form .field .add-image-button').addClass('success');
+		} else{
+			$('.image-form .field .add-image-button').addClass('error');
 		};
 	});
 };

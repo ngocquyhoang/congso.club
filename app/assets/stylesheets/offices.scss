@@ -202,6 +202,12 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
+.image-form .field .add-image-button.success{
+	background-image: asset_url('success-60x60.png');
+}
+.image-form .field .add-image-button.error{
+	background-image: asset_url('error-60x60.png');
+}
 .image-form .field.add-img-file-box{
 	background-color: rgba(255,255,255,0.4);
 }
