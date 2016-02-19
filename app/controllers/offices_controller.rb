@@ -19,6 +19,12 @@ class OfficesController < ApplicationController
 		productDomain = "congso.club"
 		@currentUrl = productDomain + "/offices/" + @office.slug
 		# add to database
+		if @office.id == Office.first.id
+			nextImageID = Office.last.id
+		else
+			nextImageID = @office.id - 1
+		end
+		@nextImage = Office.find(nextImageID)
 		post = Office.find(@office.id)
 		post.view += 1
 		post.save

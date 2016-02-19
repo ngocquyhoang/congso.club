@@ -47,18 +47,7 @@
 	height: 15em;
 	position: absolute;
 	z-index: 10;
-}
-.contact-page .about-me .infomation .info-slide .slide-content li[name="1"]{
-	background-image: asset_url('bg-coffee-6.jpg');
-	background-position: center;
-}
-.contact-page .about-me .infomation .info-slide .slide-content li[name="2"]{
-	background-image: asset_url('bg-coffee-1.jpg');
-	background-position: center;
-}
-.contact-page .about-me .infomation .info-slide .slide-content li[name="3"]{
-	background-image: asset_url('bg-coffee-3.jpg');
-	background-position: center;
+	background-color: #fff;
 }
 .contact-page .about-me .infomation .info-slide .slide-content li h5{
 	font-size: 1.5em;

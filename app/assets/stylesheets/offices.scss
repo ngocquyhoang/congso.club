@@ -354,3 +354,40 @@
 	font-family: 'Hero';
 	font-size: 1.1em;
 }
+// next image setting
+.next-image-box{
+	font-family: 'Hero';
+	padding-bottom: 2em;
+}
+.next-image-box a{
+	display: inline-block;
+}
+.next-image-box h3{
+	font-size: 1.55em;
+	font-weight: normal;
+	margin: 0.3em 0;
+}
+.next-image-box .next-image{
+	height: 5em;
+	float: left;
+}
+.next-image-box .next-image img{
+	height: 100%;
+}
+.next-image-box .next-mage-title{
+	float: left;
+}
+.next-image-box .next-mage-title p{
+	padding-top: 0.5em;
+	padding-left: 1em;
+	font-size: 1.15em;
+	color: #000;
+	width: 22em;
+	text-align: left;
+}
+.next-image-box .next-mage-title p.count{
+	padding-left: 2em;
+}
+.next-image-box .next-mage-title p.count i{
+	margin: 0 2em 0 0.75em;
+}

@@ -106,12 +106,20 @@ $('#contributed-image button.send-image').click(function(event) {
 		image_input_type = image_input_type_el.attr('name');
 	};
 	if (checkSendMessageValue( email, title, image_input_type )) {
-		if (image_input_type == "upload-image") { var image = $('#contributed-image .upload-image-data input.upload-image-file').val();};
+		ngocquyhoang = $('#contributed-image input.upload-image-file');
+		if (image_input_type == "upload-image") { var image = ngocquyhoang[0].files[0];};
 		if (image_input_type == "add-link") { var image = $('#contributed-image .add-link-data input').val();};
 		if (image_input_type == "add-idea") { var image = $('#contributed-image .add-idea-data textarea').val();};
+		console.log(name);
+		console.log(email);
+		console.log(title);
+		console.log(noted);
+		console.log(image_input_type);
+		console.log(image);
 		$.ajax({
 			url: "/dev_sendimage",
 			type: "POST",
+			processData: false,
 			data: {"name": name, "email": email, "title": title, "noted": noted, "image_input_type": image_input_type, "image": image},
 			success: function(data) {
 				window.location.href = data["redirect_page"];
