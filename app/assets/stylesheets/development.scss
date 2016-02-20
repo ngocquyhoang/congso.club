@@ -352,3 +352,16 @@
 .user-image-modal-box .user-image-modal-content p.image img{
 	height: 3em;
 }
+a.new-image-button {
+	margin: 0 1.5em;
+	padding: 0.5em 1em;
+	color: #007AFF;
+	text-decoration: none;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid #007AFF;
+	transition: all 0.7s ease;
+}
+a.new-image-button:hover{
+	background-color: #007AFF;
+	color: #fff;
+}

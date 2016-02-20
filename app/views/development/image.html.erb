@@ -2,7 +2,7 @@
 <div class="development-page">
 	<h2>Trang quản trị - Quản lý ảnh</h2>
 	<div class="dev-section all-image">
-		<h3>Có tổng cộng <%= @allImage.length %> ảnh</h3>
+		<h3>Có tổng cộng <%= @allImage.length %> ảnh <%= link_to "Tạo mới", new_office_path, :target => "_blank", :class => "new-image-button" %></h3>
 		<!-- show all image -->
 		<table class="all-image-table" cellspacing="0" cellpadding="0" >
 			<tbody>
@@ -20,9 +20,9 @@
 										<i class="fa fa-thumbs-o-up"></i>
 										<%= image.view%>
 										<i class="fa fa-eye"></i>
-										<%#= facebook_shares('http://apidock.com/rails/ActionView/Helpers/UrlHelper/link_to') %>
+										<%= facebook_shares('http://www.congso.club/offices/' + image.slug)["comment_count"] %>
 										<i class="fa fa-comments-o"></i>
-										235
+										<%= facebook_shares('http://www.congso.club/offices/' + image.slug)["share_count"] %>
 										<i class="fa fa-share-square-o"></i>
 									</p>
 								</div>

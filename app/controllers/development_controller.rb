@@ -55,12 +55,6 @@ class DevelopmentController < ApplicationController
 	end
 
 	private
-	
-		def facebook_shares(url)
-			data = Net::HTTP.get(URI.parse("https://api.facebook.com/method/links.getStats?urls=#{URI.escape(url)}&format=json"))
-			data = JSON.parse(data)
-			data[0]
-		end
 
 		def verify_is_admin
 			if admin_signed_in?
