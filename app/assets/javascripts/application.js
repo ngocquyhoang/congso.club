@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= stub contributed
 
 $(document).ready(function() {
 	// about page - zorba

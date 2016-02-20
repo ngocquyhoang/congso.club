@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 	post 'development/showmessage'
 	post 'development/deletemessage'
 	post 'dev_sendimage', to: 'contributed_image#send_image'
+	post 'dev_show_user_image', to: 'development#show_user_image'
 	get 'development/message', to: 'development#message'
 	get 'development/contact', to: 'development#contact'
 	get 'development/image', to: 'development#image'

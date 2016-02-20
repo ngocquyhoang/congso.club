@@ -249,3 +249,106 @@
 .development-page .all-image .all-image-table .dev-image-content > div > div > p.sub i{
 	margin: 0 1.5em 0 0.4em;
 }
+// setting for user send image
+.development-page .user-image .all-user-image-table{
+	width: 100%;
+	text-align: center;
+	font-size: 1.15em;
+}
+.development-page .user-image .all-user-image-table td{
+	border-bottom: 1px solid #007AFF;
+	padding: 0.5em 0;
+}
+.development-page .user-image .all-user-image-table th{
+	font-size: 1.2em;
+	font-weight: normal;
+	color: #fff;
+	padding: 0.5em 0;
+	background-color: #DCC7B1;
+	border-top: 1px solid #007AFF;
+	border-bottom: 1px solid #007AFF;
+}
+.development-page .user-image .all-user-image-table tr.readed td{
+	color: #8E8E93;
+}
+.development-page .user-image .all-user-image-table tr.show td{
+	color: #000;
+}
+.development-page .user-image .all-user-image-table tr:nth-child(even){
+	background-color: #f7eade;
+}
+.development-page .user-image .all-user-image-table .show-button{
+	padding: 0.5em 1em;
+}
+// modal box for user image
+.user-image-modal-box {
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.user-image-modal-box .user-image-modal-content{
+	margin: 7em auto;
+	width: 60em;
+	height: 32em;
+	background-color: #fff;
+	position: relative;
+}
+// set before text value
+.user-image-modal-box .user-image-modal-content h3.message-by::before{
+	content: "Tin nhắn từ ";
+}
+.user-image-modal-box .user-image-modal-content p.name::before{
+	content: "Tên người gửi : ";
+}
+.user-image-modal-box .user-image-modal-content p.email::before{
+	content: "Email : ";
+}
+.user-image-modal-box .user-image-modal-content p.time::before{
+	content: "Gửi lúc : ";
+}
+.user-image-modal-box .user-image-modal-content p.image-title::before{
+	content: "Ảnh - ";
+}
+.user-image-modal-box .user-image-modal-content p.title::before{
+	content: "Tiêu đề : ";
+}
+.user-image-modal-box .user-image-modal-content p.noted::before{
+	content: "Ghi chú : ";
+}
+// style 
+.user-image-modal-box .user-image-modal-content h3.message-by{
+	padding: 0em 1.5em;
+	font-family: 'Hero';
+	background-color: #007AFF;
+	color: #FFF;
+	font-size: 1.5em;
+	font-weight: normal;
+	height: 2.5em;
+	line-height: 2.5em;
+}
+.user-image-modal-box .user-image-modal-content p{
+	margin: 0.75em 0;
+	padding: 0 1.25em; 
+	font-family: 'Hero';
+	font-size: 1.15em;
+}
+.user-image-modal-box .user-image-modal-content .close-button{
+	position: absolute;
+	top: 0em;
+	right: 0em;
+	width: 2.5em;
+	height: 2.5em;
+	font-size: 1.5em;
+	background-image: asset_url('close-button-light.png');
+}
+.user-image-modal-box .user-image-modal-content p.image {
+	padding-left: 2.5em;
+}
+.user-image-modal-box .user-image-modal-content p.image img{
+	height: 3em;
+}

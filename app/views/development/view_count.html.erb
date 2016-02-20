@@ -6,4 +6,103 @@
 		<%= pie_chart [ ["Trang chủ", "#{@home_page}"], ["Về chúng tôi", "#{@zorba_page}"], ["Liên hệ", "#{@contact_page}"], ["Đóng góp ảnh", "#{@contributed_image_page}"] ] %>
 		<%= column_chart [ ["Trang chủ", "#{@home_page}"], ["Về chúng tôi", "#{@zorba_page}"], ["Liên hệ", "#{@contact_page}"], ["Đóng góp ảnh", "#{@contributed_image_page}"]], stacked: true %>
 	</div>
+	<h2>Trang quản trị - Ảnh người dùng gửi</h2>
+	<div class="dev-section user-image">
+		<h3>Có tổng cộng <%= @allUserImage.length %> ảnh được gửi</h3>
+		<table class="all-user-image-table" cellspacing="0" cellpadding="0" >
+			<thead>
+				<tr>
+					<th class="email">Email</th>
+					<th class="title">Tiêu đề</th>
+					<th class="time">Thời gian gửi</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<% @allUserImage.each do |user_image| %>
+					<tr class="<% if user_image.dev_readed%>readed<% else %>show<% end %>" id="<%= user_image.id %>">
+						<td class="email"><%= user_image.email %></td>
+						<td class="title"><%= user_image.title %></td>
+						<td class="time"><%= time_ago_in_words(user_image.created_at) %> trước</td>
+						<td class="show-button" onclick="showUserSendImage(<%= user_image.id %>)">Xem</td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+		<div class="paging-secction">
+			<%= will_paginate @allUserImage_paging, renderer: BootstrapPagination::Rails %>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function showUserSendImage (user_image_id){
+		trTagView = $('.development-page .user-image .all-user-image-table tr#' + user_image_id);
+		if (trTagView.attr('class') == 'show') {
+			var readedThis = true;
+			trTagView.removeClass('show');
+			trTagView.addClass('readed');
+		};
+		if (readedThis) {
+			var userImageData = {"user_image_id": user_image_id, "read" : true};
+		}else{
+			var userImageData = {"user_image_id": user_image_id};
+		};
+		// call ajax
+		$.ajax({
+			url: "/dev_show_user_image",
+			type: "POST",
+			data: userImageData,
+			success: function(data) {
+				setData( data["name"], data["email"], data["title"], data["noted"], data["image_upload"], data["image_link"], data["image_idea"], data["send_time"] );
+				$('.user-image-modal-box').slideDown(400);
+			}
+		});
+	};
+	function setData (name, email, title, noted, image_upload, image_link, image_idea, send_time) {
+		if (name != "") {
+			$('.user-image-modal-box .user-image-modal-content h3.message-by').html(name);
+			$('.user-image-modal-box .user-image-modal-content .name').html(name);
+		} else{
+			$('.user-image-modal-box .user-image-modal-content h3.message-by').html(email);
+			$('.user-image-modal-box .user-image-modal-content .name').html("ẩn danh");
+		};
+		$('.user-image-modal-box .user-image-modal-content .email').html(email);
+		$('.user-image-modal-box .user-image-modal-content .time').html(send_time);
+		$('.user-image-modal-box .user-image-modal-content .title').html(title);
+		$('.user-image-modal-box .user-image-modal-content .noted').html(noted);
+		if (image_upload != null) {
+			$('.user-image-modal-box .user-image-modal-content .image-title').text('Ảnh Upload');
+			imgFather = $('.user-image-modal-box .user-image-modal-content .image');
+			imgFather.append('<img src="' + image_upload + '" alt="">');
+		}else{
+			if (image_link != null) {
+				$('.user-image-modal-box .user-image-modal-content .image-title').text('Đường dẫn ảnh');
+				$('.user-image-modal-box .user-image-modal-content .image').html(image_link);
+			}else{
+				if (image_idea != null) {
+					$('.user-image-modal-box .user-image-modal-content .image-title').text('Ý tưởng');
+					$('.user-image-modal-box .user-image-modal-content .image').html(image_idea);
+				}
+			};
+		};
+	};
+	function hideAndClearData(){
+		$('.user-image-modal-box').slideUp(400);
+		$('.user-image-modal-box .user-image-modal-content .image').html("");
+	}
+</script>
+<div class="user-image-modal-box">
+	<div class="user-image-modal-content" >
+		<h3 class="message-by"></h3>
+		<div class="close-button" onclick="hideAndClearData()"><%= image_tag("close-button-light.png") %></div>
+		<div class="content">
+			<p class="name"></p>
+			<p class="email"></p>
+			<p class="time"></p>
+			<p class="title"></p>
+			<p class="image-title"></p>
+			<p class="image"></p>
+			<p class="noted"></p>
+		</div>
+	</div>
 </div>

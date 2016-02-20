@@ -38,7 +38,9 @@
 				<div class="modal-add-file upload-image-data">
 					<div class="add-img-file-box">
 						<div class="add-image-button" onclick="$('#contributed-image input.upload-image-file').click();"></div>
-						<input type="file" name="upload-image" placeholder="" class="upload-image-file">
+						<form method="post" enctype="multipart/form-data">
+							<input type="file" name="upload-image" placeholder="" class="upload-image-file">
+						</form>
 						<div class="add-image-infomation">
 							<ul>
 								<li class="type">Ảnh có định dạng : PNG JPG GIF</li>

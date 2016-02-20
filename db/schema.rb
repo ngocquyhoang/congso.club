@@ -79,8 +79,9 @@ ActiveRecord::Schema.define(version: 20160218092135) do
     t.text     "image_upload", limit: 65535
     t.text     "image_link",   limit: 65535
     t.text     "image_idea",   limit: 65535
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.boolean  "dev_readed",                 default: false
+    t.datetime "created_at",                                 null: false
+    t.datetime "updated_at",                                 null: false
   end
 
   create_table "view_pages", force: :cascade do |t|

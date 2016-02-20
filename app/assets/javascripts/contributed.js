@@ -106,21 +106,25 @@ $('#contributed-image button.send-image').click(function(event) {
 		image_input_type = image_input_type_el.attr('name');
 	};
 	if (checkSendMessageValue( email, title, image_input_type )) {
-		ngocquyhoang = $('#contributed-image input.upload-image-file');
-		if (image_input_type == "upload-image") { var image = ngocquyhoang[0].files[0];};
-		if (image_input_type == "add-link") { var image = $('#contributed-image .add-link-data input').val();};
-		if (image_input_type == "add-idea") { var image = $('#contributed-image .add-idea-data textarea').val();};
-		console.log(name);
-		console.log(email);
-		console.log(title);
-		console.log(noted);
-		console.log(image_input_type);
-		console.log(image);
+		$(this).html("<i class='fa fa-spinner fa-spin'></i> Đang gửi ...");
+		var formData = new FormData();
+		ngocquyhoang_file = $('#contributed-image input.upload-image-file');
+		ngocquyhoang_link = $('#contributed-image .add-link-data input').val();
+		ngocquyhoang_idea = $('#contributed-image .add-idea-data textarea').val();
+		if (image_input_type == "upload-image") { formData.append("image", ngocquyhoang_file[0].files[0]);};
+		if (image_input_type == "add-link") { formData.append("image", ngocquyhoang_link);};
+		if (image_input_type == "add-idea") { formData.append("image", ngocquyhoang_idea);};
+		formData.append("name", name);
+		formData.append("email", email);
+		formData.append("title", title);
+		formData.append("image_input_type", image_input_type);
+		formData.append("noted", noted);
 		$.ajax({
 			url: "/dev_sendimage",
 			type: "POST",
 			processData: false,
-			data: {"name": name, "email": email, "title": title, "noted": noted, "image_input_type": image_input_type, "image": image},
+			contentType: false,
+			data: formData,
 			success: function(data) {
 				window.location.href = data["redirect_page"];
 			}
