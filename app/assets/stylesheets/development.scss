@@ -344,7 +344,9 @@
 	width: 2.5em;
 	height: 2.5em;
 	font-size: 1.5em;
-	background-image: asset_url('close-button-light.png');
+	background-image: asset_url('close-button-light-20x20.png');
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 .user-image-modal-box .user-image-modal-content p.image {
 	padding-left: 2.5em;
