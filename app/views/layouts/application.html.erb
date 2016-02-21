@@ -41,18 +41,18 @@
 				<div class="header-navigation-bar">
 					<ul>
 						<li><%= link_to "Về chúng tôi", zorba_path %></li>
-						<li><%= link_to "Gửi ảnh", send_image_path %></li>
-						<li><%= link_to "Liên hệ", contact_path %></li>
+						<% if !admin_signed_in? %>
+							<li><%= link_to "Gửi ảnh", send_image_path %></li>
+							<li><%= link_to "Liên hệ", contact_path %></li>
+						<% end %>
 						<% if admin_signed_in? %>
 							<li><%= link_to "Trang quản trị", development_path %></li>
 						<% end %>
-						<li>
-							<% if admin_signed_in? %>
+						<% if admin_signed_in? %>
+							<li>
 								<%= link_to "Đăng xuất", destroy_admin_session_path, :method => :delete %>
-							<% else %>
-								<%= link_to "Đăng nhập", new_admin_session_path %>
-							<% end %>
-						</li>
+							</li>
+						<% end %>
 						<div class="clear-fix"></div>
 					</ul>
 				</div>
