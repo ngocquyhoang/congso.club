@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'sitemap_generator'
 # add friendly id
 gem 'friendly_id', '~> 5.1.0'
 # upload images
