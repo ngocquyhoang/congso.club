@@ -2,15 +2,15 @@
 <div class="home-page">
 	<% @offices.each do |office| %>
 		<div class="page-secction funny-section" id="<%= office.id %>">
-			<h3 class="title">
+			<h2 class="title">
 				<%= link_to(office) do %>
 					<%= office.title.capitalize %>
 				<% end %>
-			</h3>
+			</h2>
 			<h4 class="owner">Đăng bởi <%= office.owner.capitalize %></h4>
 			<h5 class="create-time"><%= time_ago_in_words(office.created_at).capitalize %> trước</h5>
 			<div class="image-box">
-				<img src="<%= office.image %>" alt="<%= office.slug %>" class="image-funny" name"">
+				<img src="<%= office.image %>" alt="<%= office.title %>" class="image-funny" name"">
 				<div class="image-shadow">
 					<div>
 						<span class="like-count"><%= office.like %></span>

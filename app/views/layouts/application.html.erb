@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title><%= yield(:title) + " | Công sở.club" %></title>
+		<title><%="Congso.club | " + yield(:title)%></title>
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 		<%= csrf_meta_tags %>
 		<%= favicon_link_tag 'favico.png' %>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -96,6 +95,7 @@
 		</footer>
 		<!-- end footer -->
 	</body>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<!--facebook sdk-->
 	<div id="fb-root"></div>
 	<script>

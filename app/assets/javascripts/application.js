@@ -17,7 +17,7 @@
 
 $(document).ready(function() {
 	// about page - zorba
-	setInterval(function(){ nextSlide(); }, 3000);
+	setInterval(function(){ nextSlide(); }, 5000);
 	// add new image
 	addNewImage();
 });
