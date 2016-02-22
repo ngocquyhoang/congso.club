@@ -309,11 +309,10 @@ function confirmDelete (value) {
 		$.ajax({
 			url: "/development/deletemessage",
 			type: "POST",
-			dataType: "json",
 			data: {"idMessage": idMessage},
 			success: function(data) {
 				// delete
-				alert("ok");
+				setTimeout(function(){ $('.development-page .all-messages-table tr[name="messagerowid' + idMessage + '"]').hide(); }, 600);
 			}
 		});
 		// close form
