@@ -19,6 +19,9 @@ Rails.application.routes.draw do
 	get 'zorba', to: 'zorba#index'
 	get 'send_image', to: 'contributed_image#index'
 	get 'thank_you', to: 'contributed_image#thank_you'
+	# error page
+	get '/404', to: 'errors#not_found'
+	get '/500', to: 'errors#internal_server_error'
 	# The priority is based upon order of creation: first created -> highest priority.
 	# See how all your routes lay out with "rake routes".
 

@@ -28,6 +28,8 @@ gem "chartkick"
 gem 'will_paginate'
 # theme
 gem 'will_paginate-bootstrap'
+
+gem 'popen4'
 # css
 # gem 'less-rails-bootstrap'
 # gem
@@ -67,5 +69,7 @@ group :development do
   gem 'spring'
 end
 
-gem 'rails_12factor', group: :production
-gem 'pg', group: :production  
+group :production do
+	gem 'pg'
+	gem 'unicorn'
+end
